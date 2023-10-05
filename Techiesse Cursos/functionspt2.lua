@@ -44,5 +44,5 @@ function GenSoma(parcela)
    return s
 end
 
-soma2 = GenSoma(2)
+local soma2 = GenSoma(2)
 print(soma2(10))
