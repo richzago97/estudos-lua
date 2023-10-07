@@ -58,19 +58,51 @@ local a = "Curso de Lua"
 --     print("Padrão não encontrado")
 -- end
 
+local function parseCSV()
+    -- Usando Lib de Strings para Arquivo CSV
+    local nomeArquivoLivros = "atelie-catalogo-produtos.csv"
+    local conteudo = io.open(nomeArquivoLivros):read("*a")
 
--- Usando Lib de Strings para Arquivo CSV
-local conteudo = io.open("atelie-catalogo-produtos.csv"):read("*a")
+    -- Variáveis para armazenar os campos
+    local titulos = {}
+    local isbns = {}
+    local autores = {}
+    local assuntos = {}
+    local valores = {}
 
+    -- Usando a função string.gmatch para iterar pelas linhas do arquivo
+    for linha in conteudo:gmatch("[^\n]+") do
+        local titulo, isbn, autor, assunto, valor = linha:match("([^;]+);([^;]+);([^;]+);([^;]+);([^;]+);") 
+        if titulo and isbn and autor and assunto and valor then
+            table.insert(titulos, titulo)
+            table.insert(isbns, isbn)
+            table.insert(autores, autor)
+            table.insert(assuntos, assunto)
+            table.insert(valores, valor)
+        end
+    end
 
--- Use a função string.gmatch para iterar pelas linhas do arquivo
-for linha in conteudo:gmatch("[^\n]+") do
-    local titulo, isbn, autor, assunto, valor = linha:match("([^;]+);([^;]+);([^;]+);([^;]+);([^;]+);") 
-    if titulo and isbn and autor and assunto and valor then
-        print("Titulo: " .. titulo)
-        print("ISBN: " .. isbn)
-        print("Autor: " .. autor)
-        print("Assunto: " .. assunto)
-        print("Valor: " .. valor)
+    -- Converter resultados em texto
+    local resultado = ""
+    for i = 1, #titulos do
+        resultado = resultado .. "Titulo: " .. titulos[i] .. "\n"
+        resultado = resultado .. "ISBN: " .. isbns[i] .. "\n"
+        resultado = resultado .. "Autor: " .. autores[i] .. "\n"
+        resultado = resultado .. "Assunto: " .. assuntos[i] .. "\n"
+        resultado = resultado .. "Valor: " .. valores[i] .. "\n"
+        resultado = resultado .. "\n"  -- Adicionar uma linha em branco entre os registros
+    end
+
+    -- Nome do arquivo de resultado
+    local nomeArqResult = string.gsub(nomeArquivoLivros, ".csv", ".txt")
+
+    -- Salvar resultados em um arquivo de texto
+    local arqResultado = io.open(nomeArqResult, "w")
+    if arqResultado then
+        arqResultado:write(resultado)
+        arqResultado:close()
     end
 end
+
+-- Chamada da função para executar o parse
+parseCSV()

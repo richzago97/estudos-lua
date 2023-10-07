@@ -1,0 +1,4026 @@
+Titulo: Titulo
+ISBN: Isbn
+Autor: Autor
+Assunto: Assunto
+Valor: Valor
+
+Titulo: 50 Tons da Vida
+ISBN: 97-885-7480-817-8
+Autor: Roberto Livianu
+Assunto: Literatura brasileira, Crônicas
+Valor: R$ 58,00
+
+Titulo: A Elite nos Bastidores do Modernismo Paulista
+ISBN: 978-65-5580-071-5
+Autor: Maria Eugenia Boaventura, Couto de Barros
+Assunto: Memória, Ilustrado, Literatura brasileira, História
+Valor: R$ 200,00
+
+Titulo: A Lírica do Consumo
+ISBN: 978-65-5580-098-2
+Autor: João Anzanello Carrascoza
+Assunto: Comunicação, Literatura, História, Jornalismo
+Valor: R$ 62,00
+
+Titulo: A Lua do Oriente e Outras Luas
+ISBN: 978-65-5580-076-0
+Autor: Christina Stephano de Queiroz
+Assunto: Ilustrado, Literatura brasileira, Crítica literária, Poesia, História, Biografia
+Valor: R$ 86,00
+
+Titulo: A Um - Poemas
+ISBN: 85-85851-40-6
+Autor: Robert Creeley
+Assunto: Poesia, Literatura estrangeira, Bilíngue, Ilustrado, Tradução
+Valor: R$ 62,00
+
+Titulo: A Vida Notável e Instrutiva do Mestre Tinius
+ISBN: 978-65-5580-060-9
+Autor: Johann Georg Tinius
+Assunto: Tradução, Literatura medieval, História, Livros sobre livros, Bibliofilia
+Valor: R$ 83,00
+
+Titulo: A Voz e o Tempo - 3a ed.
+ISBN: 978-65-5580-016-6
+Autor: Roberto Gambini
+Assunto: Ilustrado, Psicanálise e Psicologia
+Valor: R$ 80,00
+
+Titulo: A.S.A. - Associação dos Solitários Anônimos
+ISBN: 85-7480-132-1
+Autor: Rosario Fusco
+Assunto: Literatura brasileira, Romance
+Valor: R$ 76,00
+
+Titulo: Acústica Musical em Palavras e Sons, A
+ISBN: 978-85-7480-649-5
+Autor: Flo Menezes
+Assunto: Ilustrado, Música
+Valor: R$ 110,00
+
+Titulo: Adeus Penderama e Outros Escritos
+ISBN: 978-85-7480-377-7
+Autor: José Paulo Cavalcanti Filho
+Assunto: Memória, Literatura brasileira
+Valor: R$ 42,00
+
+Titulo: Adoniran Barbosa - O Poeta da Cidade
+ISBN: 85-7480-114-3
+Autor: Francisco Rocha
+Assunto: Música, Memória, Ilustrado
+Valor: R$ 53,00
+
+Titulo: Adorável Criatura Frankenstein
+ISBN: 85-7480-215-8
+Autor: Ademir Assunção
+Assunto: Literatura brasileira, Romance
+Valor: R$ 62,00
+
+Titulo: Afeto Autoritário, O - Televisão, Ética e Democracia
+ISBN: 85-7480-230-1
+Autor: Renato Janine Ribeiro
+Assunto: Televisão, Comunicação, Sociologia e Sociedade, Cultura
+Valor: R$ 67,00
+
+Titulo: Afinador de Passarinhos, O
+ISBN: 978-85-7480-550-4
+Autor: Gil Perini
+Assunto: Literatura brasileira, Contos
+Valor: R$ 58,00
+
+Titulo: Aldo Manuzio. Editor. Tipógrafo. Livreiro (2a ed.)
+ISBN: 978-65-5580-003-6
+Autor: Enric Satué
+Assunto: Ilustrado, Design, Tipografia, Artes gráficas, Tradução, História, Editoração, Livros sobre livros
+Valor: R$ 86,00
+
+Titulo: Alguma Crítica
+ISBN: 85-7480-068-6
+Autor: João Alexandre Barbosa
+Assunto: Crítica literária, Literatura
+Valor: R$ 75,00
+
+Titulo: Almanaque Tipográfico Brasileiro
+ISBN: 978-85-7480-418-7
+Autor: Carlos M. Horcades
+Assunto: Design, Tipografia, Almanaque, Artes gráficas, Ilustrado
+Valor: R$ 67,00
+
+Titulo: Alongamento
+ISBN: 85-7480-264-6
+Autor: Sérgio Medeiros
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 82,00
+
+Titulo: Altar & o Trono, O - Dinâmica do Poder em O Alienista
+ISBN: 978-85-7480-511-5
+Autor: Ivan Teixeira
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 130,00
+
+Titulo: Amaro Macedo - O Solitário do Cerrado
+ISBN: 978-85-7480-430-9
+Autor: Gil Felippe, Maria do Carmo Duarte Macedo
+Assunto: Memória, Biografia, Botânica, Ilustrado
+Valor: R$ 56,00
+
+Titulo: Amor, Luta e Luto - No Tempo da Ditadura
+ISBN: 978-65-5580-037-1
+Autor: Maria do Socorro Diógenes
+Assunto: Ilustrado, História, Política
+Valor: R$ 67,00
+
+Titulo: Ancora Medicinal para Conservar a Vida com Saúde
+ISBN: 85-7480-195-X
+Autor: Francisco da Fonseca Henriquez
+Assunto: Gastronomia, Culinária, Medicina e Saúde
+Valor: R$ 115,00
+
+Titulo: Andaimes
+ISBN: 978-85-7480-316-6
+Autor: Milton Torres
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 75,00
+
+Titulo: Anfiteatro, O - Textos sobre Medicina
+ISBN: 85-7480-066-X
+Autor: Pedro Nava
+Assunto: Memória, Medicina e Saúde, Ilustrado
+Valor: R$ 65,00
+
+Titulo: Angola e Moçambique - 2a ed.
+ISBN: 978-65-5580-068-5
+Autor: Rita Chaves
+Assunto: Literatura africana, Estudos Literários
+Valor: R$ 68,00
+
+Titulo: Angu de Sangue - 3a. ed.
+ISBN: 978-85-7480-835-2
+Autor: Marcelino Freire
+Assunto: Ilustrado, Literatura brasileira, Contos
+Valor: R$ 62,00
+
+Titulo: Anima Mundi
+ISBN: 85-7480-263-8
+Autor: Ricardo Pires de Souza
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 89,00
+
+Titulo: Animal de Silêncios
+ISBN: 85-7480-123-2
+Autor: Jaime Labastida
+Assunto: Tradução, Poesia, Literatura estrangeira, Bilíngue
+Valor: R$ 52,00
+
+Titulo: Anos de Exílio do Jovem Mallarmé, Os
+ISBN: 978-85-7480-366-1
+Autor: Joaquim Brasil Fontes
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 64,00
+
+Titulo: Antígona
+ISBN: 978-65-5580-085-2
+Autor: Sofocles, Jaa Torrano, Beatriz de Paoli
+Assunto: Bilíngue, Teatro, Literatura clássica, Cultura grega
+Valor: R$ 95,00
+
+Titulo: Antologia Poética
+ISBN: 85-7480-067-8
+Autor: Jorge Wanderley
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 62,00
+
+Titulo: Antologia Poética - 1987-2017
+ISBN: 978-85-7480-781-2
+Autor: Marcelo Sandmann
+Assunto: Poesia
+Valor: R$ 39,90
+
+Titulo: Ao Vires Isto - Gertrude Stein
+ISBN: 978-8574-8081-16
+Autor: Luci Collin, Daniella Aguiar, João Queiroz
+Assunto: Crítica literária, Literatura, Teoria literária
+Valor: R$ 44,90
+
+Titulo: Apoteose de Schoenberg
+ISBN: 85-7480-109-7
+Autor: Flo Menezes
+Assunto: Música, Crítica musical
+Valor: R$ 83,00
+
+Titulo: Arabia Brasilica
+ISBN: 978-85-7480-751-5
+Autor: Alberto Sismondini
+Assunto: Crítica literária, Teoria literária, Cultura islâmica, Cultura árabe
+Valor: R$ 70,00
+
+Titulo: Arca de Noésio, A
+ISBN: 85-85851-18-X
+Autor: Gustavo Martins
+Assunto: Literatura brasileira, Infantil, Ilustrado
+Valor: R$ 35,00
+
+Titulo: Arquétipos Literários, Os - 3a ed.
+ISBN: 978-85-7480-837-6
+Autor: Eleazar M. Meletínski
+Assunto: Crítica literária, Teoria literária, Tradução
+Valor: R$ 64,00
+
+Titulo: Arte da Automutilação, A
+ISBN: 978-85-7480-642-6
+Autor: Felipe Lion
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 62,00
+
+Titulo: Arte de Argumentar, A (14a. ed.)
+ISBN: 978-65-5580-034-0
+Autor: Antônio Suárez Abreu
+Assunto: Comunicação, Argumentação, Escrita, Linguística
+Valor: R$ 54,00
+
+Titulo: Arte do Zajal, A - Estudo de Poética Árabe
+ISBN: 978-85-7480-381-4
+Autor: Michel Sleiman
+Assunto: Crítica literária, Poesia, Cultura árabe
+Valor: R$ 68,00
+
+Titulo: Arte Invisível ou a Arte do Livro, A
+ISBN: 85-7480-177-1
+Autor: Plinio Martins Filho
+Assunto: Design, Tipografia, Livros sobre livros, Artes gráficas, Ilustrado
+Valor: R$ 52,00
+
+Titulo: Arte, Dor - Inquietudes entre Estética e Psicanálise
+ISBN: 978-85-7480-248-0
+Autor: João A. Frayze-Pereira
+Assunto: Arte, Psicanálise e Psicologia, Ilustrado
+Valor: R$ 180,00
+
+Titulo: Artes do Livro na Biblioteca de Gustavo Piqueira, As
+ISBN: 978-65-5580-091-3
+Autor: Gustavo Piqueira
+Assunto: Ilustrado, Crítica literária, Design, Tipografia, Artes gráficas, História, Editoração, Livros sobre livros
+Valor: R$ 189,90
+
+Titulo: Artigas e Cascaldi - Arquitetura em Londrina
+ISBN: 85-7480-156-9
+Autor: Juliana Suzuki
+Assunto: Arquitetura, Ilustrado
+Valor: R$ 98,00
+
+Titulo: As Bibliotecas Particulares do Imperador Napoleão
+ISBN: 978-65-5580-078-4
+Autor: Antoine Guillois, Geraldo Gerson de Souza
+Assunto: Literatura estrangeira, Tradução, História, Livros sobre livros, Bibliofilia
+Valor: R$ 71,00
+
+Titulo: As Paisagens da Escrita e do Livro
+ISBN: 978-65-5580-058-6
+Autor: Elisa Nazarian, Frédéric Barbier
+Assunto: Ilustrado, Literatura estrangeira, Tradução, História, Livros sobre livros, Bibliofilia
+Valor: R$ 96,00
+
+Titulo: As Traquínias
+ISBN: 978-65-5580-064-7
+Autor: Sofocles, Jaa Torrano, Beatriz de Paoli
+Assunto: Bilíngue, Tradução, Teatro, Literatura clássica, Cultura grega
+Valor: R$ 84,00
+
+Titulo: Atando as Pontas da Vida
+ISBN: 978-65-5580-021-0
+Autor: Ariovaldo José Vidal
+Assunto: Crítica literária, Literatura, Teoria literária
+Valor: R$ 56,00
+
+Titulo: Até a Margem do Grande Rio
+ISBN: 978-85-7480-575-7
+Autor: Edu Campos
+Assunto: Literatura brasileira, Contos, Fotografia, Ilustrado
+Valor: R$ 42,00
+
+Titulo: Ateneu, O
+ISBN: 978-85-7480-756-0
+Autor: Emília Amaral, Raul Pompeia
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 75,00
+
+Titulo: Auto da Barca do Inferno
+ISBN: 978-85-7480-590-0
+Autor: Gil Vicente, Ivan Teixeira
+Assunto: Cultura medieval, Idade média, Literatura portuguesa, Literatura medieval, Teatro, Ilustrado
+Valor: R$ 31,00
+
+Titulo: Auto da Barca do Inferno - 13a edição
+ISBN: 978-65-5580-092-0
+Autor: Gil Vicente, Ivan Teixeira
+Assunto: Humor, Ilustrado, Literatura medieval, Teatro, Cultura medieval
+Valor: R$ 43,00
+
+Titulo: Ájax
+ISBN: 978-65-5580-063-0
+Autor: Sofocles, Jaa Torrano, Beatriz de Paoli
+Assunto: Bilíngue, Tradução, Teatro, Literatura clássica, Cultura grega
+Valor: R$ 87,00
+
+Titulo: Édipo Rei
+ISBN: 978-65-5580-086-9
+Autor: Sofocles, Jaa Torrano, Beatriz de Paoli
+Assunto: Bilíngue, Teatro, Literatura clássica, Cultura grega
+Valor: R$ 98,00
+
+Titulo: Égloga da Maçã
+ISBN: 978-85-7480-577-1
+Autor: Affonso Ávila
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 67,00
+
+Titulo: Ícaro
+ISBN: 978-85-7480-334-0
+Autor: Gabriel Pedrosa
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Índia - Além do Olhar
+ISBN: 978-85-7480-739-3
+Autor: Marleine Paula Marcondes e Ferreira de Toledo
+Assunto: Memória, Religião
+Valor: R$ 35,00
+
+Titulo: Índios na Constituição, Os
+ISBN: 978-85-7480-827-7
+Autor: Camila Loureiro Dias, Artionka Capiberibe
+Assunto: Ilustrado, Sociologia e Sociedade, História, Política, Ecologia, Jornalismo, Cidadania, Direito
+Valor: R$ 53,00
+
+Titulo: Baú de Receitas
+ISBN: 978-65-5580-053-1
+Autor: Pedro Nava, Luciano Gomes Filippo
+Assunto: Memória, Ilustrado, Gastronomia, Culinária
+Valor: R$ 98,00
+
+Titulo: Bailadora Andaluza, A - A Explosão do Sagrado na Poesia de João Cabral
+ISBN: 85-85851-20-1
+Autor: Waldecy Tenório
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 64,00
+
+Titulo: Balão Cativo
+ISBN: 85-7480-006-6
+Autor: Pedro Nava
+Assunto: Memória, Literatura brasileira
+Valor: R$ 72,00
+
+Titulo: BaléRalé
+ISBN: 85-7480-174-7
+Autor: Marcelino Freire
+Assunto: Literatura brasileira, Contos
+Valor: R$ 48,00
+
+Titulo: Baldio - poemas (2009-2017)
+ISBN: 978-85-7480-791-1
+Autor: Rodrigo Madeira
+Assunto: Poesia
+Valor: R$ 44,90
+
+Titulo: Banda das Velhas Virgens, A - 18 Anos de Bar em Bar
+ISBN: 85-7480-304-9
+Autor: Alexandre Cavalo, Ricardo dos Santos Gozzi
+Assunto: Música, Memória, Biografia, Ilustrado
+Valor: R$ 39,80
+
+Titulo: Batalha dos Livros, A
+ISBN: 978-85-7480-773-7
+Autor: Lincoln Secco
+Assunto: História, Política, Livros sobre livros
+Valor: R$ 64,00
+
+Titulo: Bíblia do Proletariado, A
+ISBN: 978-65-5580-107-1
+Autor: Horacio Tarcus
+Assunto: Ilustrado, Sociologia e Sociedade, Tradução, História, Política, Economia
+Valor: R$ 64,00
+
+Titulo: Bíblia, Literatura e Recepção
+ISBN: 978-65-5580-045-6
+Autor: João Leonel
+Assunto: Literatura, Religião
+Valor: R$ 70,00
+
+Titulo: Beauty & Fashion
+ISBN: 85-7480-161-5
+Autor: Mário Cafiero
+Assunto: Arte, Ilustração e pintura, Humor
+Valor: R$ 86,00
+
+Titulo: Beira-Mar
+ISBN: 85-7480-147-X
+Autor: Pedro Nava
+Assunto: Memória, Literatura brasileira
+Valor: R$ 86,00
+
+Titulo: Bibliodiversidade e Preço do Livro
+ISBN: 978-65-5580-051-7
+Autor: Gustavo Piqueira, Marisa Midori Deaecto
+Assunto: Ilustrado, Livros sobre livros, Economia
+Valor: R$ 68,00
+
+Titulo: Bibliofilia e Exílio
+ISBN: 978-65-5580-059-3
+Autor: Mikhail Ossorguin, Bruno Barretto Gomide
+Assunto: Literatura estrangeira, Tradução, História, Livros sobre livros, Bibliofilia
+Valor: R$ 84,00
+
+Titulo: Bibliomania
+ISBN: 978-85-7480-722-5
+Autor: Lincoln Secco, Marisa Midori Deaecto
+Assunto: Livros sobre livros, Bibliofilia
+Valor: R$ 72,00
+
+Titulo: Biblioteca Imaginária, A
+ISBN: 85-85851-13-9
+Autor: João Alexandre Barbosa
+Assunto: Crítica literária, Literatura
+Valor: R$ 63,00
+
+Titulo: Bicho Urucutum, O
+ISBN: 85-85851-56-2
+Autor: Pedro Nava
+Assunto: Memória, Literatura brasileira, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Bilhete Seco
+ISBN: 978-85-7480-563-4
+Autor: Elisa Nazarian
+Assunto: Literatura brasileira, Contos
+Valor: R$ 63,00
+
+Titulo: Bom Crioulo
+ISBN: 978-85-7480-684-6
+Autor: Salete de Almeida Cara, Kaio Romero, Adolfo Caminha
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 55,00
+
+Titulo: Bovarismo e Romance - Madame Bovary e Lady Oracle
+ISBN: 85-7480-032-5
+Autor: Andrea Saad Hossne
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 68,00
+
+Titulo: Branco sobre Branco
+ISBN: 978-85-7480-429-3
+Autor: Guilherme Zarvos
+Assunto: Cultura, Ilustrado
+Valor: R$ 72,00
+
+Titulo: Brasil: Paisagens de Exceção - O Litoral e o Pantanal Mato-grossense: Patrimônios Básicos
+ISBN: 978-85-7480-754-6
+Autor: Aziz Ab Sáber
+Assunto: Geografia, Ecologia, Ilustrado
+Valor: R$ 64,00
+
+Titulo: C@rtas Ácidas da Campanha de Lula de 1998, As
+ISBN: 85-7480-011-2
+Autor: Bernardo Kucinski
+Assunto: Memória, Política
+Valor: R$ 38,00
+
+Titulo: Cadenciando-um-Ning - Um Samba, para o Outro
+ISBN: 85-7480-055-4
+Autor: Michael Palmer, Régis Bonvicino
+Assunto: Literatura brasileira, Poesia, Literatura estrangeira, Bilíngue
+Valor: R$ 44,00
+
+Titulo: Caderno de Literatura e Cultura Russa - Dostoiévski
+ISBN: 1806-2911
+Autor: Depto. Letras Orientais USP
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 102,00
+
+Titulo: Cadernos 1 e 2
+ISBN: 85-86084-09-3
+Autor: Pedro Nava
+Assunto: Memória, Literatura brasileira, Ilustrado
+Valor: R$ 38,00
+
+Titulo: Caligramas (2a ed.)
+ISBN: 978-85-7480-795-9
+Autor: Álvaro Faleiros, Guillaume Apollinaire
+Assunto: Ilustrado, Literatura estrangeira, Poesia, Bilíngue, Tradução
+Valor: R$ 75,00
+
+Titulo: Cama de Campanha
+ISBN: 85-7480-328-6
+Autor: Flávio Carvalho Ferraz
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 52,00
+
+Titulo: Caminho do Encontro, A - Uma Leitura de Contos Novos
+ISBN: 85-85851-84-8
+Autor: Ivone Daré Rabello
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 65,00
+
+Titulo: Caminhos do Romance em Portugal - Camilo, Eça e o Folhetim Francês
+ISBN: 978-85-7480-696-9
+Autor: Andréa Trench de Castro
+Assunto: Crítica literária, Literatura portuguesa
+Valor: R$ 64,00
+
+Titulo: Cantigas do Falso Alfonso el Sabio
+ISBN: 85-7480-331-6
+Autor: Affonso Ávila
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 70,00
+
+Titulo: Capa do Livro Brasileiro, A - 1820-1950
+ISBN: 978-85-7480-777-5
+Autor: Ubiratan Machado
+Assunto: Ilustração e pintura, Ilustrado, Design, Artes gráficas, Editoração, Livros sobre livros, Criação
+Valor: R$ 360,00
+
+Titulo: Capas de Santa Rosa
+ISBN: 978-85-7480-727-0
+Autor: Luís Bueno
+Assunto: Arte, Ilustrado, Design, Artes gráficas, Biografia, Livros sobre livros
+Valor: R$ 150,00
+
+Titulo: Capítulos da História da Medicina no Brasil
+ISBN: 85-7480-212-3
+Autor: Pedro Nava
+Assunto: Medicina e Saúde, História
+Valor: R$ 77,00
+
+Titulo: Carne, A
+ISBN: 978-85-7480-706-5
+Autor: Júlio Ribeiro
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 64,00
+
+Titulo: Carta de Pero Vaz de Caminha, A
+ISBN: 978-65-5580-115-6
+Autor: Marcelo Módolo, Maria de Fátima Nunes Madeira, Pero Vaz de Caminha
+Assunto: Memória, Literatura portuguesa, História
+Valor: R$ 48,00
+
+Titulo: Cartas a Miranda
+ISBN: 978-85-74-80-736-2
+Autor: Quatremère de Quincy
+Assunto: Arte, Arquitetura, Restauração, História
+Valor: R$ 54,00
+
+Titulo: Cartas a William Agel de Mello
+ISBN: 85-7480-153-4
+Autor: João Guimarães Rosa, William Agel de Mello
+Assunto: Memória, Literatura brasileira
+Valor: R$ 39,60
+
+Titulo: Cartas aos Amigos Caio Porfírio Carneiro e Fábio Lucas
+ISBN: 85-7480-249-2
+Autor: João Antônio
+Assunto: Memória
+Valor: R$ 54,00
+
+Titulo: Cartas de Fidelino de Figueiredo e de Segismundo Spina
+ISBN: 978-85-7480-464-4
+Autor: Nuno Fidelino de Figueiredo
+Assunto: Memória
+Valor: R$ 52,00
+
+Titulo: Cartilha - Martelo-Gabinete e Ferrografia
+ISBN: 85-7480-130-5
+Autor: Virgílio Maia
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Casa de Pensão
+ISBN: 978-85-7480-461-3
+Autor: Marcelo Bulhões, Aluísio de Azevedo
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 48,80
+
+Titulo: Casa de Pensão - 2a. ed.
+ISBN: 978-65-5580-096-8
+Autor: Aluísio de Azevedo, Marcelo Bulhões
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 64,00
+
+Titulo: Casa dos Seis Tostões, A
+ISBN: 978-85-7480-729-4
+Autor: Paul Collins
+Assunto: Tradução, Livros sobre livros
+Valor: R$ 76,00
+
+Titulo: Casas Importadoras de Santos e seus Agentes
+ISBN: 978-85-7480-710-2
+Autor: Carina Marcondes Ferreira Pedro
+Assunto: História, Economia, Cultura
+Valor: R$ 56,00
+
+Titulo: Catecismo da Preservação de Monumentos
+ISBN: 978-85-7480-662-4
+Autor: Max Dvorák
+Assunto: Arquitetura, Restauração
+Valor: R$ 53,00
+
+Titulo: Céus Derretidos
+ISBN: 85-85851-12-0
+Autor: Teixeira Coelho, Jean-Claude Bernardet
+Assunto: Literatura brasileira, Romance
+Valor: R$ 59,00
+
+Titulo: Cem Menores Contos Brasileiros do Século - 6a ed.
+ISBN: 978-65-5580-105-7
+Autor: Marcelino Freire
+Assunto: Humor, Literatura brasileira, Contos
+Valor: R$ 60,00
+
+Titulo: Cem Menores Contos Brasileiros do Século, Os
+ISBN: 97885-7480-686-0
+Autor: Marcelino Freire
+Assunto: Literatura brasileira, Contos
+Valor: R$ 35,00
+
+Titulo: Cem Menores Contos Brasileiros do Século, Os (5a. ed.)
+ISBN: 978-85-7480-799-7
+Autor: Marcelino Freire
+Assunto: Humor, Literatura brasileira, Contos
+Valor: R$ 48,00
+
+Titulo: Cena Absurdo
+ISBN: 978-85-7480-734-8
+Autor: Pedro Marques
+Assunto: Literatura, Poesia
+Valor: R$ 75,00
+
+Titulo: Cena Macaca
+ISBN: 978-85-7480-350-0
+Autor: Zé Pedro
+Assunto: Arte, Ilustração e pintura, Humor
+Valor: R$ 72,00
+
+Titulo: Cena Muda, A
+ISBN: 85-7480-017-1
+Autor: Miguel Angel Fernandez
+Assunto: Literatura brasileira, Romance
+Valor: R$ 64,00
+
+Titulo: Cenas da Infância - Kartolas, Kalungas e Katiras
+ISBN: 978-85-7480-762-1
+Autor: Jonas Rosa
+Assunto: Poesia
+Valor: R$ 63,00
+
+Titulo: Cenas em Jogo
+ISBN: 978-85-7480-805-5
+Autor: Renato Tardivo
+Assunto: Crítica literária, Teoria literária, Psicanálise e Psicologia, Cinema
+Valor: R$ 65,00
+
+Titulo: Cera das Almas
+ISBN: 85-7480-247-6
+Autor: Pedro Nava
+Assunto: Memória, Literatura brasileira
+Valor: R$ 67,00
+
+Titulo: Choro de Homem
+ISBN: 85-7480-058-9
+Autor: Marcos Rodrigues
+Assunto: Literatura brasileira, Contos, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Ciclo das Chamas
+ISBN: 85-7480-292-1
+Autor: Antônio Lázaro de Almeida Prado
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 49,00
+
+Titulo: Cidade de Atys
+ISBN: 85-85851-60-0
+Autor: Marcelo Novaes
+Assunto: Literatura brasileira, Romance
+Valor: R$ 29,00
+
+Titulo: Cidade e as Serras, A
+ISBN: 978-85-7480-380-7
+Autor: Paulo Franchetti, Leila Guenther, Eça de Queirós
+Assunto: Romance, Literatura portuguesa, Ilustrado
+Valor: R$ 63,00
+
+Titulo: Cidadela Ardente
+ISBN: 85-85851-48-1
+Autor: Thelma Guedes
+Assunto: Ilustrado, Literatura brasileira, Contos
+Valor: R$ 62,00
+
+Titulo: Cinematografia
+ISBN: 978-85-7480-808-6
+Autor: Paulo Lopes Lourenço
+Assunto: Ilustrado, Poesia
+Valor: R$ 64,00
+
+Titulo: Clarice Lispector - Uma Poética do Olhar
+ISBN: 85-85851-85-6
+Autor: Regina Pontieri
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 64,00
+
+Titulo: Clepsidra
+ISBN: 978-85-7480-462-0
+Autor: Paulo Franchetti, Camilo Pessanha
+Assunto: Poesia, Literatura portuguesa, Ilustrado
+Valor: R$ 45,00
+
+Titulo: Clichês Brasileiros
+ISBN: 978-85-7480-643-3
+Autor: Gustavo Piqueira
+Assunto: Ilustrado, Design, Livros sobre livros, Ilustração e pintura, Tipografia, Artes gráficas
+Valor: R$ 69,00
+
+Titulo: Clusters
+ISBN: 978-85-7480-522-1
+Autor: Pedro Marques
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 48,00
+
+Titulo: Cocanha - Várias Faces de uma Utopia
+ISBN: 978-65-5580-010-4
+Autor: Hilário Franco Jr.
+Assunto: Ilustrado, Sociologia e Sociedade, Literatura medieval, Mitologia, História, Cultura medieval, Idade média
+Valor: R$ 59,00
+
+Titulo: Coisas do Diabo Contra
+ISBN: 978-85-7480-645-7
+Autor: Eromar Bomfim
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 63,00
+
+Titulo: Comédia e Seus Duplos, A: O Anfitrião de Plauto
+ISBN: 978-85-7480-763-8
+Autor: Rodrigo Tadeu Gonçalves
+Assunto: Crítica literária, Teatro, Literatura clássica
+Valor: R$ 69,90
+
+Titulo: Comentário Literal sobre os Três Primeiros Capítulos do Gênesis
+ISBN: 85-7480-102-X
+Autor: Giovanni Jacopo Casanova
+Assunto: Romance, Literatura estrangeira
+Valor: R$ 56,00
+
+Titulo: Comunicados Lacônicos
+ISBN: 978-85-7480-402-6
+Autor: Antonio Lizárraga
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 67,00
+
+Titulo: Condillac Lúcido e Translúcido
+ISBN: 978-85-7480-551-1
+Autor: Leon Kossovitch
+Assunto: Filosofia
+Valor: R$ 73,00
+
+Titulo: Contos da Nova Cartilha - Primeiro Livro de Leitura
+ISBN: 978-85-7480-823-9
+Autor: Liev Tolstói
+Assunto: Literatura estrangeira, Contos, Infantil, Ilustrado, Tradução
+Valor: R$ 62,00
+
+Titulo: Contos do Divã
+ISBN: 978-85-7480-373-9
+Autor: Sylvia Loeb
+Assunto: Literatura brasileira, Contos, Psicanálise e Psicologia
+Valor: R$ 58,00
+
+Titulo: Contracomunicação
+ISBN: 85-7480-207-7
+Autor: Décio Pignatari
+Assunto: Comunicação, Semiótica, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Conversações Noturnas & Outros Poemas, As
+ISBN: 978-85-7480-363-0
+Autor: José Laurenio de Melo
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 58,00
+
+Titulo: Coração, Cabeça e Estômago
+ISBN: 978-85-7480-793-5
+Autor: Camilo Castelo Branco
+Assunto: Ilustrado, Literatura portuguesa
+Valor: R$ 59,00
+
+Titulo: Coreografia do Desejo, A - Cem Anos de Ficção Brasileira
+ISBN: 85-7480-033-3
+Autor: Maria Angélica G. Lopes
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 62,00
+
+Titulo: Cores de Rosa
+ISBN: 978-85-7480-527-6
+Autor: Adélia Bezerra de Meneses
+Assunto: Ilustrado, Literatura brasileira, Crítica literária, Semiótica, Psicanálise e Psicologia
+Valor: R$ 72,00
+
+Titulo: Corredores para Abutres
+ISBN: 85-7480-175-5
+Autor: Regina Silveira
+Assunto: Arte, Ilustração e pintura
+Valor: R$ 31,00
+
+Titulo: Corrupção (18 Contos)
+ISBN: 85-7480-141-0
+Autor: Rodrigo Penteado
+Assunto: Literatura brasileira, Contos
+Valor: R$ 63,00
+
+Titulo: Cortiço, O
+ISBN: 978-85-7480-579-5
+Autor: Paulo Franchetti, Leila Guenther, Aluísio de Azevedo
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 62,00
+
+Titulo: Coruja, O
+ISBN: 978-65--5580-005-0
+Autor: José de Paula Ramos Jr., Aluísio de Azevedo, Maria Schtine Viana, Kaio Romero
+Assunto: Ilustrado, Literatura brasileira, Romance, Literatura
+Valor: R$ 68,00
+
+Titulo: Cozinheiro Nacional: Melhores Receitas Brasileiras e Europeias
+ISBN: 978-85-7480-231-2
+Autor: Anônimo
+Assunto: Gastronomia, Culinária, História, Ilustrado
+Valor: R$ 112,00
+
+Titulo: Crítica e Criação - Um Estudo da Kreisleriana Op. 16 de Robert Schumann
+ISBN: 978-85-7480-354-8
+Autor: Mónica Vermes
+Assunto: Música, Crítica musical
+Valor: R$ 72,00
+
+Titulo: Crítica Literária Brasileira em Perspectiva, A
+ISBN: 978-85-7480-660-0
+Autor: Rogério Cordeiro, Andréa Sirihal Werkema, Claudia Campos Soares, Sérgio Alcides Pereira do Amaral
+Assunto: Literatura brasileira, Crítica literária, História
+Valor: R$ 78,00
+
+Titulo: Crônicas da Vida Boêmia
+ISBN: 85-85851-66-X
+Autor: Aluízio Falcão
+Assunto: Literatura brasileira, Crônicas
+Valor: R$ 67,00
+
+Titulo: Crônicas Efêmeras
+ISBN: 85-86084-14-X
+Autor: João do Rio
+Assunto: Memória, Literatura brasileira, Crônicas
+Valor: R$ 67,00
+
+Titulo: Criação e Conflito
+ISBN: 978-85-7480-499-6
+Autor: Celeste Ribeiro de Sousa
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 66,00
+
+Titulo: Crise em Crise - Notas sobre Poesia e Crítica
+ISBN: 978-65-5580-023-4
+Autor: Paulo Franchetti
+Assunto: Crítica literária, Literatura
+Valor: R$ 74,00
+
+Titulo: Cultura Literária Medieval, A
+ISBN: 978-85-7480-340-1
+Autor: Segismundo Spina
+Assunto: Idade média, Crítica literária, Literatura medieval, Cultura medieval
+Valor: R$ 39,00
+
+Titulo: Da Argila à Nuvem
+ISBN: 978-85-7480-831-4
+Autor: Yann Sordet
+Assunto: Artes gráficas, História, Livros sobre livros, Bibliofilia
+Valor: R$ 84,00
+
+Titulo: Dança de Shiva, A
+ISBN: 978-85-7480-503-0
+Autor: Ricardo Pires de Souza
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 49,00
+
+Titulo: Dante - O Poeta do Absoluto
+ISBN: 85-7480-009-0
+Autor: Dante Alighieri, Hilário Franco Jr.
+Assunto: Biografia
+Valor: R$ 45,00
+
+Titulo: De Olho na Morte e Antes
+ISBN: 978-85-7480-594-8
+Autor: Fernando Fortes
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 130,00
+
+Titulo: De Orfeu e de Perséfone - Morte e Literatura
+ISBN: 978-85-7480-396-8
+Autor: Lélia Parreira Duarte
+Assunto: Crítica literária, Literatura
+Valor: R$ 74,00
+
+Titulo: De Voos e Ilhas - Literatura e Comunitarismos
+ISBN: 85-7480-168-2
+Autor: Benjamin Abdala Jr.
+Assunto: Literatura brasileira, Crítica literária, Literatura portuguesa, Literatura africana
+Valor: R$ 74,00
+
+Titulo: Debaixo do Sol
+ISBN: 978-85-7480-524-5
+Autor: Eunice Arruda
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 57,00
+
+Titulo: Descoberta do Frio, A
+ISBN: 978-85-7480-708-9
+Autor: Oswaldo de Camargo
+Assunto: Literatura brasileira, Romance
+Valor: R$ 38,00
+
+Titulo: Desenho Mágico - Poesia e Política em Chico Buarque
+ISBN: 85-7480-001-5
+Autor: Adélia Bezerra de Meneses
+Assunto: Crítica literária, Música, Poesia, Política, Ilustrado
+Valor: R$ 78,00
+
+Titulo: Design como Ele É, O
+ISBN: 978-85-7480-338-8
+Autor: Chico Homem de Melo, Eliana Tróia
+Assunto: Livros sobre livros, Design, Tipografia, Artes gráficas, Ilustrado
+Valor: R$ 48,00
+
+Titulo: Design da Escrita, O - 2. ed.
+ISBN: 978-65-5580-113-2
+Autor: Antônio Suárez Abreu
+Assunto: Comunicação, Design, Argumentação, Escrita, Criação, Linguística
+Valor: R$ 61,00
+
+Titulo: Design da Escrita, O - Redigindo com Criatividade e Beleza, Inclusive Ficção
+ISBN: 978-85-7480-387-6
+Autor: Antônio Suárez Abreu
+Assunto: Design, Comunicação, Literatura, Criação, Escrita
+Valor: R$ 45,00
+
+Titulo: Design do Livro, O - 3a ed.
+ISBN: 978-65-5580-030-2
+Autor: Richard Hendel
+Assunto: Ilustrado, Design, Artes gráficas, Tradução, Editoração, Livros sobre livros
+Valor: R$ 130,00
+
+Titulo: Deste Lugar
+ISBN: 978-85-7480-595-5
+Autor: Paulo Franchetti
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 48,00
+
+Titulo: Deuses Chutam Lata na Consolação, Os
+ISBN: 85-85851-21-X
+Autor: Gilson Rampazzo
+Assunto: Literatura brasileira, Romance
+Valor: R$ 56,00
+
+Titulo: Dez Mitos sobre os Judeus - 2a. ed.
+ISBN: 978-85-7480-843-7
+Autor: Maria Luiza Tucci Carneiro
+Assunto: Ilustrado, Mitologia, História, Judaísmo
+Valor: R$ 55,00
+
+Titulo: Diana Caçadora & Tango Fantasma
+ISBN: 85-7480-209-3
+Autor: Márcia Denser
+Assunto: Literatura brasileira, Contos
+Valor: R$ 50,00
+
+Titulo: Dias Melhores... Pra Sempre!
+ISBN: 85-7480-314-6
+Autor: Cyro Leão, Luiz Chinan, Jadyr Pavão Jr.
+Assunto: Poesia, Literatura portuguesa, Ilustrado
+Valor: R$ 56,00
+
+Titulo: Diálogos Literários - Literatura, Comparativismo e Ensino
+ISBN: 978-85-7480-416-3
+Autor: Agnaldo Rodrigues da Silva
+Assunto: Crítica literária, Literatura
+Valor: R$ 75,00
+
+Titulo: Diálogos sobre a Tecnologia do Cinema Brasileiro
+ISBN: 978-85-7480-360-9
+Autor: Paulo B. C. Schettino
+Assunto: Memória, Cinema, Entrevistas
+Valor: R$ 75,00
+
+Titulo: Dicionário Grego-Português
+ISBN: 978-65-5580-073-9
+Autor: Daisi Malhadas, Maria Celeste C. Dezotti, Maria Helena de Moura Neves
+Assunto: Bilíngue, Dicionário
+Valor: R$ 346,00
+
+Titulo: Diderot - O Espírito das "Luzes"
+ISBN: 85-7480-030-9
+Autor: Jacó Guinsburg
+Assunto: Biografia
+Valor: R$ 47,00
+
+Titulo: Dissipatio H.G. - O Fim do Gênero Humano
+ISBN: 85-7480-049-X
+Autor: Guido Morselli
+Assunto: Tradução, Romance, Literatura estrangeira
+Valor: R$ 68,00
+
+Titulo: Distopia
+ISBN: 978-85-7480-506-1
+Autor: Hélio Franchini Neto
+Assunto: Literatura brasileira, Romance
+Valor: R$ 38,00
+
+Titulo: Divina Comédia
+ISBN: 978-65-5580-033-3
+Autor: João Adolfo Hansen, Henrique Xavier, Sandro Botticelli, Dante Alighieri, João Trentino Ziller
+Assunto: Ilustrado, Arte, Ilustração e pintura, Poesia, Literatura estrangeira, Bilíngue, Literatura clássica, Tradução
+Valor: R$ 520,00
+
+Titulo: Do Formalismo Estético Trovadoresco
+ISBN: 978-85-7480-442-2
+Autor: Segismundo Spina
+Assunto: Idade média, Crítica literária, Literatura medieval, Estética, Cultura medieval
+Valor: R$ 68,00
+
+Titulo: Dom Casmurro
+ISBN: 978-85-7480-399-9
+Autor: Paulo Franchetti, Leila Guenther, Machado de Assis
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 63,00
+
+Titulo: Domínios de Natureza no Brasil, Os - 8a ed.
+ISBN: 978-65-5580-031-9
+Autor: Aziz Ab Sáber
+Assunto: Ilustrado, Geografia
+Valor: R$ 65,00
+
+Titulo: Domínios de Natureza no Brasil, Os - Potencialidades Paisagísticas
+ISBN: 978-85-7480-596-2
+Autor: Aziz Ab Sáber
+Assunto: Geografia, Ecologia, Ilustrado
+Valor: R$ 52,00
+
+Titulo: Drummond - Da Rosa do Povo à Rosa das Trevas
+ISBN: 85-7480-050-3
+Autor: Vagner Camilo
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 89,00
+
+Titulo: Duplo Canto e Outros Poemas
+ISBN: 978-85-7480-547-4
+Autor: François Cheng
+Assunto: Poesia, Literatura estrangeira, Bilíngue, Tradução
+Valor: R$ 102,00
+
+Titulo: E Fizerom Taes Maravilhas... - Histórias de Cavaleiros e Cavalarias
+ISBN: 978-85-7480-629-7
+Autor: Lênia Márcia Mongelli
+Assunto: Crítica literária, Literatura medieval, História, Idade média, Cultura medieval
+Valor: R$ 110,00
+
+Titulo: Eça de Queiroz. Uma Biografia
+ISBN: 978-85-7480-673-0
+Autor: Alfredo Campos Matos
+Assunto: Literatura portuguesa, Crítica literária, Biografia, Ilustrado
+Valor: R$ 180,00
+
+Titulo: Economia da Cultura, A
+ISBN: 978-85-7480-337-1
+Autor: Françoise Benhamou
+Assunto: Tradução, Economia, Cultura
+Valor: R$ 45,00
+
+Titulo: Edgar Allan Poe - Um Homem em sua Sombra
+ISBN: 85-7480-072-4
+Autor: Ricardo Araújo
+Assunto: Crítica literária, Literatura estrangeira, Biografia
+Valor: R$ 43,00
+
+Titulo: Edgard Carone e a Ideia de Revolução no Brasil
+ISBN: 978-65-5580-119-4
+Autor: Fabiana Marchetti
+Assunto: Ilustrado, Sociologia e Sociedade, História, Política
+Valor: R$ 99,50
+
+Titulo: Edição e Revolução: Leituras Comunistas no Brasil e na França
+ISBN: 978-85-7480-661-7
+Autor: Marisa Midori Deaecto, Jean-Yves Mollier
+Assunto: História, Livros sobre livros, Ilustrado
+Valor: R$ 93,00
+
+Titulo: Edifícios Comerciais - Felipe Bezerra
+ISBN: 85-7480-272-7
+Autor: Fernando Serapião
+Assunto: Arquitetura, Ilustrado
+Valor: R$ 25,00
+
+Titulo: Edifícios Escolares - Miguel Juliano
+ISBN: 85-7480-145-3
+Autor: Cristiane Corrêa
+Assunto: Arquitetura, Ilustrado
+Valor: R$ 23,00
+
+Titulo: Educação & Psicologia - Cinquenta Anos de Profissão
+ISBN: 85-7480-250-6
+Autor: Geraldina Porto Witter
+Assunto: Memória, Ilustrado
+Valor: R$ 64,00
+
+Titulo: Educação Sentimental em Proust
+ISBN: 85-7480-128-3
+Autor: Philippe Willemart
+Assunto: Crítica literária
+Valor: R$ 67,00
+
+Titulo: Educar para o Imponderável
+ISBN: 978-65-5580-019-7
+Autor: Luis Carlos de Menezes
+Assunto: Sociologia e Sociedade, Política, Educação e Pedagogia, Cidadania
+Valor: R$ 66,00
+
+Titulo: Edusp: Um Projeto Editorial
+ISBN: 85-7480-089-9
+Autor: Marcello Rollemberg, Plinio Martins Filho
+Assunto: Editoração, Ilustrado
+Valor: R$ 99,80
+
+Titulo: Eis o Mundo de Fora
+ISBN: 978-85-7480-565-8
+Autor: Adrienne Myrtes
+Assunto: Literatura brasileira, Romance
+Valor: R$ 57,00
+
+Titulo: Electra (Sófocles)
+ISBN: 978-65-5580-112-5
+Autor: Sofocles, Jaa Torrano, Beatriz de Paoli
+Assunto: Bilíngue, Tradução, Teatro, Literatura clássica, Cultura grega
+Valor: R$ 99,00
+
+Titulo: Electra de Eurípides
+ISBN: 978-85-7480-712-6
+Autor: Trupersa - Trupe de Tradução de Teatro Antigo, Eurípides
+Assunto: Tradução, Teatro, Bilíngue, Cultura grega, Literatura clássica
+Valor: R$ 72,00
+
+Titulo: Electra(s)
+ISBN: 978-85-7480-779-9
+Autor: Trajano Vieira
+Assunto: Tradução, Cultura grega, Teatro, Literatura clássica, Ilustrado
+Valor: R$ 42,00
+
+Titulo: Elegia Grega Arcaica - Uma Antologia
+ISBN: 978-65-5580-043-2
+Autor: Giuliana Ragusa, Rafael Brunhara
+Assunto: Poesia, Bilíngue, Literatura clássica, Cultura grega
+Valor: R$ 109,00
+
+Titulo: Elementos de Semiótica Tensiva
+ISBN: 978-85-7480-572-6
+Autor: Luiz Tatit, Ivã Carlos Lopes, Claude Zilberberg
+Assunto: Comunicação, Semiótica, Linguística
+Valor: R$ 69,00
+
+Titulo: Elos de Melodia e Letra - Análise Semiótica de Seis Canções
+ISBN: 978-85-7480-403-3
+Autor: Luiz Tatit, Ivã Carlos Lopes
+Assunto: Música, Semiótica
+Valor: R$ 48,00
+
+Titulo: Em Busca do Paraíso Perdido: As Utopias Medievais
+ISBN: 978-65-5580-042-5
+Autor: Hilário Franco Jr.
+Assunto: Ilustrado, Sociologia e Sociedade, Mitologia, História, Cultura medieval, Idade média
+Valor: R$ 200,00
+
+Titulo: Em Louvor de Anti-Heróis
+ISBN: 85-7480-062-7
+Autor: Victor Brombert
+Assunto: Tradução, Crítica literária, Literatura
+Valor: R$ 78,00
+
+Titulo: Em Nome do Corpo
+ISBN: 85-7480-295-6
+Autor: Iacopo Pontormo
+Assunto: Arte, Memória, Bilíngue, Ilustrado, Tradução
+Valor: R$ 69,00
+
+Titulo: Encanto de Narciso, O - Reflexões sobre a Fotografia
+ISBN: 978-65-5580-012-8
+Autor: Boris Kossoy
+Assunto: Arte, Fotografia
+Valor: R$ 75,00
+
+Titulo: Encontros e Des-encontros
+ISBN: 85-7480-291-3
+Autor: Maria Teresa Hellmeister Fornaciari
+Assunto: Literatura brasileira, Crônicas
+Valor: R$ 58,00
+
+Titulo: Encrenca
+ISBN: 85-7480-135-6
+Autor: Manoel Carlos Karam
+Assunto: Literatura brasileira, Romance
+Valor: R$ 34,00
+
+Titulo: Engenharia, Inovação e Desenv. Sustentável
+ISBN: 978-65-5580-070-8
+Autor: Gustavo Piqueira, José Roberto Castilho Piqueira, Laurindo de Salles Leal Filho
+Assunto: Ilustrado, Sociologia e Sociedade, Arquitetura, Ecologia, Urbanismo, Cidadania
+Valor: R$ 72,00
+
+Titulo: Engenhos da Sedução - O Hino Homérico a Afrodite
+ISBN: 978-65-5580-081-4
+Autor: Mary Lafer
+Assunto: Ilustrado, Bilíngue, Mitologia, Literatura clássica, Cultura grega
+Valor: R$ 86,00
+
+Titulo: Ensaiando a Canção - Paulinho da Viola e Outros Escritos
+ISBN: 978-85-7480-537-5
+Autor: Eliete Eça Negreiros
+Assunto: Música, Crítica musical
+Valor: R$ 64,00
+
+Titulo: Ensino de Ciências e Matemática - Formação e Atuação de Professores
+ISBN: 978-85-7480-546-7
+Autor: Geraldina Porto Witter, Moacir Wuo
+Assunto: Educação e Pedagogia
+Valor: R$ 36,00
+
+Titulo: Entreato Amoroso
+ISBN: 978-85-7480-378-4
+Autor: Aercio Consolin
+Assunto: Literatura brasileira, Romance
+Valor: R$ 64,00
+
+Titulo: Entreatos
+ISBN: 978-85-7480-822-2
+Autor: Gustavo Piqueira, Marcelo Castel Cid
+Assunto: Literatura brasileira, Romance, Religião
+Valor: R$ 62,00
+
+Titulo: Entrelivros
+ISBN: 85-85851-71-6
+Autor: João Alexandre Barbosa
+Assunto: Crítica literária, Literatura
+Valor: R$ 63,00
+
+Titulo: Entretanto n° 1 - Revista de Literatura
+ISBN: 1980-8909
+Autor: Marcelino Freire, Delmo Montenegro, Fabiano Calixto, Micheliny Verunschk, Raimundo Carrero
+Assunto: Crítica literária, Poesia, Contos, Crônicas, Literatura, Ilustrado
+Valor: R$ 45,00
+
+Titulo: Entrevistas de Domingo
+ISBN: 978-85-7480-369-2
+Autor: O Diário de Mogi
+Assunto: Memória, Jornalismo
+Valor: R$ 150,00
+
+Titulo: Epigramas 2. ed.
+ISBN: 978-85-7480-840-6
+Autor: Gustavo Piqueira, Marco Valério Marcial, Rodrigo Garcia Lopes
+Assunto: Humor, Poesia, Bilíngue, Tradução, Literatura clássica
+Valor: R$ 62,00
+
+Titulo: Era no Tempo do Rei - Atualidade das Memórias de um Sargento de Milícias
+ISBN: 978-85-7480-748-5
+Autor: Edu Teruki Otsuka
+Assunto: Crítica literária, Literatura, Teoria literária
+Valor: R$ 72,00
+
+Titulo: EraOdito
+ISBN: 85-7480-094-5
+Autor: Marcelino Freire
+Assunto: Humor, Literatura brasileira, Ilustrado
+Valor: R$ 62,00
+
+Titulo: Esaú e Jacó
+ISBN: 978-65-5580-000-5
+Autor: José de Paula Ramos Jr., Machado de Assis, Paulo Franchetti
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 78,00
+
+Titulo: Escrita de Deus, A
+ISBN: 85-7480-282-4
+Autor: Wilson Roberto Theodoro Filho
+Assunto: Literatura brasileira, Contos
+Valor: R$ 72,00
+
+Titulo: Escritores, Gatos e Teologia
+ISBN: 978-85-7480-674-7
+Autor: Waldecy Tenório
+Assunto: Literatura brasileira, Crítica literária, Religião
+Valor: R$ 68,00
+
+Titulo: Esplendor do Barroco Luso-brasileiro
+ISBN: 978-85-7480-700-3
+Autor: Benedito Lima de Toledo
+Assunto: Ilustrado, Arte, Arquitetura
+Valor: R$ 145,00
+
+Titulo: Espuma do Fogo, A
+ISBN: 85-7480-097-X
+Autor: Carlos Nejar
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 53,00
+
+Titulo: Estados da Crítica
+ISBN: 85-7480-322-7
+Autor: Alcides Cardoso dos Santos
+Assunto: Crítica literária, Literatura
+Valor: R$ 68,00
+
+Titulo: Estimar Canções
+ISBN: 978-85-74-80-737-9
+Autor: Luiz Tatit
+Assunto: Arte, Música, Semiótica
+Valor: R$ 68,00
+
+Titulo: Estrelas Errantes - Memória do Teatro Ídiche no Brasil
+ISBN: 978-85-7480-648-8
+Autor: Nachman Falbel
+Assunto: Ilustrado, Judaísmo, Memória, História, Teatro
+Valor: R$ 160,00
+
+Titulo: Estudos Comparados - Teoria, Crítica e Metodologia
+ISBN: 978-85-7480-677-8
+Autor: Benjamin Abdala Jr.
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 75,00
+
+Titulo: Estudos de Literatura Brasileira e Portuguesa
+ISBN: 978-85-7480-353-1
+Autor: Paulo Franchetti
+Assunto: Literatura brasileira, Crítica literária, Literatura portuguesa
+Valor: R$ 78,00
+
+Titulo: Euclides da Cunha: Uma Odisseia nos Trópicos
+ISBN: 978-85-7480-440-8
+Autor: Frederic Amory
+Assunto: Crítica literária, Biografia, Ilustrado
+Valor: R$ 130,00
+
+Titulo: Eugênio Montale - Criatividade Poética e Psicanálise
+ISBN: 85-7480-084-8
+Autor: Marisa Pelella Mélega
+Assunto: Crítica literária, Poesia, Literatura estrangeira, Psicanálise e Psicologia
+Valor: R$ 52,00
+
+Titulo: Eugênio Onêguin - Volume 1
+ISBN: 978-85-7480-825-3
+Autor: Elena Vássina, Aleksandr Púchkin, Alípio Correia de Franca Neto
+Assunto: Ilustrado, Romance, Literatura estrangeira, Poesia, Bilíngue, Tradução
+Valor: R$ 89,00
+
+Titulo: Exílio - As Histórias da Grande Peste
+ISBN: 978-85-7480-364-7
+Autor: Samuel Reibscheid
+Assunto: Literatura brasileira, Contos
+Valor: R$ 68,00
+
+Titulo: Extravio Marinho
+ISBN: 978-85-7480-500-9
+Autor: Simone Homem de Mello
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 63,00
+
+Titulo: Farsa de Inês Pereira
+ISBN: 978-8-57-480681-5
+Autor: Izeti Fragata Torralvo, Carlos Cortez Minchillo, Gil Vicente
+Assunto: Cultura medieval, Idade média, Literatura portuguesa, Literatura medieval, Teatro, Ilustrado
+Valor: R$ 53,00
+
+Titulo: Fascinação
+ISBN: 978-85-7480-821-5
+Autor: Luci Collin, Flavio de Souza
+Assunto: Ilustrado, Literatura brasileira, Romance, Literatura
+Valor: R$ 49,90
+
+Titulo: Fábulas para o Ano 2000
+ISBN: 85-85851-61-9
+Autor: Gustavo Martins, Rodrigo Lacerda
+Assunto: Literatura brasileira, Contos, Infantil, Ilustrado
+Valor: R$ 48,00
+
+Titulo: Fúria Azul - Antielegias
+ISBN: 978-85-7480-593-1
+Autor: Carlos Nejar
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 62,00
+
+Titulo: Feito Eu
+ISBN: 978-85-7480-342-5
+Autor: Elisa Nazarian
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 63,00
+
+Titulo: Fetichismos Visuais - 3a ed.
+ISBN: 978-65-5580-109-5
+Autor: Massimo Canevacci
+Assunto: Ilustrado, Comunicação, Cultura, Semiótica
+Valor: R$ 78,00
+
+Titulo: Fetichismos Visuais - Corpos Erópticos e Metrópole Comunicacional
+ISBN: 978-85-7480-719-5
+Autor: Massimo Canevacci
+Assunto: Comunicação, Ilustrado
+Valor: R$ 62,00
+
+Titulo: Ficção da Escrita, A
+ISBN: 85-7480-228-X
+Autor: Cláudia Amigo Pino
+Assunto: Crítica literária, Literatura, Criação
+Valor: R$ 72,00
+
+Titulo: Figurações do Oitocentos
+ISBN: 978-85-7480-339-5
+Autor: Paulo Motta Oliveira
+Assunto: Crítica literária, História, Teatro, Cultura, Estética
+Valor: R$ 85,00
+
+Titulo: Filósofo da Malta, O
+ISBN: 978-65-5580-072-2
+Autor: Maria Eugenia Boaventura, Couto de Barros
+Assunto: Literatura brasileira, Crítica literária, História
+Valor: R$ 100,00
+
+Titulo: Filho do Crucificado, O
+ISBN: 85-7480-077-5
+Autor: Nelson de Oliveira
+Assunto: Literatura brasileira, Contos
+Valor: R$ 52,00
+
+Titulo: Filosofando com o Miró
+ISBN: 85-7480-004-X
+Autor: Eduardo Etzel
+Assunto: Memória, Literatura brasileira
+Valor: R$ 72,00
+
+Titulo: Finnegans Wake - Finnicius Revém - Vol. Único
+ISBN: 978-65-5580-069-2
+Autor: James Joyce, Donaldo Schüler, Henrique Xavier
+Assunto: Literatura estrangeira, Literatura, Tradução
+Valor: R$ 272,00
+
+Titulo: Fluxo Silencioso das Máquinas, O
+ISBN: 85-7480-087-2
+Autor: Bruno Zeni
+Assunto: Literatura brasileira, Contos
+Valor: R$ 68,00
+
+Titulo: Fogos de Artifício: Flaubert e a Escritura
+ISBN: 978-85-7480-454-5
+Autor: Verónica Galíndez-Jorge
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 68,00
+
+Titulo: Forma do Livro, A - Ensaios sobre Tipografia e Estética do Livro
+ISBN: 978-85-7480-361-6
+Autor: Jan Tschichold
+Assunto: Tradução, Design, Tipografia, Editoração, Livros sobre livros, Artes gráficas, Ilustrado
+Valor: R$ 110,00
+
+Titulo: Fotografia & História
+ISBN: 978-85-7480-683-9
+Autor: Boris Kossoy
+Assunto: Memória, História, Fotografia, Ilustrado
+Valor: R$ 62,00
+
+Titulo: Fragmentos do Sol Chuvoso
+ISBN: 978-85-7480-501-6
+Autor: Lauro Henriques Jr.
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 56,00
+
+Titulo: Franklin Távora e o seu Tempo
+ISBN: 85-85851-47-3
+Autor: Cláudio Aguiar
+Assunto: Biografia
+Valor: R$ 60,00
+
+Titulo: Frei Galvão - Arquiteto
+ISBN: 978-85-7480-349-4
+Autor: Benedito Lima de Toledo
+Assunto: Memória, Arquitetura, Patrimônio Histórico, Ilustrado
+Valor: R$ 40,00
+
+Titulo: Freud - A Conquista do Proibido
+ISBN: 85-7480-010-4
+Autor: Renato Mezan
+Assunto: Biografia
+Valor: R$ 52,00
+
+Titulo: Fronteiras Culturais - Brasil, Uruguai, Argentina
+ISBN: 85-7480-122-4
+Autor: Maria Helena Martins
+Assunto: Sociologia e Sociedade, Economia, Cultura
+Valor: R$ 67,00
+
+Titulo: Gérard de Nerval: A Escrita em Trânsito
+ISBN: 978-85-7480-456-9
+Autor: Marta Kawano
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 68,00
+
+Titulo: Gênero do Cuidado, O
+ISBN: 9786-5558-002-41
+Autor: Nadya Araujo Guimarães, Helena Sumiko Hirata
+Assunto: Sociologia e Sociedade, Cidadania
+Valor: R$ 62,00
+
+Titulo: Geórgicas
+ISBN: 978-85-7480-838-3
+Autor: Virgílio, Odorico Mendes, Paulo Sergio de Vasconcellos
+Assunto: Poesia, Bilíngue, Tradução, Literatura clássica, Odorico Mendes
+Valor: R$ 110,00
+
+Titulo: Gentíssima
+ISBN: 978-85-7480-344-9
+Autor: Maria Ignez Corrêa da Costa Barbosa
+Assunto: Memória, Entrevistas
+Valor: R$ 69,00
+
+Titulo: Geometrias de Cosmos
+ISBN: 978-85-7480-828-4
+Autor: Rodrigo Suzuki Cintra
+Assunto: Literatura, Poesia
+Valor: R$ 63,00
+
+Titulo: Gil Vicente - O Velho da Horta, Auto da Barca do Inferno, Farsa de Inês Pereira (40a ed.)
+ISBN: 978-85-7480-784-3
+Autor: Segismundo Spina
+Assunto: Ilustrado, Literatura portuguesa, Literatura medieval, Teatro, Cultura medieval, Idade média
+Valor: R$ 63,00
+
+Titulo: Girassol Voltado para a Terra
+ISBN: 978-85-7480-723-2
+Autor: Renato Tardivo
+Assunto: Literatura brasileira, Contos, Ilustrado
+Valor: R$ 54,00
+
+Titulo: Goethe e Hackert - Sobre a Pintura de Paisagem
+ISBN: 978-85-7480-262-6
+Autor: Claudia Valladão de Mattos
+Assunto: Arte, Ilustração e pintura
+Valor: R$ 64,00
+
+Titulo: Graciliano na Terra de Camões
+ISBN: 978-65-5580-018-0
+Autor: Gustavo Piqueira, Thiago Mio Salla
+Assunto: Ilustrado, Literatura brasileira, Crítica literária, Literatura, Teoria literária
+Valor: R$ 98,00
+
+Titulo: Gramática Integral da Língua Portuguesa, 2a ed.
+ISBN: 978-65-5580-057-9
+Autor: Antônio Suárez Abreu
+Assunto: Comunicação, Escrita, Linguística
+Valor: R$ 110,00
+
+Titulo: Grito de Jorge Andrade, O - A Experiência de um Autor na Telenovela Brasileira dos Anos 1970
+ISBN: 978-85-7480-655-6
+Autor: Sabina Reggiani Anzuategui
+Assunto: Cultura, Televisão
+Valor: R$ 67,00
+
+Titulo: Guarani, O
+ISBN: 978-65-5580-035-7
+Autor: José de Alencar, Eduardo Vieira Martins, Luciana Rocha
+Assunto: Ilustrado, Literatura brasileira, Romance, Literatura
+Valor: R$ 69,00
+
+Titulo: Guimarães Rosa - Fronteiras, Margens, Passagens
+ISBN: 85-7480-210-7
+Autor: Marli Fantini Scarpelli
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 89,00
+
+Titulo: Gustavo Giovannoni - Textos Escolhidos
+ISBN: 978-85-7480-601-3
+Autor: Beatriz Mugayar Kühl
+Assunto: Arquitetura, Restauração
+Valor: R$ 62,00
+
+Titulo: Hannah Arendt & Karl Marx - O Mundo do Trabalho
+ISBN: 978-85-7480-790-4
+Autor: Eugenia Sales Wagner
+Assunto: Política, Sociologia e Sociedade, Economia
+Valor: R$ 67,00
+
+Titulo: Hannah Arendt - Ética e Política
+ISBN: 978-85-7480-705-8
+Autor: Eugenia Sales Wagner
+Assunto: Política, Sociologia e Sociedade
+Valor: R$ 74,00
+
+Titulo: Herdando uma Biblioteca
+ISBN: 978-65-5580-004-3
+Autor: Miguel Sanches Neto
+Assunto: Crônicas, Livros sobre livros, Bibliofilia
+Valor: R$ 56,00
+
+Titulo: Hidra Vocal - Estudos sobre Retórica e Poética
+ISBN: 978-65-5580-002-9
+Autor: Maria do Socorro Fernandes de Carvalho, Marcelo Lachat, Lavínia Silvares
+Assunto: Crítica literária, Literatura, Poesia, Semântica
+Valor: R$ 65,00
+
+Titulo: Hino Homérico a Apolo, O
+ISBN: 85-7480-091-0
+Autor: Luiz Alberto Machado Cabral
+Assunto: Crítica literária, Poesia, Mitologia, Bilíngue, Ilustrado
+Valor: R$ 98,00
+
+Titulo: Hipóteses de Amor
+ISBN: 85-7480-085-6
+Autor: Annalisa Cima
+Assunto: Poesia, Literatura estrangeira, Bilíngue, Ilustrado, Tradução
+Valor: R$ 98,00
+
+Titulo: História da Língua Portuguesa
+ISBN: 978-85-7480-398-2
+Autor: -
+Assunto: Paleografia, História, Literatura, Linguística
+Valor: R$ 140,00
+
+Titulo: História das Aventuras de Joseph Andrews e seu Amigo o Senhor Abraham Adams, A
+ISBN: 978-85-7480-532-0
+Autor: Henry Fielding
+Assunto: Romance, Literatura estrangeira, Ilustrado, Tradução
+Valor: R$ 165,00
+
+Titulo: História de um Livro
+ISBN: 978-65-5580-032-6
+Autor: Marisa Midori Deaecto
+Assunto: Ilustrado, História, Política, Livros sobre livros, Bibliofilia
+Valor: R$ 110,00
+
+Titulo: História do Livro e da Edição
+ISBN: 978-65-5580-111-8
+Autor: Gustavo Piqueira, Yann Sordet
+Assunto: Ilustrado, Design, Artes gráficas, Tradução, História, Editoração, Livros sobre livros
+Valor: R$ 230,00
+
+Titulo: História do PCB
+ISBN: 978-65-5580-088-3
+Autor: Lincoln Secco, Luiz Bernardo Pericas
+Assunto: Sociologia e Sociedade, História, Política
+Valor: R$ 98,00
+
+Titulo: História do PT (5a. ed.)
+ISBN: 978-85-7480-789-8
+Autor: Lincoln Secco
+Assunto: Ilustrado, Política, História, Sociologia e Sociedade
+Valor: R$ 49,00
+
+Titulo: História do PT - 6a. ed.
+ISBN: 978-65-5580-103-3
+Autor: Lincoln Secco
+Assunto: Sociologia e Sociedade, História, Política
+Valor: R$ 65,00
+
+Titulo: Histórias de Banheiro
+ISBN: 978-85-7480-474-3
+Autor: Dirce de Assis Cavalcanti
+Assunto: Literatura brasileira, Contos
+Valor: R$ 63,00
+
+Titulo: Histórias em Imagens e Versos - Wilhelm Busch
+ISBN: 978-85-7480-771-3
+Autor: Simone Homem de Mello, Guilherme de Almeida, Wilhelm Busch
+Assunto: Arte, Ilustração e pintura, Humor, Ilustrado, Artes gráficas, Bilíngue, Infantil, Tradução
+Valor: R$ 98,00
+
+Titulo: Hong Kong & Outros Poemas
+ISBN: 85-85851-92-9
+Autor: Antônio Moura
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 26,00
+
+Titulo: Horizonte da Minha Pele, O
+ISBN: 978-85-7480-549-8
+Autor: Emilio Bejel
+Assunto: Tradução, Romance, Literatura estrangeira, Biografia
+Valor: R$ 73,00
+
+Titulo: Idade da Aurora, A
+ISBN: 85-7480-150-X
+Autor: Carlos Nejar
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 93,00
+
+Titulo: Idade da Noite, A
+ISBN: 85-7480-120-8
+Autor: Carlos Nejar
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 97,00
+
+Titulo: Idade Média no Cinema, A
+ISBN: 978-85-7480-421-7
+Autor: José Rivair Macedo, Lênia Márcia Mongelli
+Assunto: História, Cinema, Idade média, Cultura medieval
+Valor: R$ 62,00
+
+Titulo: Idiotas & Demagogos - Pequeno Manual de Instruções da Democracia
+ISBN: 85-7480-121-6
+Autor: Almyr Gajardoni
+Assunto: Política, Sociologia e Sociedade
+Valor: R$ 62,00
+
+Titulo: Ilhas Brasil
+ISBN: 85-7480-124-0
+Autor: Carlos Vogt
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 68,00
+
+Titulo: Ilustre Casa de Ramires, A - 2a. ed.
+ISBN: 978-85-7480-685-3
+Autor: Marise Hansen, Eça de Queirós
+Assunto: Romance, Literatura portuguesa, Ilustrado
+Valor: R$ 63,00
+
+Titulo: Ilustre Casa de Ramires, A - 3a. ed.
+ISBN: 978-65-5580-093-7
+Autor: Eça de Queirós, Marise Hansen
+Assunto: Ilustrado, Romance, Literatura portuguesa
+Valor: R$ 63,00
+
+Titulo: Imagem Fria, A
+ISBN: 85-7480-149-6
+Autor: Tales Ab'Sáber
+Assunto: Cinema, Cultura
+Valor: R$ 68,00
+
+Titulo: Imagens do Poder em Sêneca
+ISBN: 85-7480-310-3
+Autor: Marilena Vizentin
+Assunto: Política, Sociologia e Sociedade, Economia
+Valor: R$ 72,00
+
+Titulo: Imigrantes Judeus do Oriente Médio - São Paulo e Rio de Janeiro
+ISBN: 85-7480-162-3
+Autor: Rachel Mizrahi
+Assunto: História, Judaísmo, Ilustrado
+Valor: R$ 180,00
+
+Titulo: Imigrantes, Mascates e Doutores
+ISBN: 85-7480-107-0
+Autor: Meir Kucinski
+Assunto: Ilustrado, Literatura brasileira, Contos, Judaísmo, Tradução
+Valor: R$ 68,00
+
+Titulo: Imprensa Confiscada pelo DEOPS - 1924-1954, A
+ISBN: 85-7480-152-6
+Autor: Maria Luiza Tucci Carneiro, Boris Kossoy
+Assunto: Política, Livros sobre livros, Memória, História, Censura, Jornalismo, Ilustrado
+Valor: R$ 140,00
+
+Titulo: Informação. Linguagem. Comunicação
+ISBN: 978-85-7480-647-1
+Autor: Décio Pignatari
+Assunto: Comunicação, Semiótica, Ilustrado
+Valor: R$ 54,00
+
+Titulo: Iniciação Boêmia & Textos Correlatos
+ISBN: 978-85-7480-505-4
+Autor: Nuno Fidelino de Figueiredo, Fidelino de Figueiredo
+Assunto: Memória, Crítica literária, História
+Valor: R$ 55,00
+
+Titulo: Inocência
+ISBN: 978-85-7480-832-1
+Autor: José de Paula Ramos Jr., Visconde de Taunay, Jefferson Cano, Kaio Romero
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 59,00
+
+Titulo: Insólita Metrópole: São Paulo nas Crônicas de Paulo Bomfim
+ISBN: 978-85-7480-636-5
+Autor: Ana Luiza Martins
+Assunto: Literatura brasileira, Crônicas, História
+Valor: R$ 84,00
+
+Titulo: Intelecto em Ibn Sina (Avicena), O
+ISBN: 978-85-7480-382-1
+Autor: Miguel Attie Filho
+Assunto: Filosofia, Cultura árabe
+Valor: R$ 75,00
+
+Titulo: Interior Via Satélite
+ISBN: 978-85-7480-470-5
+Autor: Marcos Siscar
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 68,00
+
+Titulo: Interpretações: Crítica Literária e Psicanálise
+ISBN: 978-85-7480-670-9
+Autor: Cleusa Rios P. Passos, Yudith Rosenbaum
+Assunto: Crítica literária, Psicanálise e Psicologia
+Valor: R$ 48,00
+
+Titulo: Intervalo Semântico, O
+ISBN: 978-85-7480-253-4
+Autor: Carlos Vogt
+Assunto: Semântica, Argumentação, Linguística
+Valor: R$ 72,00
+
+Titulo: Intransitivos, Os
+ISBN: 85-7480-146-1
+Autor: Cacá Moreira de Souza
+Assunto: Literatura brasileira, Contos
+Valor: R$ 68,00
+
+Titulo: Introdução ao Estudo de Fernando Pessoa
+ISBN: 978-85-7480-753-9
+Autor: Fernando Cabral Martins
+Assunto: Crítica literária, Poesia, Literatura portuguesa, História
+Valor: R$ 68,00
+
+Titulo: Inula Niúla
+ISBN: 978-85-7480-444-6
+Autor: Michel Sleiman
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 58,00
+
+Titulo: Iracema - Lenda do Ceará
+ISBN: 85-7480-324-3
+Autor: Paulo Franchetti, Leila Guenther, José de Alencar
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 59,00
+
+Titulo: Irrecusável Busca de Sentido, A
+ISBN: 85-7480-258-1
+Autor: Scarlett Marton
+Assunto: Memória, Biografia, Filosofia
+Valor: R$ 52,00
+
+Titulo: Isolados em um Território em Guerra na América do Sul
+ISBN: 978-65-5580-084-5
+Autor: Koichi Kishimoto
+Assunto: Memória, Ilustrado, Literatura, História, Biografia
+Valor: R$ 94,00
+
+Titulo: Jacques Derrida - Entreatos de Leitura e Literatura-
+ISBN: 978-85-7480-663-1
+Autor: Roberto Said, Luiz Fernando Ferreira Sá
+Assunto: Crítica literária, Literatura estrangeira, Filosofia
+Valor: R$ 74,00
+
+Titulo: João Guimarães Rosa e a Saudade
+ISBN: 85-7480-129-1
+Autor: Susana Lages
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 42,00
+
+Titulo: Jogo de Palavras
+ISBN: 978-85-7480-783-6
+Autor: Jacó Guinsburg
+Assunto: Poesia
+Valor: R$ 68,00
+
+Titulo: Jogo de Ronda
+ISBN: 85-7480-026-0
+Autor: Orlando Arruda
+Assunto: Literatura brasileira, Contos
+Valor: R$ 65,00
+
+Titulo: Jornada e a Clausura, A
+ISBN: 85-7480-110-0
+Autor: Raquel de Almeida Prado
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 68,00
+
+Titulo: José Paulo Paes - Vol. I
+ISBN: 978-65-5580-101-9
+Autor: Fernando Paixão, Ieda Lebensztayn, José Paulo Paes
+Assunto: Literatura brasileira, Crítica literária, Literatura
+Valor: R$ 90,00
+
+Titulo: José Paulo Paes - Vol. II
+ISBN: 978-65-5580-102-6
+Autor: Fernando Paixão, Ieda Lebensztayn, José Paulo Paes
+Assunto: Literatura brasileira, Crítica literária, Literatura
+Valor: R$ 90,00
+
+Titulo: José Saramago - 6 de Novembro de 1985
+ISBN: 978-65-5580-040-1
+Autor: Horácio Costa
+Assunto: Literatura portuguesa, Entrevistas
+Valor: R$ 49,50
+
+Titulo: Joyce Era Louco?
+ISBN: 978-85-7480-764-5
+Autor: Donaldo Schüler
+Assunto: Crítica literária, Psicanálise e Psicologia
+Valor: R$ 60,50
+
+Titulo: Judeus e Judaísmo na Obra de Lasar Segall
+ISBN: 85-7480-259-X
+Autor: Maria Luiza Tucci Carneiro, Celso Lafer
+Assunto: Ilustrado, Arte, Ilustração e pintura, Sociologia e Sociedade, Judaísmo
+Valor: R$ 148,00
+
+Titulo: Kalevala - Poema Primeiro - 2a. ed.
+ISBN: 978-85-7480-714-0
+Autor: Álvaro Faleiros, Elias Lönnrot
+Assunto: Tradução, Mitologia, Poesia, Literatura estrangeira, Bilíngue
+Valor: R$ 52,00
+
+Titulo: Konstantinos Kaváfis - 60 Poemas
+ISBN: 978-85-7480-780-5
+Autor: Trajano Vieira, Konstantinos Kaváfis
+Assunto: Poesia, Literatura estrangeira, Bilíngue, Tradução
+Valor: R$ 56,00
+
+Titulo: L'azur Blasé ou Ensaio do Fracasso sobre o Humor
+ISBN: 978-85-7480-738-6
+Autor: Guilherme Gontijo Flores
+Assunto: Poesia
+Valor: R$ 44,90
+
+Titulo: Lacraus
+ISBN: 85-7480-204-2
+Autor: Miguel Jorge
+Assunto: Literatura brasileira, Contos
+Valor: R$ 68,00
+
+Titulo: Laetitia, sp
+ISBN: 978-85-7480-545-0
+Autor: Gabriel Pedrosa
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 56,00
+
+Titulo: Lâmina do Tempo
+ISBN: 85-7480-113-5
+Autor: Moacyr Godoy Moreira
+Assunto: Literatura brasileira, Contos
+Valor: R$ 67,00
+
+Titulo: Lâmpada da Memória, A - 3. ed.
+ISBN: 978-65-5580-050-0
+Autor: John Ruskin
+Assunto: Tradução, Arquitetura, Restauração
+Valor: R$ 56,00
+
+Titulo: Leão, o Africano
+ISBN: 978-85-7480-759-1
+Autor: Murilo Sebe Bon Meihy
+Assunto: Ilustrado, História, Cultura islâmica, Cultura árabe
+Valor: R$ 68,00
+
+Titulo: Lei n. 12.343 de 2 de Dezembro de 2010
+ISBN: 978-85-7480-652-5
+Autor: -
+Assunto: Política, Economia, Cultura
+Valor: R$ 38,00
+
+Titulo: Leitor Segundo G.H., O - Uma Análise do Romance A Paixão Segundo G.H. de Clarice Lispector
+ISBN: 85-7480-257-3
+Autor: Emília Amaral
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 68,00
+
+Titulo: Leituras Desarquivadas
+ISBN: 978-85-7480-371-5
+Autor: João Alexandre Barbosa
+Assunto: Crítica literária, Literatura
+Valor: R$ 75,00
+
+Titulo: Leituras Imediatas
+ISBN: 978-85-7480-834-5
+Autor: Jerusa Pires Ferreira
+Assunto: Ilustrado, Literatura brasileira, Comunicação, Crítica literária, Cordel
+Valor: R$ 62,00
+
+Titulo: Leituras Indispensáveis 2
+ISBN: 978-85-7480-473-6
+Autor: Aziz Ab Sáber
+Assunto: Educação e Pedagogia, Ecologia, Sociologia e Sociedade, Cidadania
+Valor: R$ 23,00
+
+Titulo: Lembranças de Esquecer
+ISBN: 85-85851-42-2
+Autor: Camilo Guimarães
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 46,00
+
+Titulo: Leniza & Elis
+ISBN: 85-7480-092-9
+Autor: Ariovaldo José Vidal, Joaquim Alves de Aguiar
+Assunto: Crítica literária, Biografia
+Valor: R$ 62,00
+
+Titulo: Leopardo dos Olhos de Fogo
+ISBN: 85-85851-69-4
+Autor: Carlos Eugênio Marcondes de Moura
+Assunto: Ilustrado, Sociologia e Sociedade, Religião, Cultura
+Valor: R$ 78,00
+
+Titulo: Letras e Memória - Uma Breve História da Escrita
+ISBN: 978-85-7480-414-9
+Autor: Adovaldo Fernandes Sampaio
+Assunto: Livros sobre livros, Memória, História, Linguística, Escrita, Ilustrado
+Valor: R$ 120,00
+
+Titulo: Letras na Terra do Brasil, As
+ISBN: 978-65-5580-062-3
+Autor: Jean Pierre Chauvin, Marcelo Lachat
+Assunto: Ilustrado, Literatura brasileira, História, Filosofia, Estudos Literários
+Valor: R$ 105,00
+
+Titulo: Lição Aproveitada, A - Modernismo e Cinema em Mário de Andrade
+ISBN: 978-85-7480-556-6
+Autor: João Manuel dos Santos Cunha
+Assunto: Arte, Crítica literária, Cinema
+Valor: R$ 65,00
+
+Titulo: Lições de Taxidermia
+ISBN: 978-85-7480-445-3
+Autor: Fernando Antônio Dusi Rocha
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 56,00
+
+Titulo: Lições do Acaso
+ISBN: 978-85-7480-468-2
+Autor: Luis Carlos de Menezes
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 56,00
+
+Titulo: Liberalismo e Natureza - A Propriedade em John Locke
+ISBN: 978-85-7480-476-7
+Autor: Rodrigo Suzuki Cintra
+Assunto: Economia, Filosofia, Direito
+Valor: R$ 55,00
+
+Titulo: Linguística Cognitiva - Uma Visão Geral e Aplicada
+ISBN: 978-85-7480-526-9
+Autor: Antônio Suárez Abreu
+Assunto: Comunicação, Semiótica, Linguística, Cognição
+Valor: R$ 58,00
+
+Titulo: Lira dos Vinte Anos
+ISBN: 978-85-7480-675-4
+Autor: Álvares de Azevedo, José Emílio Major Neto
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 64,00
+
+Titulo: Literatulogia
+ISBN: 85-85851-55-4
+Autor: Janilto Andrade
+Assunto: Teoria literária, Literatura
+Valor: R$ 26,00
+
+Titulo: Literatura Comparada e Relações Comunitárias, Hoje
+ISBN: 978-85-7480-627-3
+Autor: Benjamin Abdala Jr.
+Assunto: Política, Literatura
+Valor: R$ 72,00
+
+Titulo: Literatura e Memória Política - Angola. Brasil. Moçambique. Portugal
+ISBN: 978-85-7480-680-8
+Autor: Benjamin Abdala Jr., Rejane Vecchia Rocha e Silva
+Assunto: Crítica literária, Literatura portuguesa, Política
+Valor: R$ 63,00
+
+Titulo: Literatura Grega: Irradiações
+ISBN: 978-85-7480-800-0
+Autor: Donaldo Schüler
+Assunto: História, Literatura clássica, Filosofia, Cultura grega
+Valor: R$ 57,00
+
+Titulo: Literatura, História e Política (3a. ed.)
+ISBN: 978-85-7480-769-0
+Autor: Benjamin Abdala Jr.
+Assunto: Crítica literária, Literatura, História, Política
+Valor: R$ 65,00
+
+Titulo: Livro - Revista do NELE
+ISBN: 2179-801X
+Autor: NELE - Núcleo de Estudos do Livro e da Edição/USP
+Assunto: Editoração, Livros sobre livros, Bibliofilia, Artes gráficas
+Valor: R$ 33,00
+
+Titulo: Livro - Revista do NELE 09/10
+ISBN: 9772179801092
+Autor: NELE - Núcleo de Estudos do Livro e da Edição/USP
+Assunto: Ilustrado, Artes gráficas, Editoração, Livros sobre livros, Bibliofilia
+Valor: R$ 136,00
+
+Titulo: Livro 7/8 - revista do NELE
+ISBN: 2179-801x
+Autor: NELE - Núcleo de Estudos do Livro e da Edição/USP
+Assunto: Ilustrado, Artes gráficas, Editoração, Livros sobre livros, Bibliofilia
+Valor: R$ 92,00
+
+Titulo: Livro das Origens, O
+ISBN: 978-65-5580-025-8
+Autor: Geraldo Holanda Cavalcanti
+Assunto: Crítica literária, Teoria literária, Religião
+Valor: R$ 92,00
+
+Titulo: Livro e Liberdade
+ISBN: 85-7480-178-X
+Autor: Luciano Canfora
+Assunto: Editoração, Livros sobre livros, Cultura
+Valor: R$ 31,00
+
+Titulo: Livro n. 6 - Revista do NELE
+ISBN: 2179-801x
+Autor: NELE - Núcleo de Estudos do Livro e da Edição/USP
+Assunto: Ilustrado, Artes gráficas, Editoração, Livros sobre livros, Livrarias
+Valor: R$ 92,00
+
+Titulo: Livro n.3 - Revista do NELE
+ISBN: 2179-801X
+Autor: NELE - Núcleo de Estudos do Livro e da Edição/USP
+Assunto: Editoração, Livros sobre livros, Bibliofilia, Artes gráficas
+Valor: R$ 63,00
+
+Titulo: Livro n.4 - Revista do NELE
+ISBN: 2179-801X
+Autor: NELE - Núcleo de Estudos do Livro e da Edição/USP
+Assunto: Editoração, Livros sobre livros, Bibliofilia, Artes gráficas
+Valor: R$ 65,00
+
+Titulo: Livro n.5 - Revista do NELE
+ISBN: 977-21-7980-100-9
+Autor: NELE - Núcleo de Estudos do Livro e da Edição/USP
+Assunto: Artes gráficas, Editoração, Livros sobre livros, Bibliofilia
+Valor: R$ 85,00
+
+Titulo: Livro no Jornal, O
+ISBN: 85-7480-082-1
+Autor: Isabel Travancas
+Assunto: Editoração, Jornalismo, Livros sobre livros, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Livro,
+ISBN: 978-85-7480-600-6
+Autor: Michel Melot
+Assunto: Editoração, Livros sobre livros
+Valor: R$ 115,00
+
+Titulo: Livros e Leituras na Espanha do Século de Ouro
+ISBN: 978-85-7480-694-5
+Autor: Antonio Castillo Gómez
+Assunto: Editoração, História, Livros sobre livros
+Valor: R$ 63,00
+
+Titulo: Livros e Subversão - Seis Estudos
+ISBN: 978-85-7480-743-0
+Autor: Sandra Reimão
+Assunto: Comunicação, História, Política, Livros sobre livros
+Valor: R$ 63,00
+
+Titulo: Livros Proibidos, Ideias Malditas
+ISBN: 85-7480-071-6
+Autor: Maria Luiza Tucci Carneiro
+Assunto: Ilustrado, Política, História, Censura, Livros sobre livros
+Valor: R$ 70,00
+
+Titulo: Livros, Editoras & Projetos
+ISBN: 978-85-7480-356-2
+Autor: Jerusa Pires Ferreira, Jacó Guinsburg, Plinio Martins Filho, Maria Otilia Bocchini
+Assunto: Livros sobre livros, Editoração
+Valor: R$ 30,00
+
+Titulo: Lodo
+ISBN: 978-85-7480-436-1
+Autor: Luis Dolhnikoff
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 72,00
+
+Titulo: Luci Collin - Antologia Poética (1984-2018)
+ISBN: 978-85-7480-796-6
+Autor: Luci Collin
+Assunto: Poesia
+Valor: R$ 39,90
+
+Titulo: Lugar, Tempo, Olhar - Arte Brasileira na França Românica
+ISBN: 978-85-7480-439-2
+Autor: Anne Louyot
+Assunto: Ilustrado, Arte, Ilustração e pintura, Arquitetura, Bilíngue
+Valor: R$ 85,00
+
+Titulo: Lusíadas, Os - Episódios
+ISBN: 978-85-7480-802-4
+Autor: Luís de Camões, Ivan Teixeira
+Assunto: Poesia, Literatura portuguesa, Ilustrado
+Valor: R$ 61,00
+
+Titulo: Machado e Rosa - Leituras Críticas
+ISBN: 978-85-7480-508-5
+Autor: Marli Fantini Scarpelli
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 98,00
+
+Titulo: Macunaíma
+ISBN: 978-85-7480-750-8
+Autor: Mário de Andrade
+Assunto: Arte, Ilustrado, Literatura brasileira, Romance, Artes gráficas, Literatura
+Valor: R$ 350,00
+
+Titulo: Maias, Os
+ISBN: 85-7480-044-9
+Autor: Eça de Queirós
+Assunto: Romance, Literatura portuguesa
+Valor: R$ 83,00
+
+Titulo: Males do Tabaco e Outras Peças em um Ato, Os
+ISBN: 85-7480-042-2
+Autor: Anton Tchékhov
+Assunto: Literatura estrangeira, Teatro, Tradução
+Valor: R$ 34,00
+
+Titulo: Males do Tabaco, Os (3a. ed.)
+ISBN: 978-85-7480-842-0
+Autor: Anton Tchékhov
+Assunto: Humor, Literatura estrangeira, Tradução, Teatro, Literatura clássica
+Valor: R$ 56,00
+
+Titulo: Malhas da Cultura 1, As
+ISBN: 978-85-7480-650-1
+Autor: José Guilherme Pereira Leite
+Assunto: Política, Economia, Cultura
+Valor: R$ 57,00
+
+Titulo: Malhas da Cultura 2, As
+ISBN: 978-85-7480-651-8
+Autor: José Guilherme Pereira Leite
+Assunto: Política, Economia, Cultura
+Valor: R$ 68,00
+
+Titulo: Manuais de Desenho da Escrita, Os
+ISBN: 978-85-7480-518-4
+Autor: Maria Helena Werneck Bomeny
+Assunto: Livros sobre livros, Design, Tipografia, Ilustrado
+Valor: R$ 240,00
+
+Titulo: Manual de Versificação Românica Medieval
+ISBN: 85-7480-159-3
+Autor: Segismundo Spina
+Assunto: Idade média, Crítica literária, Poesia, Literatura medieval
+Valor: R$ 58,00
+
+Titulo: Manual do Estilo Desconfiado
+ISBN: 978-85-7480-774-4
+Autor: Fernando Paixão
+Assunto: Literatura brasileira, Crítica literária, Teoria literária, Escrita
+Valor: R$ 53,00
+
+Titulo: Manuel Bandeira e a Música - com Três Poemas Visitados
+ISBN: 978-85-7480-386-9
+Autor: Pedro Marques
+Assunto: Música, Literatura brasileira, Crítica literária
+Valor: R$ 64,00
+
+Titulo: Marca do Leviatã, A - Linguagem e Poder em Hobbes
+ISBN: 85-7480-116-X
+Autor: Renato Janine Ribeiro
+Assunto: Política, Filosofia
+Valor: R$ 58,00
+
+Titulo: Mariannita Luzzati
+ISBN: 978-85-7480-447-7
+Autor: Gabriel Pérez Barreiro
+Assunto: Arte, Ilustração e pintura
+Valor: R$ 67,00
+
+Titulo: Marx, Zola e a Prosa Realista
+ISBN: 978-85-7480-453-8
+Autor: Salete de Almeida Cara
+Assunto: Crítica literária, Literatura estrangeira, Sociologia e Sociedade
+Valor: R$ 68,00
+
+Titulo: MASSAO OHNO, Editor
+ISBN: 978-85-7480-839-0
+Autor: Jose Armando Pereira da Silva, Massao Ohno
+Assunto: Ilustrado, Design, Artes gráficas, História, Biografia, Editoração, Livros sobre livros
+Valor: R$ 210,00
+
+Titulo: Matéria Lítica: Drummond, Cabral, Neruda e Paz
+ISBN: 978-85-7480-726-3
+Autor: Mario Higa
+Assunto: Crítica literária, Literatura, Poesia
+Valor: R$ 70,00
+
+Titulo: Matinas & Bagatelas
+ISBN: 85-7480-144-5
+Autor: Maria do Carmo Campos
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 68,00
+
+Titulo: Matrizes Impressas do Oral: Conto Russo no Sertão
+ISBN: 978-85-7480-676-1
+Autor: Jerusa Pires Ferreira
+Assunto: Ilustrado, Livros sobre livros, Teoria literária, História, Literatura, Cordel
+Valor: R$ 75,00
+
+Titulo: Matzá com Moussaká - Histórias de Judeus e Gregos
+ISBN: 978-85-7480-351-7
+Autor: Táki Athanássios Cordás
+Assunto: Memória, História, Judaísmo, Cultura grega, Ilustrado
+Valor: R$ 68,00
+
+Titulo: Máquina Peluda, A
+ISBN: 85-85851-34-1
+Autor: Ademir Assunção
+Assunto: Literatura brasileira, Contos
+Valor: R$ 58,00
+
+Titulo: Mário, Otávio - Cartas de Mário de Andrade a Otávio Dias Leite
+ISBN: 85-7060-464-5
+Autor: Marcos Antonio de Moraes
+Assunto: Memória, Cultura
+Valor: R$ 69,00
+
+Titulo: Mão do Deserto, A
+ISBN: 978-65-5580-041-8
+Autor: Paulo Franchetti
+Assunto: Memória, Literatura
+Valor: R$ 65,00
+
+Titulo: Música do Parnaso
+ISBN: 85-7480-312-X
+Autor: Manuel Botelho de Oliveira, Ivan Teixeira
+Assunto: Crítica literária, Poesia, Literatura portuguesa, Fac-símile
+Valor: R$ 150,00
+
+Titulo: Medeia
+ISBN: 978-85-7480-658-7
+Autor: Trupersa - Trupe de Tradução de Teatro Antigo, Eurípides
+Assunto: Literatura clássica, Teatro, Bilíngue, Cultura grega, Tradução
+Valor: R$ 42,00
+
+Titulo: Medicina de Os Lusíadas, A
+ISBN: 85-7480-203-4
+Autor: Pedro Nava
+Assunto: Crítica literária, Medicina e Saúde, Literatura portuguesa
+Valor: R$ 58,00
+
+Titulo: Melancolias, Mercadorias: Dorival Caymmi, Chico Buarque, o Pregão de Rua e a Canção Popular-Comercial no Brasil
+ISBN: 978-85-7480-502-3
+Autor: Walter Garcia
+Assunto: Música, Crítica musical
+Valor: R$ 72,00
+
+Titulo: Memória Futura
+ISBN: 978-85-7480-519-1
+Autor: Paulo Franchetti
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 55,00
+
+Titulo: Memórias Biográficas de Pintores Extraordinários
+ISBN: 85-7480-041-4
+Autor: William Beckford
+Assunto: Arte, Memória
+Valor: R$ 57,00
+
+Titulo: Memórias de um Sargento de Milícias
+ISBN: 978-85-7480-728-7
+Autor: Mamede Mustafa Jarouche, Manuel Antônio de Almeida
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 64,00
+
+Titulo: Memórias Póstumas de Brás Cubas
+ISBN: 978-85-7480-598-6
+Autor: Antonio Medina Rodrigues, Machado de Assis
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 69,00
+
+Titulo: Memorial de Aires
+ISBN: 978-65-5580-114-9
+Autor: Machado de Assis, Ieda Lebensztayn
+Assunto: Literatura brasileira, Romance
+Valor: R$ 79,00
+
+Titulo: Memorial de Mogi das Cruzes
+ISBN: 85-7480-101-1
+Autor: José Sebastião Witter
+Assunto: Literatura brasileira, Crônicas
+Valor: R$ 65,00
+
+Titulo: Memorial de um Herege
+ISBN: 85-7480-018-X
+Autor: Samuel Reibscheid
+Assunto: Literatura brasileira, Romance
+Valor: R$ 68,00
+
+Titulo: Mensagem
+ISBN: 978-85-7480-702-7
+Autor: António Apolinário Lourenço, Kaio Romero, Fernando Pessoa
+Assunto: Poesia, Literatura portuguesa, Ilustrado
+Valor: R$ 59,00
+
+Titulo: Meu Fausto (Esboços)
+ISBN: 978-85-7480-542-9
+Autor: Paul Valéry
+Assunto: Literatura estrangeira, Teatro, Tradução
+Valor: R$ 65,00
+
+Titulo: Milton Hatoum - Itinerário para um Certo Relato
+ISBN: 85-7480-315-4
+Autor: Marleine Paula Marcondes e Ferreira de Toledo
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 67,00
+
+Titulo: Mistério do Leão Rampante, O
+ISBN: 85-7480-302-2
+Autor: Rodrigo Lacerda
+Assunto: Humor, Literatura brasileira, Romance, Ilustrado
+Valor: R$ 120,00
+
+Titulo: Mistérios do Dicionário
+ISBN: 85-7480-252-2
+Autor: João Alexandre Barbosa
+Assunto: Crítica literária, Literatura
+Valor: R$ 78,00
+
+Titulo: Modernidade entre Tapumes, A
+ISBN: 978-65-5580-008-1
+Autor: Vagner Camilo
+Assunto: Crítica literária, Literatura, Poesia, Teoria literária
+Valor: R$ 135,00
+
+Titulo: Modernização pelo Avesso - Impasses da Representação Literária em Os Contos de Belazarte, de Mário de Andrade
+ISBN: 978-85-7480-697-6
+Autor: Wilson José Flores Jr.
+Assunto: Literatura brasileira, Crítica literária, Estudos Literários
+Valor: R$ 68,00
+
+Titulo: Modos de Leitura - Crítica e Tradução
+ISBN: 978-65-5580-047-0
+Autor: Gustavo Piqueira, Mario Higa
+Assunto: Crítica literária
+Valor: R$ 72,00
+
+Titulo: Modos de Morar nos Apartamentos Duplex
+ISBN: 978-65-5580-044-9
+Autor: Sabrina Fontenele
+Assunto: Ilustrado, Sociologia e Sociedade, Arquitetura, Urbanismo
+Valor: R$ 105,00
+
+Titulo: Moeda da Arte, A - A Dinâmica dos Campos Artístico e Econômico no Patrocínio
+ISBN: 978-85-7480-653-2
+Autor: Eduardo Fragoaz
+Assunto: Política, Economia, Cultura
+Valor: R$ 80,00
+
+Titulo: Moleque de Fábrica - Uma Arqueologia da Memória Social
+ISBN: 978-85-7480-788-1
+Autor: José de Souza Martins
+Assunto: Memória, Ilustrado, Sociologia e Sociedade, Política
+Valor: R$ 94,00
+
+Titulo: Morte aos Papagaios
+ISBN: 85-7480-265-4
+Autor: Gustavo Piqueira
+Assunto: Literatura brasileira, Design, Crônicas, Ilustrado
+Valor: R$ 75,00
+
+Titulo: Muita Sorte  Pouco Juízo
+ISBN: 85-7480-106-2
+Autor: José Roberto de Alencar
+Assunto: Memória, Jornalismo, Ilustrado
+Valor: R$ 44,00
+
+Titulo: Mulher no Escuro, A
+ISBN: 978-85-7480-326-5
+Autor: Cláudia Vasconcellos
+Assunto: Literatura brasileira, Contos, Teatro
+Valor: R$ 64,00
+
+Titulo: Mulheres de Passagem
+ISBN: 978-85-7480-733-1
+Autor: M. A. Amaral Rezende
+Assunto: Literatura, Contos
+Valor: R$ 49,00
+
+Titulo: Museu da Infância Eterna
+ISBN: 978-65-5580-006-7
+Autor: Miguel Sanches Neto
+Assunto: Memória, Literatura brasileira, Crônicas
+Valor: R$ 56,00
+
+Titulo: Na Conquista do Brasil
+ISBN: 85-7480-053-8
+Autor: Donaldo Schüler
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 68,00
+
+Titulo: Na Madrugada das Formas Poéticas
+ISBN: 85-7480-054-6
+Autor: Segismundo Spina
+Assunto: Idade média, Crítica literária, Poesia, Literatura medieval
+Valor: R$ 36,00
+
+Titulo: Na Senda das Noites: Os Quatro Talismãs de Charles Nodier e Les mille et une nuits
+ISBN: 978-85-7480-472-9
+Autor: Christiane Damien
+Assunto: Crítica literária, Literatura estrangeira, Cultura árabe
+Valor: R$ 68,00
+
+Titulo: Nações Literárias
+ISBN: 978-85-7480-504-7
+Autor: Wander Melo Miranda
+Assunto: Crítica literária
+Valor: R$ 67,00
+
+Titulo: Narciso em Sacrifício - A Poética de Mário de Sá-Carneiro
+ISBN: 85-7480-191-7
+Autor: Mario de Sá-Carneiro, Fernando Paixão
+Assunto: Crítica literária, Literatura portuguesa
+Valor: R$ 65,00
+
+Titulo: Nas Águas do Mesmo Rio
+ISBN: 85-7480-311-1
+Autor: Giselda Leirner
+Assunto: Literatura brasileira, Romance
+Valor: R$ 67,00
+
+Titulo: Nas Tramas da Ficção - História, Literatura e Leitura
+ISBN: 978-85-7480-408-8
+Autor: Clóvis Gruner, Cláudio DeNipoti
+Assunto: Crítica literária, Literatura
+Valor: R$ 68,00
+
+Titulo: Nós e as Palavras
+ISBN: 978-85-7480-812-3
+Autor: Luís Bueno
+Assunto: Crítica literária, Literatura, Teoria literária
+Valor: R$ 74,00
+
+Titulo: Nebulosa, A
+ISBN: 978-85-7480-782-9
+Autor: Joaquim Manuel de Macedo, Kaio Romero, Angela Maria Gonçalves da Costa
+Assunto: Ilustrado, Literatura brasileira, Poesia
+Valor: R$ 56,00
+
+Titulo: Neguinho
+ISBN: 978-85-7480-433-0
+Autor: Guga Stroeter
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 65,00
+
+Titulo: No Fim das Terras
+ISBN: 85-7480-260-3
+Autor: Milton Torres
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 92,00
+
+Titulo: No Limiar da Noite
+ISBN: 978-65-5580-038-8
+Autor: José de Souza Martins
+Assunto: Poesia, Crônicas
+Valor: R$ 48,00
+
+Titulo: No Rastro de Afrodite - Plantas Afrodisíacas e Culinária
+ISBN: 85-7480-232-8
+Autor: Gil Felippe
+Assunto: Ilustrado, Gastronomia, Culinária, Botânica
+Valor: R$ 120,00
+
+Titulo: Nome do Cuidado, O
+ISBN: 978-85-7480-452-1
+Autor: Leo Lama, Paulo Hersch Rosenbaum
+Assunto: Medicina e Saúde, Cinema, Ilustrado
+Valor: R$ 67,00
+
+Titulo: Normas Gerais para os Trabalhos de Grau
+ISBN: 85-7480-108-9
+Autor: Segismundo Spina
+Assunto: Comunicação, Escrita, Produção acadêmica
+Valor: R$ 56,00
+
+Titulo: Notícia Histórica da Vida e das Obras de José Haydn
+ISBN: 85-7480-180-1
+Autor: J. Le Breton
+Assunto: Tradução, Música, Memória
+Valor: R$ 58,00
+
+Titulo: Novas Tecnologias - EGC Arquitetura
+ISBN: 85-7480-220-4
+Autor: Renato Schroeder
+Assunto: Arquitetura, Ilustrado
+Valor: R$ 25,00
+
+Titulo: Nove Degraus para o Esquecimento
+ISBN: 978-85-7480-761-4
+Autor: Aguinaldo Gonçalves
+Assunto: Ilustrado, Literatura brasileira, Poesia
+Valor: R$ 95,00
+
+Titulo: Novelas, Espelhos e um Pouco de Choro
+ISBN: 85-7480-052-X
+Autor: Thelma Guedes
+Assunto: Literatura brasileira, Contos
+Valor: R$ 68,00
+
+Titulo: Noviço, O
+ISBN: 978-85-7480-707-2
+Autor: José de Paula Ramos Jr., Martins Pena
+Assunto: Literatura brasileira, Teatro, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Novos Poemas
+ISBN: 978-85-7480-747-8
+Autor: Carlos Vogt
+Assunto: Literatura, Poesia
+Valor: R$ 66,00
+
+Titulo: O Azul e o Mar
+ISBN: 978-85-7480-824-6
+Autor: Paul Valéry, Eduardo de Campos Valadares
+Assunto: Literatura estrangeira, Poesia, Bilíngue, Tradução
+Valor: R$ 56,00
+
+Titulo: O Hóspede
+ISBN: 978-85-7480-798-0
+Autor: Mario Higa
+Assunto: Literatura brasileira, Contos
+Valor: R$ 56,00
+
+Titulo: O Língua
+ISBN: 978-85-7480-818-5
+Autor: Eromar Bomfim
+Assunto: Romance, Literatura
+Valor: R$ 68,00
+
+Titulo: O Marinheiro
+ISBN: 978-65-5580-116-3
+Autor: Fernando Pessoa, António Apolinário Lourenço
+Assunto: Literatura portuguesa, Teatro
+Valor: R$ 42,50
+
+Titulo: O Pai - 6a edição
+ISBN: 978-85-7480-826-0
+Autor: Dirce de Assis Cavalcanti
+Assunto: Memória, Ilustrado, História, Biografia
+Valor: R$ 63,00
+
+Titulo: O Que Aconteceu, Aconteceu
+ISBN: 85-7480-023-6
+Autor: Jacó Guinsburg
+Assunto: Judaísmo, Literatura brasileira, Contos
+Valor: R$ 63,00
+
+Titulo: O Que É Comunicação Poética
+ISBN: 978-85-7480-561-0
+Autor: Décio Pignatari
+Assunto: Comunicação, Poesia, Ilustrado
+Valor: R$ 36,00
+
+Titulo: O Que É Um Livro?
+ISBN: 978-85-7480-830-7
+Autor: João Adolfo Hansen
+Assunto: História, Editoração, Livros sobre livros, Bibliofilia
+Valor: R$ 42,00
+
+Titulo: O Um
+ISBN: 85-85851-41-4
+Autor: Bruno Verner
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 73,00
+
+Titulo: Obras Poéticas de Alvarenga Peixoto
+ISBN: 978-65-5580-022-7
+Autor: Caio Cesar Esteves de Souza, Alvarenga Peixoto
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 98,00
+
+Titulo: Octávio Brandão e as Matrizes Intelectuais do Marxismo no Brasil
+ISBN: 978-85-7480-816-1
+Autor: Felipe Castilho de Lacerda
+Assunto: Ilustrado, Sociologia e Sociedade, História, Política
+Valor: R$ 68,00
+
+Titulo: Olga Savary - Erotismo e Paixão
+ISBN: 978-85-7480-424-8
+Autor: Marleine Paula Marcondes e Ferreira de Toledo
+Assunto: Literatura brasileira, Crítica literária, Poesia
+Valor: R$ 68,00
+
+Titulo: Olhares Desatentos
+ISBN: 978-85-7480-347-0
+Autor: Sérgio Sesiki
+Assunto: Literatura brasileira, Poesia, Contos, Crônicas, Cultura, Ilustrado
+Valor: R$ 57,00
+
+Titulo: Olhares Plausíveis
+ISBN: 978-85-7480-435-4
+Autor: Gregório Bacic
+Assunto: Literatura brasileira, Contos
+Valor: R$ 57,00
+
+Titulo: Olho Vesgo, O
+ISBN: 85-7480-080-5
+Autor: Tiago Mussi
+Assunto: Literatura brasileira, Contos
+Valor: R$ 48,00
+
+Titulo: Orações Insubordinadas
+ISBN: 978-85-7480-431-6
+Autor: Carlos Castelo
+Assunto: Humor, Literatura brasileira, Aforismos, Ilustrado
+Valor: R$ 78,00
+
+Titulo: Orestes
+ISBN: 978-85-7480-766-9
+Autor: Eurípides, Trupersa - Trupe de Tradução de Teatro Antigo
+Assunto: Bilíngue, Tradução, Teatro, Literatura clássica, Cultura grega
+Valor: R$ 68,00
+
+Titulo: Orlando Furioso - 2 ed. Tomo I
+ISBN: 978-65-5580-097-5
+Autor: Ludovico Ariosto, Pedro Garcez Ghirardi
+Assunto: Ilustrado, Poesia, Bilíngue, Literatura medieval, Literatura clássica, Idade média
+Valor: R$ 220,00
+
+Titulo: Orlando Furioso - Tomo I
+ISBN: 978-85-7480-529-0
+Autor: Ludovico Ariosto
+Assunto: Cultura medieval, Idade média, Poesia, Bilíngue, Literatura clássica, Ilustrado, Tradução
+Valor: R$ 138,00
+
+Titulo: Orlando Furioso - Tomo II
+ISBN: 978-65-5580-079-1
+Autor: Ludovico Ariosto, Pedro Garcez Ghirardi
+Assunto: Ilustrado, Poesia, Bilíngue, Literatura medieval, Literatura clássica
+Valor: R$ 260,00
+
+Titulo: Os Admiradores Desconhecidos de "La Nouvelle Héloïse"
+ISBN: 978-65-5580-061-6
+Autor: Jean-Jacques Rousseau, Daniel Mornet, Geraldo Gerson de Souza
+Assunto: Literatura estrangeira, Tradução, História, Livros sobre livros, Bibliofilia
+Valor: R$ 73,00
+
+Titulo: Os Diabos de Ourém
+ISBN: 978-65-5580-099-9
+Autor: Maria Luiza Tucci Carneiro
+Assunto: Ilustrado, Literatura brasileira, Romance, História
+Valor: R$ 68,00
+
+Titulo: Os Evangelhos - Uma Tradução
+ISBN: 978-65-5580-011-1
+Autor: Marcelo Musa Cavallari
+Assunto: Bilíngue, Tradução, Literatura clássica, Religião
+Valor: R$ 147,00
+
+Titulo: Os Maias - 3a. ed.
+ISBN: 978-65-5580-029-6
+Autor: Eça de Queirós
+Assunto: Romance, Literatura portuguesa
+Valor: R$ 83,00
+
+Titulo: Os Sertões (6a. ed.)
+ISBN: 978-65-5580-077-7
+Autor: Euclides da Cunha, Leopoldo Bernucci, Enio Squeff
+Assunto: Ilustrado, Literatura brasileira, Romance, História
+Valor: R$ 295,00
+
+Titulo: Otelo Brasileiro de Machado de Assis, O - 3a. ed.
+ISBN: 978-65-5580-028-9
+Autor: Helen Caldwell
+Assunto: Tradução, Literatura brasileira, Crítica literária
+Valor: R$ 72,00
+
+Titulo: Outra Guerra do Fim do Mundo, A
+ISBN: 978-85-7480-667-9
+Autor: Osvaldo Coggiola
+Assunto: Política, História, Sociologia e Sociedade, Ilustrado
+Valor: R$ 68,00
+
+Titulo: Outra Língua
+ISBN: 978-85-7480-374-6
+Autor: Henryk Siewierski
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 36,00
+
+Titulo: Outro Lado do Vento, O
+ISBN: 978-85-7480-528-3
+Autor: Wassily Chuck
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 68,00
+
+Titulo: Ouvir o Som
+ISBN: 85-7480-268-9
+Autor: Paulo Zuben
+Assunto: Música
+Valor: R$ 68,00
+
+Titulo: País em Branco
+ISBN: 978-85-7480-375-3
+Autor: Ricardo Rizzo
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 63,00
+
+Titulo: Pagu - Literatura e Revolução
+ISBN: 85-7480-169-0
+Autor: Thelma Guedes
+Assunto: Literatura brasileira, Crítica literária, Biografia
+Valor: R$ 68,00
+
+Titulo: Pai de Max Bauer e Outros Contos, O
+ISBN: 978-85-7480-568-9
+Autor: Marcos Rodrigues
+Assunto: Literatura brasileira, Contos, Ilustrado
+Valor: R$ 54,00
+
+Titulo: Paixão & Poesia
+ISBN: 978-65-5580-066-1
+Autor: Adélia Bezerra de Meneses
+Assunto: Ilustrado, Crítica literária, Literatura, Estudos Literários
+Valor: R$ 80,00
+
+Titulo: Palavra e Rosto
+ISBN: 978-85-7480-450-7
+Autor: Fernando Paixão
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 76,00
+
+Titulo: Palavra e Sombra - Ensaios de Crítica
+ISBN: 978-85-7480-467-5
+Autor: Arthur Nestrovski
+Assunto: Literatura brasileira, Crítica literária, Literatura estrangeira
+Valor: R$ 67,00
+
+Titulo: Palmeirim de Inglaterra
+ISBN: 978-85-7480-735-5
+Autor: Lênia Márcia Mongelli, Francisco de Moraes
+Assunto: Ilustrado, Romance, Literatura, Literatura portuguesa, Literatura medieval, Cultura medieval, Idade média
+Valor: R$ 241,00
+
+Titulo: Papel-Jornal - Artigos de Jornalismo Cultural
+ISBN: 85-7480-025-2
+Autor: Marcello Rollemberg
+Assunto: Jornalismo, Cultura
+Valor: R$ 58,00
+
+Titulo: Paradeiro
+ISBN: 978-85-7480-819-2
+Autor: Luís Bueno
+Assunto: Romance, Literatura
+Valor: R$ 68,00
+
+Titulo: Paratextos Editoriais
+ISBN: 978-85-7480-458-3
+Autor: Gérard Genette
+Assunto: Design, Artes gráficas, Tradução, Editoração, Livros sobre livros
+Valor: R$ 110,00
+
+Titulo: Parsona
+ISBN: 978-85-7480-757-7
+Autor: Adriano Scandolara
+Assunto: Poesia
+Valor: R$ 44,90
+
+Titulo: Parte da Tarde, A
+ISBN: 85-7480-306-5
+Autor: Fernando Paixão
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 68,00
+
+Titulo: Pas de Politique Mariô! Mario Pedrosa e a Política
+ISBN: 978-85-7480-768-3
+Autor: Dainis Karepovs
+Assunto: Ilustrado, História, Política
+Valor: R$ 72,00
+
+Titulo: Passos da Semiótica Tensiva
+ISBN: 978-85-7480-844-4
+Autor: Luiz Tatit
+Assunto: Comunicação, Semiótica, Linguística
+Valor: R$ 56,00
+
+Titulo: Pastorinhas de Pirenópolis-GO, As
+ISBN: 978-85-7480-672-3
+Autor: Lênia Márcia Mongelli, Neide Rodrigues Gomes
+Assunto: Ilustrado, História, Religião, Teatro, Cultura
+Valor: R$ 87,00
+
+Titulo: Paulinho da Viola e o Elogio do Amor
+ISBN: 978-85-7480-745-4
+Autor: Eliete Eça Negreiros
+Assunto: Música, Crítica musical
+Valor: R$ 56,00
+
+Titulo: Périplos
+ISBN: 85-7480-277-8
+Autor: Simone Homem de Mello
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 67,00
+
+Titulo: Pedras Pensadas
+ISBN: 85-7480-143-7
+Autor: Adolfo Montejo Navas
+Assunto: Poesia, Literatura estrangeira, Bilíngue, Aforismos
+Valor: R$ 65,00
+
+Titulo: Pedro Nava e a Construção do Texto
+ISBN: 85-7480-202-6
+Autor: Edina Panichi, Miguel Luiz Contani
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 62,00
+
+Titulo: Pequeno Guia Histórico das Livrarias Brasileiras
+ISBN: 978-85-7480-420-0
+Autor: Ubiratan Machado
+Assunto: Livros sobre livros, Memória, Cultura, Livrarias, Ilustrado
+Valor: R$ 65,00
+
+Titulo: Pequeno Livro do Cerrado, O
+ISBN: 85-7480-186-0
+Autor: Gil Perini
+Assunto: Literatura brasileira, Contos
+Valor: R$ 53,00
+
+Titulo: Pequeno Palco
+ISBN: 978-65-5580-020-3
+Autor: Ricardo Lima
+Assunto: Ilustrado, Literatura, Poesia
+Valor: R$ 54,00
+
+Titulo: Pequeno Pomo ou a História da Música do Pós-Modernismo, O
+ISBN: 85-85851-46-5
+Autor: Boudewijn Buckinx
+Assunto: Música, Crítica musical
+Valor: R$ 67,00
+
+Titulo: Percursos pela África e por Macau
+ISBN: 85-7480-276-X
+Autor: Benilde Justo Caniato
+Assunto: Crítica literária, Literatura africana
+Valor: R$ 67,00
+
+Titulo: Perseu, Medusa & Camille Claudel - Sobre a Experiência de Captura Estética
+ISBN: 978-85-7480-423-1
+Autor: Ada Morgenstern
+Assunto: Arte, Psicanálise e Psicologia, Ilustrado
+Valor: R$ 72,00
+
+Titulo: Philobiblon ou O Amigo do Livro
+ISBN: 978-85-7480-368-5
+Autor: Marcelo Castel Cid
+Assunto: Tradução, Cultura medieval, Idade média, Livros sobre livros, Bilíngue, Bibliofilia
+Valor: R$ 57,00
+
+Titulo: Pincelagens & Debuxos / Debuxos & Pincelagens
+ISBN: 85-7480-266-2
+Autor: Hélio Cabral
+Assunto: Arte, Ilustração e pintura, Humor
+Valor: R$ 88,00
+
+Titulo: Pintura como Modelo para uma Filosofia da Expressão
+ISBN: 978-85-7480-806-2
+Autor: Ana Westphal
+Assunto: Arte, Filosofia
+Valor: R$ 39,00
+
+Titulo: Plínio, o Jovem
+ISBN: 978-65-5580-065-4
+Autor: João Ângelo Oliva Neto, Paulo Sergio de Vasconcellos, Plinio o Jovem
+Assunto: Bilíngue, Tradução, Literatura clássica
+Valor: R$ 109,00
+
+Titulo: Poema dos Lunáticos, O
+ISBN: 85-7480-246-8
+Autor: Ermanno Cavazzoni
+Assunto: Cinema, Romance, Literatura estrangeira, Tradução
+Valor: R$ 75,00
+
+Titulo: Poema, O: Leitores e Leituras
+ISBN: 85-7480-028-7
+Autor: Andrea Saad Hossne, Ivone Daré Rabello, Viviana Bosi, Cláudia Arruda Campos
+Assunto: Crítica literária, Literatura
+Valor: R$ 65,00
+
+Titulo: Poemas Reunidos
+ISBN: 978-85-7480-509-2
+Autor: Mario Higa, Cesário Verde
+Assunto: Poesia, Literatura portuguesa
+Valor: R$ 61,00
+
+Titulo: Poesia É Criação: Uma Antologia
+ISBN: 978-85-7480-716-4
+Autor: José de Almada Negreiros
+Assunto: Ilustrado, Poesia, Literatura estrangeira, Teoria literária, Literatura portuguesa, Teatro
+Valor: R$ 78,00
+
+Titulo: Poesia como Pintura, A - A Ekphrasis em Albano Martins
+ISBN: 978-85-7480-699-0
+Autor: Álvaro Cardoso Gomes
+Assunto: Arte, Crítica literária, Poesia, Literatura portuguesa, Estudos Literários
+Valor: R$ 65,00
+
+Titulo: Poesias
+ISBN: 978-85-7480-400-2
+Autor: Segismundo Spina
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 38,00
+
+Titulo: Poetas Românticos, Críticos e Outros Loucos
+ISBN: 85-7480-189-5
+Autor: Charles Rosen
+Assunto: Tradução, Crítica literária, Literatura
+Valor: R$ 73,00
+
+Titulo: Política Cultural e Economia da Cultura
+ISBN: 978-85-7480-630-3
+Autor: José Carlos Durand
+Assunto: Política, Economia, Cultura
+Valor: R$ 68,00
+
+Titulo: Pontuação Circense
+ISBN: 85-7480-035-X
+Autor: Esio Macedo
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 32,00
+
+Titulo: Por Minha Letra e Sinal - Documentos do Ouro do Século XVII
+ISBN: 85-7480-303-0
+Autor: Heitor Megale, Sílvio de Almeida Toledo Neto
+Assunto: Idade média, Paleografia, História, Livros sobre livros, Linguística
+Valor: R$ 110,00
+
+Titulo: Por um Cinema Popular - Leon Hirszman, Política e Resistência
+ISBN: 978-65-5580-009-8
+Autor: Gustavo Piqueira, Reinaldo Cardenuto
+Assunto: Ilustrado, História, Política, Cinema
+Valor: R$ 96,00
+
+Titulo: Por uma Nova Política - Uma Campanha na SBPC
+ISBN: 85-7480-196-8
+Autor: Renato Janine Ribeiro
+Assunto: Política, Sociologia e Sociedade
+Valor: R$ 62,00
+
+Titulo: Portanto... Pepetela
+ISBN: 978-85-7480-457-6
+Autor: Rita Chaves, Tania Macêdo
+Assunto: Crítica literária, Literatura africana
+Valor: R$ 76,00
+
+Titulo: Portas do Sonho, As
+ISBN: 85-7480-096-1
+Autor: Adélia Bezerra de Meneses
+Assunto: Mitologia, Psicanálise e Psicologia, Cultura, Ilustrado
+Valor: R$ 78,00
+
+Titulo: Portos Flutuantes - Trânsitos Ibero-afro-americanos
+ISBN: 85-7480-245-X
+Autor: Benjamin Abdala Jr., Marli Fantini Scarpelli
+Assunto: Literatura brasileira, Crítica literária, Literatura portuguesa, Literatura africana
+Valor: R$ 72,00
+
+Titulo: Porvir que Vem Antes de Tudo - Literatura e Cinema em Lavoura Arcaica
+ISBN: 978-85-7480-585-6
+Autor: Renato Tardivo
+Assunto: Crítica literária, Psicanálise e Psicologia, Cinema
+Valor: R$ 62,00
+
+Titulo: Prelúdio da Metrópole - Arquitetura e Urbanismo em São Paulo na Passagem do Século XIX ao XX
+ISBN: 85-7480-014-7
+Autor: Hugo Segawa
+Assunto: Arquitetura, Urbanismo, Patrimônio Histórico, Ilustrado
+Valor: R$ 92,00
+
+Titulo: Prenúncios e Vestígios
+ISBN: 978-85-7480-695-2
+Autor: Edward Lopes
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 85,00
+
+Titulo: Presente
+ISBN: 978-65-5580-039-5
+Autor: Esio Macedo
+Assunto: Literatura, Poesia
+Valor: R$ 58,00
+
+Titulo: Preservação do Patrimônio Arquitetônico da Industrialização
+ISBN: 978-85-7480-814-7
+Autor: Beatriz Mugayar Kühl
+Assunto: Arquitetura, Restauração, Patrimônio Histórico, Ilustrado
+Valor: R$ 110,00
+
+Titulo: Primórdios da Cerveja no Brasil, Os
+ISBN: 85-7480-183-6
+Autor: Sérgio de Paula Santos
+Assunto: Gastronomia, História
+Valor: R$ 48,00
+
+Titulo: Primeiras Palavras
+ISBN: 85-85851-88-0
+Autor: Douglas Messerli
+Assunto: Poesia, Literatura estrangeira, Bilíngue
+Valor: R$ 48,00
+
+Titulo: Primeiro Livro. A Vida Muito Horrífica do Grande Gargantua, Pai de Pantagruel
+ISBN: 978-65-5580-054-8
+Autor: François Rabelais, Élide Valarini Oliver
+Assunto: Ilustrado, Romance, Literatura estrangeira, Tradução
+Valor: R$ 176,00
+
+Titulo: Primo Basílio, O
+ISBN: 978-85-7480-669-3
+Autor: Paulo Franchetti, Luciana Rocha, Eça de Queirós
+Assunto: Romance, Literatura portuguesa, Ilustrado
+Valor: R$ 50,80
+
+Titulo: Privilégios, Os
+ISBN: 978-85-7480-591-7
+Autor: Jerusa Pires Ferreira, Stendhal
+Assunto: Literatura estrangeira, Contos, Tradução
+Valor: R$ 49,00
+
+Titulo: Processos de Criação em À Sombra das Raparigas em Flor, Os
+ISBN: 978-85-7480-732-4
+Autor: Philippe Willemart
+Assunto: Crítica literária, Literatura, Teoria literária, Psicanálise e Psicologia
+Valor: R$ 68,00
+
+Titulo: Produção Gráfica para Designers
+ISBN: 978-85-7480-731-7
+Autor: Mark Gatter
+Assunto: Ilustrado, Design, Artes gráficas, Tradução, Livros sobre livros
+Valor: R$ 160,00
+
+Titulo: Proust, Poeta e Psicanalista
+ISBN: 85-7480-024-4
+Autor: Philippe Willemart
+Assunto: Crítica literária, Literatura estrangeira, Psicanálise e Psicologia
+Valor: R$ 65,00
+
+Titulo: Psicolirismo da Terapia Cotidiana
+ISBN: 978-85-7480-639-6
+Autor: Rita Moutinho
+Assunto: Poesia
+Valor: R$ 68,00
+
+Titulo: Quadragésimo
+ISBN: 85-85851-79-1
+Autor: Horácio Costa
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 65,00
+
+Titulo: Quarto Livro dos Fatos e Ditos Heroicos do Bom Pantagruel, O
+ISBN: 978-85-7480-709-6
+Autor: François Rabelais
+Assunto: Tradução, Romance, Literatura estrangeira, Ilustrado
+Valor: R$ 161,00
+
+Titulo: Quase Fim de Serapião Filogônio, O
+ISBN: 978-85-7480-390-6
+Autor: Jonas Rosa
+Assunto: Literatura brasileira, Romance
+Valor: R$ 56,00
+
+Titulo: Quase Tudo
+ISBN: 978-85-7480-530-6
+Autor: Ecos Falsos
+Assunto: Música, Biografia
+Valor: R$ 30,00
+
+Titulo: Quatro Ensaios sobre OSCAR NIEMEYER
+ISBN: 978-85-7480-666-2
+Autor: Paulo Bruna, Ingrid Quintana Guerrero
+Assunto: Ilustrado, Arquitetura, Restauração, Urbanismo
+Valor: R$ 72,00
+
+Titulo: Queda do Muro de Berlim e a Presentificação da História, A
+ISBN: 85-7480-131-3
+Autor: Flávia Bancher
+Assunto: Política, História, Sociologia e Sociedade, Ilustrado
+Valor: R$ 62,00
+
+Titulo: Questão da Ideologia no Círculo de Bakhtin, A
+ISBN: 978-85-7480-760-7
+Autor: Luiz Rosalvo Costa
+Assunto: Ilustrado, Comunicação, Filosofia, Linguística
+Valor: R$ 68,00
+
+Titulo: Quincas Borba
+ISBN: 978-85-7480-742-3
+Autor: Machado de Assis, Jean Pierre Chauvin, Kaio Romero
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 63,00
+
+Titulo: Rabelais e Joyce - Três Leituras Menipeias
+ISBN: 978-85-7480-313-5
+Autor: Élide Valarini Oliver
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 65,00
+
+Titulo: Rapid Departures
+ISBN: 85-7480-308-1
+Autor: Vincent Katz
+Assunto: Tipografia, Poesia, Literatura estrangeira, Bilíngue, Ilustrado, Tradução
+Valor: R$ 72,00
+
+Titulo: Réu Confesso - Poemas Reunidos (1968-2010)
+ISBN: 978-85-7480-521-4
+Autor: Luiz Meyer
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 44,00
+
+Titulo: Realidade & Ilusão em Machado de Assis
+ISBN: 978-85-7480-410-1
+Autor: José Aderaldo Castello
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 64,00
+
+Titulo: Realidade Possível: Dilemas da Ficção em Henry James e Machado de Assis
+ISBN: 978-85-7480-626-6
+Autor: Marcelo Pen Parreira
+Assunto: Crítica literária
+Valor: R$ 68,00
+
+Titulo: Realidades e Ficções na Trama Fotográfica - 5ª Edição
+ISBN: 978-85-7480-730-0
+Autor: Boris Kossoy
+Assunto: História, Fotografia
+Valor: R$ 45,00
+
+Titulo: Realidades e Ficções na Trama Fotográfica - 6a ed.
+ISBN: 978-65-5580-013-5
+Autor: Boris Kossoy
+Assunto: Ilustrado, História, Fotografia
+Valor: R$ 63,00
+
+Titulo: Recordações do Escrivão Isaías Caminha
+ISBN: 978-65-5580-082-1
+Autor: José de Paula Ramos Jr., Lima Barreto, Zepa Ferrer
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 75,00
+
+Titulo: Refluxos
+ISBN: 978-85-7480-523-8
+Autor: Edson Valente
+Assunto: Literatura brasileira, Contos
+Valor: R$ 58,00
+
+Titulo: Relíquia, A
+ISBN: 978-85-7480-755-3
+Autor: Fernando Marcílio L. Couto, Eça de Queirós
+Assunto: Romance, Literatura portuguesa, Ilustrado
+Valor: R$ 61,00
+
+Titulo: Remorso do Cosmos
+ISBN: 85-7480-197-6
+Autor: Régis Bonvicino
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 53,00
+
+Titulo: René Thiollier - Obra e Vida do Grão-Senhor da Villa Fortunata e da Academia Paulista de Letras
+ISBN: 978-85-7480-770-6
+Autor: Valter Cesar Pinheiro
+Assunto: Ilustrado, Literatura brasileira, Crítica literária, Biografia
+Valor: R$ 69,00
+
+Titulo: República das Bicicletas
+ISBN: 85-7480-199-2
+Autor: Moacyr Godoy Moreira
+Assunto: Literatura brasileira, Crônicas
+Valor: R$ 50,00
+
+Titulo: Repensando a Educação
+ISBN: 978-85-7480-379-1
+Autor: Geraldina Porto Witter
+Assunto: Educação e Pedagogia
+Valor: R$ 35,00
+
+Titulo: Repensando o Partido Verde Brasileiro
+ISBN: 85-7480-255-7
+Autor: Tibor Rabóczkay
+Assunto: Política
+Valor: R$ 53,00
+
+Titulo: Resíduos
+ISBN: 85-85851-23-6
+Autor: David Oscar Vaz
+Assunto: Literatura brasileira, Contos
+Valor: R$ 56,00
+
+Titulo: Resíduos Ensaísticos de uma Pós-Graduação
+ISBN: 978-85-7480-517-7
+Autor: Segismundo Spina
+Assunto: Crítica literária, Teoria literária, Linguística
+Valor: R$ 54,00
+
+Titulo: Resposta
+ISBN: 85-7480-279-4
+Autor: Elisa Nazarian
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 63,00
+
+Titulo: Restauração
+ISBN: 978-85-7480-632-7
+Autor: E. E. Viollet-le-Duc
+Assunto: Arquitetura, Restauração
+Valor: R$ 55,00
+
+Titulo: Restauradores, Os - 5a. ed.
+ISBN: 978-65-5580-049-4
+Autor: Beatriz Mugayar Kühl, Camillo Boito, Paulo Mugayar Kühl
+Assunto: Arquitetura, Restauração, Patrimônio Histórico, Urbanismo
+Valor: R$ 57,00
+
+Titulo: Resumo do Dia
+ISBN: 85-85851-11-2
+Autor: Heitor Ferraz
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 52,00
+
+Titulo: Retorno de Bennu, O
+ISBN: 978-85-7480-803-1
+Autor: Majela Colares
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 64,00
+
+Titulo: Retrato do Brasil em Cordel
+ISBN: 978-85-7480-538-2
+Autor: Mark Curran
+Assunto: Ilustrado, Livros sobre livros, Literatura brasileira, Cultura, Cordel
+Valor: R$ 120,00
+
+Titulo: Revista de Estudos Orientais n° 4
+ISBN: (não possui)
+Autor: Depto. Letras Orientais USP
+Assunto: Literatura estrangeira
+Valor: R$ 78,00
+
+Titulo: Revistas na Era Pós-Verso
+ISBN: 85-7480-222-0
+Autor: Omar Khouri
+Assunto: Crítica literária, Editoração, Poesia concreta, Ilustrado
+Valor: R$ 64,00
+
+Titulo: Rio na Parede, O
+ISBN: 978-85-7480-586-3
+Autor: Gil Felippe
+Assunto: Literatura brasileira, Contos
+Valor: R$ 63,00
+
+Titulo: Romance de Formação em Perspectiva Histórica - O Tambor de Lata de Günter Grass
+ISBN: 85-85851-87-2
+Autor: Marcus Vinicius Mazzari
+Assunto: Crítica literária, Literatura estrangeira
+Valor: R$ 64,00
+
+Titulo: Romance de Formação: Caminhos e Descaminhos do Herói
+ISBN: 978-65558-000-74
+Autor: Marcus Vinicius Mazzari, Maria Cecilia Marks
+Assunto: Crítica literária, Literatura, Teoria literária
+Valor: R$ 106,00
+
+Titulo: Rosa Luxemburgo: Crise e Revolução
+ISBN: 978-85-7480-809-3
+Autor: Rosa Rosa Gomes
+Assunto: História, Política
+Valor: R$ 72,00
+
+Titulo: Rosto da Memória, O
+ISBN: 978-85-7480-690-7
+Autor: Décio Pignatari
+Assunto: Literatura brasileira, Contos
+Valor: R$ 68,00
+
+Titulo: Roteiro para um Narrador - Uma Leitura dos Contos de Rubem Fonseca
+ISBN: 85-7480-020-1
+Autor: Ariovaldo José Vidal
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 65,00
+
+Titulo: Rousseau e as Artes
+ISBN: 978-85-7480-701-0
+Autor: Paulo Mugayar Kühl, Célia Gambini
+Assunto: Arte, Filosofia
+Valor: R$ 62,00
+
+Titulo: Rudimentos da Vida Coletiva
+ISBN: 85-7480-137-2
+Autor: Alcir Pécora
+Assunto: Literatura brasileira, Romance
+Valor: R$ 55,00
+
+Titulo: Rumo à Vertigem ou A Arte de Naufragar-se
+ISBN: 978-85-7480-717-1
+Autor: Wassily Chuck
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 69,00
+
+Titulo: Rupturas - Poemas em Busca de um Eixo
+ISBN: 978-85-7480-569-6
+Autor: Ana Maria Amaral
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 43,00
+
+Titulo: Sabedoria do Bibliotecário, A
+ISBN: 978-85-7480-829-1
+Autor: Michel Melot
+Assunto: Biblioteconomia, Livros sobre livros
+Valor: R$ 91,00
+
+Titulo: Salvações no Nordeste - Política e Participação Popular
+ISBN: 978-85-7480-573-3
+Autor: Flávia Borges Pereira
+Assunto: Política, História, Sociologia e Sociedade, Cordel
+Valor: R$ 62,00
+
+Titulo: Sangue dos Dias Transparentes, O
+ISBN: 85-7480-134-8
+Autor: Paulo Franchetti
+Assunto: Literatura brasileira, Contos
+Valor: R$ 58,00
+
+Titulo: Saramago - Um Roteiro para os Romances - 2 ed.
+ISBN: 978-65-5580-083-8
+Autor: Eduardo Calbucci
+Assunto: Literatura portuguesa, Estudos Literários
+Valor: R$ 67,00
+
+Titulo: São Paulo: Trânsitos
+ISBN: 85-7480-297-2
+Autor: Vincenzo Scarpellini
+Assunto: Arte, Ilustração e pintura
+Valor: R$ 48,00
+
+Titulo: São Paulo: Vidas
+ISBN: 85-7480-298-0
+Autor: Vincenzo Scarpellini
+Assunto: Arte, Ilustração e pintura
+Valor: R$ 48,00
+
+Titulo: Século da Canção, O - 3a. ed.
+ISBN: 978-65-5580-036-4
+Autor: Luiz Tatit
+Assunto: Música, Semiótica, Crítica musical
+Valor: R$ 75,00
+
+Titulo: Só (seguido de Despedidas)
+ISBN: 978-85-7480-463-7
+Autor: Annie Gisele Fernandes, Hélder Garmes, Antônio Nobre
+Assunto: Poesia, Literatura portuguesa, Ilustrado
+Valor: R$ 64,00
+
+Titulo: Sôbô - Uma Saga da Imigração Japonesa (2a. ed.)
+ISBN: 978-85-7480-833-8
+Autor: Tatsuzô Ishikawa
+Assunto: Memória, Romance, Literatura estrangeira, Ilustrado, Tradução
+Valor: R$ 67,00
+
+Titulo: Segundo Livro do Bom Pantagruel, Rei dos Dipsodos... O
+ISBN: 978-65-5580-055-5
+Autor: François Rabelais, Élide Valarini Oliver
+Assunto: Ilustrado, Romance, Literatura estrangeira, Tradução
+Valor: R$ 146,00
+
+Titulo: Sem Aqui, Nem Agora
+ISBN: 978-65-5580-108-8
+Autor: M. A. Amaral Rezende
+Assunto: Literatura brasileira, Romance, Literatura
+Valor: R$ 65,00
+
+Titulo: Sementes Aladas
+ISBN: 978-85-7480-471-2
+Autor: Percy Bysshe Shelley
+Assunto: Poesia, Literatura estrangeira, Bilíngue, Tradução
+Valor: R$ 68,00
+
+Titulo: Semiótica & Literatura (8a. ed.)
+ISBN: 978-85-7480-778-2
+Autor: Décio Pignatari
+Assunto: Comunicação, Cultura, Literatura, Semiótica
+Valor: R$ 62,00
+
+Titulo: Semiótica à Luz de Guimarães Rosa
+ISBN: 978-85-7480-397-5
+Autor: Luiz Tatit
+Assunto: Literatura brasileira, Crítica literária, Semiótica
+Valor: R$ 48,00
+
+Titulo: Semiótica da Arte e da Arquitetura
+ISBN: 85-7480-206-9
+Autor: Décio Pignatari
+Assunto: Arte, Semiótica, Arquitetura, Ilustrado
+Valor: R$ 41,00
+
+Titulo: Serafim Ponte Grande e as Dificuldades da Crítica Literária
+ISBN: 85-7480-036-8
+Autor: Pascoal Farinaccio
+Assunto: Literatura brasileira, Crítica literária
+Valor: R$ 65,00
+
+Titulo: Signos (em) Cena - Poemas | Ensaios
+ISBN: 978-85-7480-515-3
+Autor: Aguinaldo Gonçalves
+Assunto: Arte, Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 92,00
+
+Titulo: Silêncios de Água e Pedra
+ISBN: 978-85-7480-388-3
+Autor: Wassily Chuck
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 65,00
+
+Titulo: Silêncios no Escuro
+ISBN: 978-85-7480-715-7
+Autor: Maria Viana
+Assunto: Literatura brasileira, Contos
+Valor: R$ 63,00
+
+Titulo: Simbolismo dos Padrões Geométricos da Arte Islâmica, O
+ISBN: 978-85-7480-367-8
+Autor: Sylvia Leite
+Assunto: Arte, Religião, Cultura islâmica, Ilustrado, Cultura árabe
+Valor: R$ 63,00
+
+Titulo: Sinais das Ideias
+ISBN: 85-7480-317-0
+Autor: Moacir Ferreira de Oliveira
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 57,00
+
+Titulo: Soalho de Tábua
+ISBN: 978-85-7480-548-1
+Autor: Moacyr Godoy Moreira
+Assunto: Literatura brasileira, Contos, Ilustrado
+Valor: R$ 35,00
+
+Titulo: Sobre o Filme Lavour'Arcaica
+ISBN: 85-7480-140-2
+Autor: Luiz Fernando Carvalho
+Assunto: Cinema, Entrevistas, Ilustrado
+Valor: R$ 65,00
+
+Titulo: Sociologia Brasileira Hoje
+ISBN: 978-85-7480-772-0
+Autor: Sergio Miceli, Carlos Benedito Martins
+Assunto: Ilustrado, Sociologia e Sociedade, Política, Economia, Cidadania
+Valor: R$ 68,00
+
+Titulo: Sociologia Brasileira Hoje II
+ISBN: 978-85-7480-810-9
+Autor: Sergio Miceli, Carlos Benedito Martins
+Assunto: Sociologia e Sociedade, Política, Economia
+Valor: R$ 72,00
+
+Titulo: Sociologia da Leitura
+ISBN: 978-85-7480-507-8
+Autor: Mauro Gama, Chantal Horellou-Lafarge, Monique Segré
+Assunto: Tradução, Sociologia e Sociedade, Literatura, Cultura, Livrarias
+Valor: R$ 56,00
+
+Titulo: Sofia - Uma Ventania para Dentro / Sofia - Una Brisa para Dentro
+ISBN: 85-7480-294-8
+Autor: Sidney Rocha
+Assunto: Literatura brasileira, Romance, Bilíngue
+Valor: R$ 64,00
+
+Titulo: Sombras da Percepção
+ISBN: 978-85-7480-520-7
+Autor: Geoffrey Lynn, Aurora Fornoni Bernardini
+Assunto: Poesia, Literatura estrangeira, Bilíngue
+Valor: R$ 62,00
+
+Titulo: Sombras e Distâncias
+ISBN: 85-7480-063-5
+Autor: Egberto Penido
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 57,00
+
+Titulo: Somente nos Cinemas
+ISBN: 978-85-7480-836-9
+Autor: Jorge Ialanji Filholini
+Assunto: Literatura brasileira, Contos
+Valor: R$ 65,00
+
+Titulo: Sondas
+ISBN: 85-85851-19-8
+Autor: José de Paula Ramos Jr.
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 63,00
+
+Titulo: Sonetos de Camões - 6a ed.
+ISBN: 9788574807447
+Autor: Izeti Fragata Torralvo, Carlos Cortez Minchillo, Luís de Camões
+Assunto: Poesia, Literatura portuguesa, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Sonetos de Camões - 7a ed.
+ISBN: 978-65-5580-100-2
+Autor: Luís de Camões, Hélio Cabral, Izeti Fragata Torralvo, Carlos Cortez Minchillo
+Assunto: Ilustrado, Poesia, Literatura portuguesa
+Valor: R$ 58,00
+
+Titulo: Sudário
+ISBN: 85-7480-330-8
+Autor: Guiomar de Grammont
+Assunto: Literatura brasileira, Contos
+Valor: R$ 62,00
+
+Titulo: Túnel do Tempo
+ISBN: 978-85-7480-370-8
+Autor: José Sebastião Witter
+Assunto: Memória, Literatura brasileira, Jornalismo
+Valor: R$ 64,00
+
+Titulo: Teatro da Memória de Giulio Camillo, O
+ISBN: 85-7480-296-4
+Autor: Milton José de Almeida
+Assunto: Arte, Teatro, Filosofia, Ilustrado
+Valor: R$ 87,00
+
+Titulo: Teatro de Animação
+ISBN: 85-85851-25-2
+Autor: Ana Maria Amaral
+Assunto: Teatro, Ilustrado
+Valor: R$ 55,00
+
+Titulo: Teatro Russo - Literatura e Espetáculo
+ISBN: 978-85-7480-567-2
+Autor: Arlete Cavalieri, Elena Vássina
+Assunto: Ilustrado, Crítica literária, Literatura estrangeira, Teatro
+Valor: R$ 110,00
+
+Titulo: Tempo Solto
+ISBN: 978-85-7480-637-2
+Autor: Amálio Pinheiro
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 42,00
+
+Titulo: Tempo Vivo da Memória, O - 4a ed.
+ISBN: 978-65-5580-067-8
+Autor: Ecléa Bosi
+Assunto: Memória, Ilustrado, Sociologia e Sociedade, Psicanálise e Psicologia, Cidadania
+Valor: R$ 75,00
+
+Titulo: Tempo Vivo da Memória, O - Ensaios de Psicologia Social
+ISBN: 978-85-7480-640-2
+Autor: Ecléa Bosi
+Assunto: Memória, Psicanálise e Psicologia, Sociologia e Sociedade
+Valor: R$ 55,00
+
+Titulo: Tempos da Fotografia, Os - 4. ed.
+ISBN: 978-65-5580-106-4
+Autor: Boris Kossoy
+Assunto: Ilustrado, Comunicação, Fotografia
+Valor: R$ 58,00
+
+Titulo: Tempos da Fotografia, Os - O Efêmero e o Perpétuo
+ISBN: 978-85-7480-336-4
+Autor: Boris Kossoy
+Assunto: História, Fotografia, Ilustrado
+Valor: R$ 55,00
+
+Titulo: Teoria da Poesia Concreta - Textos Críticos e Manifestos (1950-1960)
+ISBN: 978-85-7480-678-5
+Autor: Décio Pignatari, Augusto de Campos, Haroldo de Campos
+Assunto: Literatura brasileira, Poesia, Teoria literária, Poesia concreta
+Valor: R$ 78,00
+
+Titulo: Teoria da Restauração
+ISBN: 978-85-7480-631-0
+Autor: Cesare Brandi
+Assunto: Arquitetura, Restauração
+Valor: R$ 75,00
+
+Titulo: Teoria Social Contemporânea
+ISBN: 978-65-5580-074-6
+Autor: Patrick Baert, Filipe Carreira da Silva
+Assunto: Sociologia e Sociedade, Filosofia
+Valor: R$ 110,00
+
+Titulo: Terceiro Livro dos Fatos e Ditos Heroicos do Bom Pantagruel - 2a ed.
+ISBN: 978-65-5580-056-2
+Autor: François Rabelais, Élide Valarini Oliver
+Assunto: Ilustrado, Romance, Literatura estrangeira, Tradução
+Valor: R$ 168,00
+
+Titulo: Terceiro Livro dos Fatos e Ditos Heroicos do Bom Pantagruel, O - 1a edição
+ISBN: 85-7480-103-8
+Autor: François Rabelais
+Assunto: Romance, Literatura estrangeira, Ilustrado, Tradução
+Valor: R$ 136,00
+
+Titulo: Terceiro Tempo
+ISBN: 978-85-7480-691-4
+Autor: Décio Pignatari
+Assunto: Literatura brasileira, Crônicas, História
+Valor: R$ 58,00
+
+Titulo: Território de Epidauro
+ISBN: 85-7480-188-7
+Autor: Pedro Nava
+Assunto: Memória, Medicina e Saúde
+Valor: R$ 72,00
+
+Titulo: Til - Romance Brasileiro
+ISBN: 978-85-7480-587-0
+Autor: Ivan Teixeira, José de Alencar
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 62,00
+
+Titulo: Timbre
+ISBN: 85-7480-242-5
+Autor: Virgílio Maia
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 53,00
+
+Titulo: Toda a Cidade de São Francisco do Pará
+ISBN: 978-6555-800-142
+Autor: Gustavo Piqueira
+Assunto: Arte, Comunicação, História
+Valor: R$ 48,00
+
+Titulo: Todos Entoam - Ensaios, Conversas e Lembranças
+ISBN: 978-85-7480-689-1
+Autor: Luiz Tatit
+Assunto: Música, Biografia
+Valor: R$ 87,00
+
+Titulo: Together 1996
+ISBN: 85-85851-29-5
+Autor: Régis Bonvicino
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 28,00
+
+Titulo: Tolerância e o Intempestivo, A
+ISBN: 85-7480-293-X
+Autor: Edson Passetti
+Assunto: Política, Sociologia e Sociedade, Religião, Filosofia
+Valor: R$ 69,00
+
+Titulo: Tragédia Grega - O Mito em Cena
+ISBN: 85-7480-187-9
+Autor: Daisi Malhadas
+Assunto: Mitologia, Teatro
+Valor: R$ 62,00
+
+Titulo: Trajetória de Paulo Emilio
+ISBN: 978-85-7480-654-9
+Autor: Adilson Mendes
+Assunto: Cinema, Cultura
+Valor: R$ 68,00
+
+Titulo: Trajetória em Noite Escura
+ISBN: 978-85-7480-562-7
+Autor: Naoya Shiga
+Assunto: Romance, Literatura estrangeira, Tradução
+Valor: R$ 72,00
+
+Titulo: Transliteração do Hebraico para Leitores Brasileiros
+ISBN: 978-85-7480-646-4
+Autor: Saul Kirschbaum
+Assunto: Tradução, Judaísmo, Editoração, Hebraico
+Valor: R$ 38,00
+
+Titulo: Transmutação Metalinguística na Poética de Edgard Braga, A
+ISBN: 978-85-7480-634-1
+Autor: Beatriz Helena Ramos Amaral
+Assunto: Literatura brasileira, Crítica literária, Poesia
+Valor: R$ 65,00
+
+Titulo: Transverso
+ISBN: 978-85-7480-741-6
+Autor: Marcos Pamplona
+Assunto: Poesia
+Valor: R$ 44,90
+
+Titulo: Travessias - D. João VI e o Mundo Lusófono
+ISBN: 978-85-7480-665-5
+Autor: Paulo Motta Oliveira
+Assunto: Crítica literária, Literatura portuguesa, História
+Valor: R$ 82,00
+
+Titulo: Trágica História do Dr. Fausto, A
+ISBN: 978-85-7480-815-4
+Autor: Luís Bueno, Christopher Marlowe
+Assunto: Bilíngue, Tradução, Teatro, Literatura clássica
+Valor: R$ 146,00
+
+Titulo: Três Vezes Machado de Assis
+ISBN: 978-85-7480-345-6
+Autor: Ubiratan Machado
+Assunto: Memória, Literatura brasileira, Crítica literária
+Valor: R$ 58,00
+
+Titulo: Tripé
+ISBN: 85-85851-77-5
+Autor: Rodrigo Lacerda
+Assunto: Literatura brasileira, Contos
+Valor: R$ 67,00
+
+Titulo: Triste Fim de Policarpo Quaresma
+ISBN: 978-85-7480-704-1
+Autor: Gustavo Martins, Lima Barreto, Ivan Teixeira
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 59,00
+
+Titulo: Tropicália - Alegoria Alegria (5a. ed.)
+ISBN: 978-65-5580-017-3
+Autor: Celso Favaretto
+Assunto: Música, Crítica musical
+Valor: R$ 67,00
+
+Titulo: TV Digital.Br: Conceitos e Estudos sobre o ISDB-Tb
+ISBN: 978-85-7480-455-2
+Autor: S. Squirra, Valdecir Becker
+Assunto: Comunicação, Televisão, Ilustrado
+Valor: R$ 58,00
+
+Titulo: Ubiratan Machado - Bibliófilo e Leitor Exemplar
+ISBN: 978-65-5580-089-0
+Autor: Ubiratan Machado
+Assunto: Memória, Ilustrado, Literatura, História, Biografia, Bibliofilia
+Valor: R$ 60,00
+
+Titulo: Um Amor Literário
+ISBN: 85-7480-305-7
+Autor: Letícia Malard
+Assunto: Literatura brasileira, Romance
+Valor: R$ 58,00
+
+Titulo: Um Canto
+ISBN: 85-85851-33-3
+Autor: Cacá Moreira de Souza
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 68,00
+
+Titulo: Um Lance de Dados - 2a. ed.
+ISBN: 978-85-7480-767-6
+Autor: Álvaro Faleiros, Stéphane Mallarmé
+Assunto: Poesia, Literatura estrangeira, Bilíngue, Tradução
+Valor: R$ 52,00
+
+Titulo: Um Lance de Dados - 3a. ed.
+ISBN: 978-65-5580-104-0
+Autor: Álvaro Faleiros, Stéphane Mallarmé
+Assunto: Literatura estrangeira, Poesia, Bilíngue
+Valor: R$ 58,00
+
+Titulo: Uma Lua em Paris
+ISBN: 85-85851-17-1
+Autor: M. A. Amaral Rezende
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 53,00
+
+Titulo: Urna, A
+ISBN: 85-7480-019-8
+Autor: David Oscar Vaz
+Assunto: Literatura brasileira, Contos
+Valor: R$ 54,00
+
+Titulo: Vanguardas: Brasil  Itália
+ISBN: 85-7480-157-7
+Autor: Lúcia Wataghin
+Assunto: Crítica literária, Arquitetura, Cultura
+Valor: R$ 65,00
+
+Titulo: Várias Histórias
+ISBN: 978-85-7480-441-5
+Autor: José de Paula Ramos Jr., Machado de Assis
+Assunto: Literatura brasileira, Contos, Ilustrado
+Valor: R$ 44,00
+
+Titulo: Várias Histórias - 3a. ed.
+ISBN: 978-65-5580-094-4
+Autor: José de Paula Ramos Jr., Machado de Assis
+Assunto: Ilustrado, Literatura brasileira, Contos
+Valor: R$ 65,00
+
+Titulo: Vão-se os Dias e Eu Fico
+ISBN: 978-85-7480-451-4
+Autor: Edson Nery da Fonseca
+Assunto: Memória, Biblioteconomia, Ilustrado
+Valor: R$ 56,00
+
+Titulo: Velho é o Espelho
+ISBN: 978-85-7480-372-2
+Autor: Maria de Lourdes Ferreira Alves
+Assunto: Literatura brasileira, Poesia
+Valor: R$ 58,00
+
+Titulo: Velho Chico ou A Vida é Amável, O
+ISBN: 85-85851-57-0
+Autor: Dirce de Assis Cavalcanti
+Assunto: Memória
+Valor: R$ 62,00
+
+Titulo: Velhos Amigos
+ISBN: 978-85-7480-841-3
+Autor: Ecléa Bosi
+Assunto: Memória, Ilustrado, Literatura brasileira, Contos, Crônicas
+Valor: R$ 68,00
+
+Titulo: Vermelho
+ISBN: 85-7480-039-2
+Autor: Aguinaldo Gonçalves
+Assunto: Ilustrado, Literatura brasileira, Poesia
+Valor: R$ 72,00
+
+Titulo: Viagem a um Deserto Interior
+ISBN: 978-85-7480-711-9
+Autor: Leila Guenther
+Assunto: Literatura brasileira, Poesia, Ilustrado
+Valor: R$ 64,00
+
+Titulo: Viagem ao Egito, Jordânia e Israel
+ISBN: 85-7480-241-7
+Autor: Pedro Nava
+Assunto: Memória, Literatura brasileira, Ilustrado
+Valor: R$ 42,00
+
+Titulo: Viagem de Joseph Língua
+ISBN: 978-85-7480-448-4
+Autor: Pedro Américo de Farias
+Assunto: Literatura brasileira, Romance
+Valor: R$ 27,00
+
+Titulo: Viagem Magnética
+ISBN: 978-85-7480-687-7
+Autor: Décio Pignatari
+Assunto: Literatura brasileira, Teatro
+Valor: R$ 55,00
+
+Titulo: Viagens na Minha Terra
+ISBN: 978-85-7480-592-4
+Autor: Ivan Teixeira, Kaio Romero, Almeida Garrett
+Assunto: Romance, Literatura portuguesa, Ilustrado
+Valor: R$ 62,00
+
+Titulo: Vida e Morte de M. J. Gonzaga de Sá
+ISBN: 978-85-7480-765-2
+Autor: Lima Barreto, Marcos Scheffel, Kaio Romero
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 43,00
+
+Titulo: Vida e Morte de M. J. Gonzaga de Sá - 2a. ed.
+ISBN: 978-65-5580-095-1
+Autor: Lima Barreto, Marcos Scheffel
+Assunto: Ilustrado, Literatura brasileira, Romance
+Valor: R$ 59,00
+
+Titulo: Vida Literária no Brasil Colônia, A
+ISBN: 978-65-5580-080-7
+Autor: Ubiratan Machado
+Assunto: Ilustrado, Literatura brasileira, História, Estudos Literários
+Valor: R$ 98,00
+
+Titulo: Vidas de Dante - 2 edição
+ISBN: 978-65-5580-075-3
+Autor: Dante Alighieri, Eduardo Henrik Aubert
+Assunto: Biografia, História
+Valor: R$ 82,00
+
+Titulo: Vitrola dos Ausentes
+ISBN: 85-7480-269-7
+Autor: Paulo Ribeiro
+Assunto: Literatura brasileira, Romance
+Valor: R$ 63,00
+
+Titulo: Viva Vaia - Poesia 1949-1979
+ISBN: 978-85-7480-688-4
+Autor: Augusto de Campos
+Assunto: Literatura brasileira, Poesia, Poesia concreta, Ilustrado
+Valor: R$ 160,00
+
+Titulo: Vocabulário Português-Nheengatu - Nheengatu-Português
+ISBN: 978-85-7480-638-9
+Autor: E. Stradelli
+Assunto: Tradução, Dicionário, Linguística
+Valor: R$ 110,00
+
+Titulo: Voo Noturno das Galinhas, O
+ISBN: 85-7480-323-5
+Autor: Leila Guenther
+Assunto: Literatura brasileira, Contos
+Valor: R$ 58,00
+
+Titulo: Voz que Canta na Voz que Fala, A - Poética e Política na Trajetória de Gilberto Gil
+ISBN: 978-85-7480-718-8
+Autor: Pedro Henrique Varoni de Carvalho
+Assunto: Música, Crítica musical
+Valor: R$ 78,00
+
+Titulo: William Morris - Sobre as Artes do Livro
+ISBN: 978-85-7480-845-1
+Autor: Gustavo Piqueira, William Morris
+Assunto: Ilustrado, Design, Artes gráficas, Tradução, Editoração, Livros sobre livros
+Valor: R$ 188,00
+
+Titulo: Yaser
+ISBN: 978-85-7480-813-0
+Autor: Eda Nagayama
+Assunto: Ilustrado, Romance, Literatura, Bilíngue, Política
+Valor: R$ 45,00
+
+Titulo: Zé Ferino
+ISBN: 85-85851-98-8
+Autor: Rodrigo Penteado
+Assunto: Literatura brasileira, Romance, Ilustrado
+Valor: R$ 34,00
+
