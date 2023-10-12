@@ -1,0 +1,10 @@
+-- Tópicos que já abordei de Lua.
+
+1. Variáveis, sintaxes e tipos
+2. Strings
+3. Tables (Arrays) 
+4. Operadores
+5. Estruturas Condicionais
+6. Estruturas de repetições
+7. Functions
+8. I/O
