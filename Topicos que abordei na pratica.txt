@@ -8,3 +8,5 @@
 6. Estruturas de repetições
 7. Functions
 8. I/O
+9. Modulos
+10. Bibliotecas

@@ -1,0 +1,417 @@
+1. Introdução
+
+Lua é uma linguagem de script leve e poderosa que pode ser facilmente incorporada em outros programas. Ela suporta vários estilos de programação, como procedimental, orientado a objetos e funcional, e é ideal para tarefas de configuração, scripts e prototipagem rápida. Lua é implementada como uma biblioteca em C e oferece um interpretador independente chamado "lua". Ela não possui um programa principal próprio, mas pode ser incorporada em outros programas, permitindo que esses programas chamem funções Lua, manipulem variáveis Lua e registrem funções em C para serem usadas no código Lua. A linguagem é flexível e personalizável, tornando-a adequada para uma ampla gama de domínios. Além disso, Lua é software gratuito e está disponível no site oficial da Lua.
+
+Essencialmente, Lua é uma linguagem de script poderosa, flexível e de fácil incorporação em outros programas, tornando-a versátil para diversas aplicações.
+
+2. Conceitos Básicos
+
+Nesta seção, vamos entender os conceitos básicos da linguagem Lua:
+
+1. **Valores e Tipos:** Lua é uma linguagem dinamicamente tipada, o que significa que as variáveis não têm tipos, apenas os valores têm. Existem oito tipos básicos em Lua: `nil`, `boolean`, `number`, `string`, `function`, `userdata`, `thread`, e `table`.
+
+2. **Nil e Boolean:** `nil` é usado para representar a ausência de um valor útil, enquanto `boolean` possui dois valores, `false` e `true`. Ambos `nil` e `false` são considerados "valores falsos", enquanto qualquer outro valor é considerado "verdadeiro".
+
+3. **Números:** Lua possui dois subtipos para números: `integer` (inteiros) e `float` (números de ponto flutuante). Inteiros são representados como números inteiros de 64 bits, e floats como números de ponto flutuante de dupla precisão. Pode ser configurado para usar números de 32 bits, o que é útil para sistemas embarcados.
+
+4. **Strings:** Strings em Lua representam sequências de bytes imutáveis. São 8-bit clean, o que significa que podem conter qualquer valor de 8 bits, incluindo zeros. Lua não faz suposições sobre o conteúdo de strings, e o comprimento de uma string deve caber em um número inteiro Lua.
+
+5. **Funções:** Lua pode chamar e manipular funções escritas em Lua e C, ambas representadas pelo tipo `function`.
+
+6. **Userdata:** O tipo `userdata` permite armazenar dados arbitrários em variáveis Lua. Existem dois tipos de `userdata`: `full userdata` (que representa um bloco de memória gerenciado por Lua) e `light userdata` (que é um valor de ponteiro C). Operações em `userdata` são definidas pelo programador através de metatables.
+
+7. **Threads:** O tipo `thread` representa threads de execução independentes usados para implementar corrotinas em Lua. Não estão relacionados a threads do sistema operacional e funcionam em todos os sistemas, mesmo que não suportem threads nativamente.
+
+8. **Tabelas:** Tabelas implementam arrays associativos, permitindo que chaves sejam qualquer valor Lua, exceto `nil` e `NaN` (Not a Number). Tabelas podem ser heterogêneas, ou seja, podem conter valores de todos os tipos, e qualquer chave não presente em uma tabela é associada a `nil`.
+
+As tabelas são a principal estrutura de dados em Lua e podem ser usadas para representar várias estruturas, como arrays, listas, tabelas de símbolos, conjuntos, registros, árvores, etc. Além disso, funções podem ser armazenadas em tabelas, permitindo que as tabelas carreguem métodos.
+
+Vale mencionar que, ao contrário de algumas linguagens, Lua manipula apenas referências para objetos, não cópias dos valores reais, o que economiza memória e torna as operações eficientes.
+
+Para verificar o tipo de um valor, a função `type` pode ser usada, e retorna uma string que descreve o tipo do valor.
+
+2.2 Environments and the Global Environment:
+
+Essa seção fala sobre ambientes e o ambiente global em Lua:
+
+- **Ambientes e _ENV:** Em Lua, qualquer referência a um nome não vinculado a uma declaração (ou seja, um nome livre) é sintaticamente traduzida como `_ENV.var`. Cada trecho de código é compilado no escopo de uma variável local externa chamada `_ENV`, o que significa que `_ENV` nunca é um nome livre no código.
+
+- **Ambientes e Tabelas:** Qualquer tabela usada como valor de `_ENV` é chamada de ambiente. Lua mantém um ambiente distinto chamado ambiente global, que é mantido em um índice especial no registro C. Em Lua, a variável global `_G` é inicializada com esse mesmo valor. Alterar o valor de `_G` não afetará o funcionamento interno do Lua, apenas seu próprio código.
+
+- **Carregamento de Chunks:** Quando Lua carrega um trecho de código, o valor padrão de sua variável `_ENV` é o ambiente global. Portanto, por padrão, nomes livres no código Lua se referem a entradas no ambiente global e são chamados de variáveis globais. Você pode usar a função `load` (ou `loadfile`) para carregar um trecho de código com um ambiente diferente.
+
+Em resumo, o ambiente global é onde variáveis globais em Lua são armazenadas por padrão. Você pode usar ambientes personalizados para isolar variáveis e funções, evitando conflitos com o ambiente global padrão.
+
+2.3 Error Handling
+
+Essa seção trata do tratamento de erros em Lua:
+
+- **Ocorrência de Erros:** Várias operações em Lua podem gerar erros. Um erro interrompe o fluxo normal do programa, mas é possível capturá-lo e continuar a execução.
+
+- **Gerando Erros:** Código Lua pode gerar erros explicitamente chamando a função `error`. Essa função nunca retorna ao programa.
+
+- **Tratamento de Erros:** Para capturar erros em Lua, você pode realizar uma chamada protegida usando `pcall` (ou `xpcall`). O `pcall` chama uma função específica em modo protegido. Qualquer erro durante a execução da função interrompe sua execução, e o controle retorna imediatamente para o `pcall`, que retorna um código de status.
+
+- **Geração e Manipulação de Mensagens de Erro:** Sempre que ocorre um erro, um objeto de erro é propagado com informações sobre o erro. Lua gera apenas erros cujo objeto de erro é uma string, mas programas podem gerar erros com qualquer valor como objeto de erro. Cabe ao programa Lua ou ao programa host lidar com esses objetos de erro. Por razões históricas, um objeto de erro é frequentemente chamado de mensagem de erro, embora não precise ser uma string.
+
+- **Manipuladores de Mensagens:** Ao usar `xpcall` (ou `lua_pcall` em C), você pode fornecer um manipulador de mensagens a ser chamado em caso de erros. Esse manipulador é chamado com o objeto de erro original e retorna um novo objeto de erro. Ele é chamado antes de desempilhar o erro, permitindo que ele reúna mais informações sobre o erro, como examinar a pilha e criar um rastreamento de pilha. O manipulador de mensagens é protegido pela chamada protegida, então um erro dentro dele chamará o manipulador novamente. Se esse loop persistir por muito tempo, Lua o interromperá e retornará uma mensagem apropriada. O manipulador de mensagens é chamado apenas para erros regulares em tempo de execução, não para erros de alocação de memória ou erros ao executar finalizadores ou outros manipuladores de mensagens.
+
+- **Avisos (Warnings):** Lua também oferece um sistema de avisos (veja `warn`). Ao contrário dos erros, os avisos não interferem de forma alguma na execução do programa. Normalmente, eles geram apenas uma mensagem ao usuário, embora esse comportamento possa ser adaptado a partir de C (veja `lua_setwarnf`).
+
+2.4 Metatables and Metamethods
+
+Metatables e Metamétodos são conceitos importantes em Lua:
+
+- **Metatables:** Cada valor em Lua pode ter uma metatable, que é uma tabela Lua comum que define o comportamento desse valor em eventos específicos. Você pode alterar vários aspectos do comportamento de um valor definindo campos específicos em sua metatable. Por exemplo, quando um valor não numérico é usado em uma operação de adição, Lua verifica se existe uma função no campo `__add` da metatable desse valor. Se encontrar uma função, Lua chama essa função para realizar a adição.
+
+- **Chaves de Eventos:** Para cada evento em uma metatable, a chave correspondente é uma string com o nome do evento prefixado por dois sublinhados, e o valor correspondente é chamado de metavalue. Para a maioria dos eventos, o metavalue deve ser uma função, chamada de metamétodo. Por exemplo, a chave é a string "__add" e o metamétodo é a função que realiza a adição. Por convenção, todas as chaves de metatables em Lua são compostas por dois sublinhados seguidos por letras minúsculas.
+
+- **Consultando Metatables:** Você pode consultar a metatable de qualquer valor usando a função `getmetatable`. Lua consulta metamétodos em metatables usando um acesso direto.
+
+- **Substituição de Metatable:** Você pode substituir a metatable de tabelas usando a função `setmetatable`. No entanto, você não pode alterar a metatable de outros tipos a partir do código Lua, exceto usando a biblioteca de depuração.
+
+- **Operações Controladas por Metatables:** As metatables controlam o comportamento de operações específicas. Algumas operações incluem adição, subtração, multiplicação, divisão, concatenação e outras. Se um valor tem uma metatable com um metamétodo apropriado para uma operação, o metamétodo é chamado para realizar a operação. Caso contrário, Lua gera um erro.
+
+- **Metatables para Tabelas e Outros Tipos:** Tabelas e userdata completos têm metatables individuais, enquanto outros tipos compartilham uma única metatable por tipo. Por padrão, um valor não tem uma metatable, mas a biblioteca de strings define uma metatable para o tipo de string.
+
+- **Outros Eventos Controlados por Metatables:** Além das operações matemáticas, metatables também podem controlar operações de índice e chamadas de função, entre outras.
+
+- **Boas Práticas:** É uma boa prática adicionar todos os metamétodos necessários a uma tabela antes de defini-la como metatable de algum objeto. Além disso, é aconselhável definir a metatable de um objeto logo após a sua criação.
+
+Metatables e metamétodos fornecem flexibilidade para personalizar o comportamento dos valores em Lua de acordo com suas necessidades. Eles são uma parte fundamental da metaprogramação em Lua.
+
+2.5 Garbage Collection
+
+O mecanismo de coleta de lixo (garbage collection) em Lua é responsável pela gestão automática da memória, o que significa que você não precisa se preocupar em alocar memória para novos objetos ou liberá-la quando os objetos não são mais necessários. Lua gerencia a memória automaticamente executando um coletor de lixo para coletar todos os objetos mortos. Isso se aplica a todos os tipos de memória usados por Lua, como strings, tabelas, userdata, funções, threads e estruturas internas.
+
+Um objeto é considerado morto assim que o coletor de lixo pode ter certeza de que o objeto não será mais acessado durante a execução normal do programa. No entanto, esse momento pode não coincidir com as expectativas do programador. A única garantia é que Lua não coletará um objeto que ainda possa ser acessado durante a execução normal do programa e que, eventualmente, coletará um objeto que seja inacessível a partir de Lua. Inacessível de Lua significa que nem uma variável nem outro objeto vivo faz referência ao objeto. O coletor de lixo nunca coleta objetos acessíveis por meio do registro (registry), que inclui o ambiente global.
+
+O coletor de lixo em Lua pode operar em dois modos: incremental e geracional. O modo padrão com os parâmetros padrão é adequado para a maioria dos casos. No entanto, programas que desperdiçam uma grande quantidade de tempo alocando e liberando memória podem se beneficiar de configurações diferentes. É importante observar que o comportamento do coletor de lixo não é portável entre plataformas e versões diferentes do Lua, o que torna as configurações ótimas também não portáteis.
+
+Você pode alterar o modo e os parâmetros do coletor de lixo chamando `lua_gc` em C ou `collectgarbage` em Lua. Essas funções também podem ser usadas para controlar o coletor diretamente, como interrompê-lo e reiniciá-lo.
+
+2.5.1 Incremental Garbage Collection, 2.5.2 Generational Garbage Collection, 2.5.3 Garbage-Collection Metamethods
+
+No modo de coleta incremental, cada ciclo de coleta de lixo realiza uma coleta de marcação e varredura em pequenas etapas intercaladas com a execução do programa. Nesse modo, o coletor de lixo utiliza três números para controlar seus ciclos de coleta de lixo: a pausa do coletor de lixo, o multiplicador de etapas do coletor de lixo e o tamanho da etapa do coletor de lixo.
+
+- **A pausa do coletor de lixo** controla quanto tempo o coletor espera antes de iniciar um novo ciclo. O coletor inicia um novo ciclo quando o uso de memória atinge n% do uso após a coleta anterior. Valores maiores tornam o coletor menos agressivo. Valores iguais ou menores que 100 significam que o coletor não espera para iniciar um novo ciclo. Um valor de 200 significa que o coletor espera que o uso total de memória dobre antes de iniciar um novo ciclo. O valor padrão é 200, e o valor máximo é 1000.
+
+- **O multiplicador de etapas do coletor de lixo** controla a velocidade do coletor em relação à alocação de memória, ou seja, quantos elementos ele marca ou varre para cada quilobyte de memória alocada. Valores maiores tornam o coletor mais agressivo, mas também aumentam o tamanho de cada etapa incremental. Não se deve usar valores menores que 100, pois eles tornam o coletor muito lento e podem resultar em uma coleta que nunca é concluída. O valor padrão é 100, e o valor máximo é 1000.
+
+- **O tamanho da etapa do coletor de lixo** controla o tamanho de cada etapa incremental, ou seja, quantos bytes o interpretador aloca antes de executar uma etapa. Esse parâmetro é logarítmico: um valor de n significa que o interpretador alocará 2^n bytes entre as etapas e realizará um trabalho equivalente durante a etapa. Um valor grande, como 60, torna o coletor um coletor de lixo que para o mundo (não incremental). O valor padrão é 13, o que significa etapas de aproximadamente 8 Kbytes.
+
+No modo geracional, o coletor realiza coletas menores frequentes que examinam apenas objetos recentemente criados. Se, após uma coleta menor, o uso de memória ainda estiver acima de um limite, o coletor faz uma coleta maior que para o mundo, que examina todos os objetos. O modo geracional usa dois parâmetros: o multiplicador menor e o multiplicador maior.
+
+- **O multiplicador menor** controla a frequência das coletas menores. Para um multiplicador menor x, uma nova coleta menor será feita quando a memória crescer x% mais do que a memória usada após a coleta maior anterior. Por exemplo, para um multiplicador de 20, o coletor fará uma coleta menor quando o uso de memória estiver 20% maior do que o uso após a coleta maior anterior. O valor padrão é 20, e o valor máximo é 200.
+
+- **O multiplicador maior** controla a frequência das coletas maiores. Para um multiplicador maior x, uma nova coleta maior será feita quando a memória crescer x% mais do que a memória usada após a coleta maior anterior. Por exemplo, para um multiplicador de 100, o coletor fará uma coleta maior quando o uso de memória estiver maior do que o dobro do uso após a coleta anterior. O valor padrão é 100, e o valor máximo é 1000.
+
+Em relação aos metamétodos de coleta de lixo (garbage collection), você pode definir metamétodos de coleta de lixo para tabelas e, usando a API em C, para userdata completos (consulte a seção 2.4). Esses metamétodos, chamados de finalizadores, são chamados quando o coletor de lixo detecta que a tabela ou userdata correspondente está morta. Os finalizadores permitem coordenar a coleta de lixo do Lua com o gerenciamento de recursos externos, como fechamento de arquivos, conexões de rede ou banco de dados ou liberação de sua própria memória.
+
+Para que um objeto (tabela ou userdata) seja finalizado quando coletado, você deve marcá-lo para finalização. Você marca um objeto para finalização quando define sua metatable e a metatable possui um metamétodo __gc. Observe que se você definir uma metatable sem um campo __gc e posteriormente criar esse campo na metatable, o objeto não será marcado para finalização.
+
+Quando um objeto marcado se torna morto, ele não é coletado imediatamente pelo coletor de lixo. Em vez disso, o Lua o coloca em uma lista. Após a coleta, o Lua percorre essa lista. Para cada objeto na lista, ele verifica o metamétodo __gc do objeto: se estiver presente, o Lua o chama com o objeto como seu único argumento.
+
+No final de cada ciclo de coleta de lixo, os finalizadores são chamados na ordem reversa em que os objetos foram marcados para finalização, entre aqueles coletados nesse ciclo; ou seja, o primeiro finalizador a ser chamado é aquele associado ao objeto marcado por último no programa. A execução de cada finalizador pode ocorrer em qualquer ponto durante a execução do código regular.
+
+Porque o objeto sendo coletado ainda deve ser usado pelo finalizador, esse objeto (e outros objetos acessíveis somente por meio dele) deve ser ressuscitado pelo Lua. Geralmente, essa ressurreição é transitória, e a memória do objeto é liberada no próximo ciclo de coleta de lixo. No entanto, se o finalizador armazenar o objeto em algum local global (por exemplo, uma variável global), a ressurreição será permanente. Além disso, se o finalizador marcar um objeto finalizante para finalização novamente, seu finalizador será chamado novamente no próximo ciclo em que o objeto estiver morto. Em qualquer caso, a memória do objeto é liberada apenas em um ciclo de GC em que o objeto estiver morto e não estiver marcado para finalização.
+
+Quando você fecha um estado (veja `lua_close`), o Lua chama os finalizadores de todos os objetos marcados para finalização, seguindo a ordem inversa em que foram marcados. Se algum finalizador marcar objetos para coleta durante essa fase, essas marcações não terão efeito.
+
+Finalizadores não podem ceder nem executar o coletor de lixo. Como omo eles podem ser executados em momentos imprevisíveis, é uma boa prática restringir cada finalizador ao mínimo necessário para liberar adequadamente seu recurso associado.
+
+Qualquer erro durante a execução de um finalizador gera um aviso; o erro não é propagado.
+
+2.5.4 - Weak Tables
+
+Uma tabela fraca (weak table) é uma tabela cujos elementos são referências fracas. Uma referência fraca é ignorada pelo coletor de lixo. Em outras palavras, se as únicas referências a um objeto forem referências fracas, o coletor de lixo coletará esse objeto.
+
+Uma tabela fraca pode ter chaves fracas, valores fracos ou ambos. Uma tabela com valores fracos permite a coleta de seus valores, mas impede a coleta de suas chaves. Uma tabela com chaves fracas e valores fracos permite a coleta tanto das chaves quanto dos valores. Em qualquer caso, se tanto a chave quanto o valor forem coletados, o par inteiro é removido da tabela. A fraqueza de uma tabela é controlada pelo campo __mode de sua metatable. Esse metavalue, se presente, deve ser uma das seguintes strings: "k", para uma tabela com chaves fracas; "v", para uma tabela com valores fracos; ou "kv", para uma tabela com chaves e valores fracos.
+
+Uma tabela com chaves fracas e valores fortes também é chamada de tabela efêmera (ephemeron table). Em uma tabela efêmera, um valor é considerado alcançável apenas se sua chave for alcançável. Em particular, se a única referência a uma chave passa pelo seu valor, o par é removido.
+
+Qualquer mudança na fraqueza de uma tabela pode entrar em vigor somente no próximo ciclo de coleta. Em particular, se você mudar a fraqueza para um modo mais forte, o Lua pode ainda coletar alguns itens dessa tabela antes que a mudança tenha efeito.
+
+Somente objetos que possuem uma construção explícita são removidos de tabelas fracas. Valores como números e funções C leves não estão sujeitos à coleta de lixo e, portanto, não são removidos de tabelas fracas (a menos que seus valores associados sejam coletados). Embora as strings estejam sujeitas à coleta de lixo, elas não têm uma construção explícita e sua igualdade é por valor; elas se comportam mais como valores do que como objetos. Portanto, elas não são removidas de tabelas fracas.
+
+Objetos ressuscitados (ou seja, objetos que estão sendo finalizados e objetos acessíveis apenas por meio de objetos que estão sendo finalizados) têm um comportamento especial em tabelas fracas. Eles são removidos de valores fracos antes de executar seus finalizadores, mas são removidos de chaves fracas somente na próxima coleta após a execução de seus finalizadores, quando esses objetos são realmente liberados. Esse comportamento permite que o finalizador acesse propriedades associadas ao objeto por meio de tabelas fracas.
+
+Se uma tabela fraca estiver entre os objetos ressuscitados em um ciclo de coleta, ela pode não ser adequadamente limpa até o próximo ciclo.
+
+2.6 Coroutines
+
+Lua suporta corrotinas, também chamadas de multithreading colaborativo. Uma corrotina em Lua representa uma thread de execução independente. No entanto, ao contrário das threads em sistemas multithread, uma corrotina só suspende sua execução chamando explicitamente uma função `yield`.
+
+Você cria uma corrotina chamando `coroutine.create`. Seu único argumento é uma função que é a função principal da corrotina. A função `create` apenas cria uma nova corrotina e retorna um identificador para ela (um objeto do tipo thread); ela não inicia a corrotina.
+
+Você executa uma corrotina chamando `coroutine.resume`. Quando você chama `coroutine.resume` pela primeira vez, passando como seu primeiro argumento uma corrotina retornada por `coroutine.create`, a corrotina inicia sua execução chamando sua função principal. Argumentos extras passados para `coroutine.resume` são passados como argumentos para essa função. Depois que a corrotina começa a ser executada, ela é executada até terminar ou até que seja suspensa.
+
+Uma corrotina pode terminar sua execução de duas maneiras: normalmente, quando sua função principal retorna (explicitamente ou implicitamente, após a última instrução); e anormalmente, se houver um erro não protegido. Em caso de término normal, `coroutine.resume` retorna `true`, além de quaisquer valores retornados pela função principal da corrotina. Em caso de erros, `coroutine.resume` retorna `false` mais o objeto de erro. Nesse caso, a corrotina não desfaz sua pilha, para que seja possível inspecioná-la após o erro com a API de depuração.
+
+Uma corrotina faz uma pausa chamando `coroutine.yield`. Quando uma corrotina faz uma pausa, a chamada correspondente a `coroutine.resume` retorna imediatamente, mesmo se a pausa ocorrer dentro de chamadas de função aninhadas (ou seja, não na função principal, mas em uma função chamada diretamente ou indiretamente pela função principal). No caso de uma pausa, `coroutine.resume` também retorna `true`, além de quaisquer valores passados para `coroutine.yield`. Da próxima vez que você retomar a mesma corrotina, ela continuará sua execução a partir do ponto em que fez a pausa, com a chamada a `coroutine.yield` retornando quaisquer argumentos extras passados para `coroutine.resume`.
+
+Assim como `coroutine.create`, a função `coroutine.wrap` também cria uma corrotina, mas em vez de retornar a própria corrotina, ela retorna uma função que, quando chamada, retoma a corrotina. Quaisquer argumentos passados para esta função são repassados a `coroutine.resume`. `coroutine.wrap` retorna todos os valores retornados por `coroutine.resume`, exceto o primeiro (o código de erro booleano). Ao contrário de `coroutine.resume`, a função criada por `coroutine.wrap` propaga qualquer erro para o chamador. Nesse caso, a função também encerra a corrotina (consulte `coroutine.close`).
+
+Como exemplo de como as corrotinas funcionam, considere o seguinte código:
+
+```lua
+function foo(a)
+   print("foo", a)
+   return coroutine.yield(2*a)
+end
+
+co = coroutine.create(function(a, b)
+   print("co-body", a, b)
+   local r = foo(a + 1)
+   print("co-body", r)
+   local r, s = coroutine.yield(a + b, a - b)
+   print("co-body", r, s)
+   return b, "end"
+end)
+
+print("main", coroutine.resume(co, 1, 10))
+print("main", coroutine.resume(co, "r"))
+print("main", coroutine.resume(co, "x", "y"))
+print("main", coroutine.resume(co, "x", "y"))
+```
+
+Quando você o executa, ele produz a seguinte saída:
+
+```
+co-body 1       10
+foo     2
+main    true    4
+co-body r
+main    true    11      -9
+co-body x       y
+main    true    10      end
+main    false   cannot resume dead coroutine
+```
+
+Você também pode criar e manipular corrotinas por meio da API C: consulte as funções `lua_newthread`, `lua_resume` e `lua_yield`.
+
+3. The Language
+
+Esta seção descreve a lexicografia, a sintaxe e a semântica do Lua. Em outras palavras, ela explica quais tokens são válidos, como eles podem ser combinados e o que essas combinações significam.
+
+Os construtos da linguagem serão explicados usando a notação estendida de BNF, na qual {a} significa 0 ou mais instâncias de "a", e [a] significa uma instância opcional de "a". Os não terminais são representados como "non-terminal", palavras-chave como "kword" e outros símbolos terminais como '= '. A sintaxe completa do Lua pode ser encontrada na seção §9 no final deste manual.
+
+3.1 Lexical Conventions
+
+O Lua é uma linguagem livre de formatação. Ela ignora espaços e comentários entre elementos lexicais (tokens), a menos que sejam delimitadores entre dois tokens. Em código-fonte, o Lua reconhece como espaços os caracteres de espaço ASCII padrão, alimentação de formulário, nova linha, retorno de carro, guia horizontal e guia vertical.
+
+Nomes (também chamados de identificadores) em Lua podem ser qualquer sequência de letras latinas, dígitos arábicos e sublinhados, desde que não comecem com um dígito e não sejam uma palavra reservada. Identificadores são usados para nomear variáveis, campos de tabela e rótulos.
+
+As palavras-chave a seguir são reservadas e não podem ser usadas como nomes:
+
+```
+and       break     do        else      elseif    end
+false     for       function  goto      if        in
+local     nil       not       or        repeat    return
+then      true      until     while
+```
+
+O Lua é uma linguagem sensível a maiúsculas e minúsculas: "and" é uma palavra reservada, mas "And" e "AND" são dois nomes diferentes e válidos. Como convenção, os programas devem evitar criar nomes que comecem com um sublinhado seguido de uma ou mais letras maiúsculas (como "_VERSION").
+
+As seguintes sequências de caracteres denotam outros tokens:
+
+```
++     -     *     /     %     ^     #
+&     ~     |     <<    >>    //
+==    ~=    <=    >=    <     >     =
+(     )     {     }     [     ]     ::
+;     :     ,     .     ..    ...
+```
+
+Uma string literal curta pode ser delimitada por aspas simples ou duplas correspondentes e pode conter as seguintes sequências de escape semelhantes a C: '\a' (sinal sonoro), '\b' (retrocesso), '\f' (avanço de página), '\n' (nova linha), '\r' (retorno de carro), '\t' (tabulação horizontal), '\v' (tabulação vertical), '\\' (barra invertida), '\"' (aspas duplas) e '\'' (apóstrofo). Uma barra invertida seguida de uma quebra de linha resulta em uma nova linha na string. Uma string literal curta não pode conter quebras de linha não escapadas nem escapes que não formem uma sequência de escape válida.
+
+Você pode especificar qualquer byte em uma string literal curta, incluindo zeros embutidos, por meio de seu valor numérico. Isso pode ser feito com a sequência de escape \xXX, onde XX é uma sequência de exatamente dois dígitos hexadecimais, ou com a sequência de escape \ddd, onde ddd é uma sequência de até três dígitos decimais. As strings literais podem conter quaisquer bytes de um valor de 231 ou menos.
+
+Strings literais também podem ser definidas usando um formato longo entre colchetes. Uma string longa começa com um colchete de abertura de qualquer nível e termina no primeiro colchete de fechamento do mesmo nível. Ela pode conter qualquer texto, exceto um colchete de fechamento do mesmo nível. Literais nesse formato entre colchetes podem se estender por várias linhas, não interpretam sequências de escape e ignoram colchetes longos de qualquer outro nível. Qualquer tipo de sequência de fim de linha (retorno de carro, nova linha, retorno de carro seguido de nova linha ou nova linha seguida de retorno de carro) é convertido em uma simples nova linha. Quando o colchete longo de abertura é imediatamente seguido por uma nova linha, a nova linha não é incluída na string.
+
+Exemplos de constantes numéricas válidas são:
+
+```
+3   345   0xff   0xBEBADA
+```
+
+Exemplos de constantes de ponto flutuante válidas são:
+
+```
+3.0     3.1416     314.16e-2     0.31416E1     34e1
+0x0.1E  0xA23p-4   0X1.921FB54442D18P+1
+```
+
+Um comentário começa com um duplo hífen (--) em qualquer lugar fora de uma string. Se o texto imediatamente após -- não for um colchete de abertura longo, o comentário é um comentário curto, que vai até o final da linha. Caso contrário, é um comentário longo, que vai até o colchete de fechamento longo correspondente.
+
+3.2 Variables
+
+Variáveis são locais que armazenam valores. Existem três tipos de variáveis no Lua: variáveis globais, variáveis locais e campos de tabelas.
+
+Um único nome pode denotar uma variável global ou uma variável local (ou um parâmetro formal de uma função, que é um tipo particular de variável local):
+
+```
+var ::= Name
+```
+
+Name denota identificadores (consulte §3.1).
+
+Qualquer nome de variável é considerado global a menos que seja explicitamente declarado como local (consulte §3.3.7). Variáveis locais têm escopo léxico: variáveis locais podem ser livremente acessadas por funções definidas dentro de seu escopo (consulte §3.5).
+
+Antes da primeira atribuição a uma variável, seu valor é `nil`.
+
+Colchetes são usados para indexar uma tabela:
+
+```
+var ::= prefixexp ‘[’ exp ‘]’
+```
+
+O significado dos acessos aos campos de tabela pode ser alterado por meio de metatabelas (consulte §2.4).
+
+A sintaxe `var.Name` é apenas açúcar sintático para `var["Name"]`:
+
+```
+var ::= prefixexp ‘.’ Name
+```
+
+Um acesso a uma variável global `x` é equivalente a `_ENV.x`. Devido à forma como os blocos são compilados, a variável `_ENV` em si nunca é global (consulte §2.2).
+
+3.3 Statements
+
+O Lua suporta um conjunto quase convencional de declarações, semelhante ao de outras linguagens convencionais. Esse conjunto inclui blocos, atribuições, estruturas de controle, chamadas de funções e declarações de variáveis.
+
+3.3.1 Blocks
+
+Um bloco é uma lista de declarações que são executadas sequencialmente. Você pode usar chaves para delimitar blocos:
+
+```
+do
+  -- Suas declarações aqui
+end
+```
+
+Dentro de um bloco, você pode ter várias declarações que são executadas em ordem. Blocos são frequentemente usados para controlar o escopo de variáveis. Você pode usar blocos explícitos delimitados pela palavra-chave `do` e `end` para criar blocos. Eles são úteis para controlar o escopo das declarações de variáveis. Também podem ser usados para adicionar uma instrução `return` no meio de outro bloco.
+
+Por exemplo:
+
+```lua
+do
+  local x = 10
+  local y = 20
+  print(x + y)
+end
+```
+
+Nesse exemplo, as variáveis `x` e `y` só são visíveis dentro do bloco `do...end`. Isso ajuda a evitar conflitos de nomes de variáveis em outros lugares do seu código.
+
+3.3.2 – Chunks
+
+Um "chunk" é a unidade de compilação do Lua. Sintaticamente, um "chunk" é simplesmente um bloco de código, que consiste em um conjunto de declarações.
+
+No contexto da execução, um "chunk" é tratado como o corpo de uma função anônima com um número variável de argumentos. Essa função anônima pode definir variáveis locais, receber argumentos e retornar valores. A função é sempre compilada no escopo de uma variável local externa chamada `_ENV`. Independentemente do uso dessa variável, a função resultante sempre terá `_ENV` como sua única variável externa.
+
+Um "chunk" pode ser armazenado em um arquivo ou em uma string dentro do programa hospedeiro. Para executar um "chunk", o Lua primeiro o carrega, pré-compila o código do "chunk" em instruções para uma máquina virtual e, em seguida, executa o código compilado com um interpretador para a máquina virtual.
+
+Os "chunks" também podem ser pré-compilados em uma forma binária. Você pode usar o programa `luac` e a função `string.dump` para fazer isso. Programas em forma de código-fonte e programas compilados são intercambiáveis; o Lua detecta automaticamente o tipo de arquivo e age de acordo com ele.
+
+Em resumo, um "chunk" é uma unidade de código Lua que pode ser armazenada em arquivos ou strings e executada pelo interpretador Lua.
+
+3.3.3 – Assignment
+
+Lua permite atribuições múltiplas, o que significa que você pode atribuir valores a várias variáveis de uma só vez. A sintaxe para atribuição envolve uma lista de variáveis no lado esquerdo e uma lista de expressões no lado direito, separadas por vírgulas.
+
+Aqui estão as regras de sintaxe:
+
+- `stat` denota uma declaração de atribuição.
+- `varlist` denota uma lista de variáveis no lado esquerdo da atribuição, onde `var` representa uma variável. Essas variáveis são separadas por vírgulas.
+- `explist` denota uma lista de expressões no lado direito da atribuição, onde `exp` representa uma expressão. Essas expressões também são separadas por vírgulas.
+
+Antes da atribuição, a lista de valores é ajustada para ter o mesmo comprimento da lista de variáveis. Se houver mais variáveis do que valores, as variáveis restantes receberão o valor `nil`. Se houver mais valores do que variáveis, os valores extras serão ignorados.
+
+Um ponto importante a ser observado é que, durante uma atribuição múltipla, o Lua garante que todas as leituras de variáveis ocorram antes das atribuições. Isso significa que, se você estiver lendo uma variável e atribuindo um novo valor a ela na mesma atribuição, a variável será lida antes de receber o novo valor. Por exemplo:
+
+```lua
+i = 3
+i, a[i] = i+1, 20
+```
+
+Nesse caso, `a[3]` é definido como 20, enquanto `a[4]` não é afetado, porque a leitura de `i` no contexto de `a[i]` ocorre antes de `i` ser atribuído 4.
+
+Além disso, você pode usar atribuições múltiplas para trocar valores entre variáveis. Por exemplo:
+
+```lua
+x, y = y, x
+```
+
+Essa linha troca os valores de `x` e `y`. Você pode até fazer permutações cíclicas:
+
+```lua
+x, y, z = y, z, x
+```
+
+Nesse caso, os valores de `x`, `y` e `z` são permutados cíclicamente.
+
+É importante notar que essa garantia se aplica apenas a acessos sintaticamente dentro da declaração de atribuição. Se uma função ou um metamétodo chamado durante a atribuição alterar o valor de uma variável, o Lua não dá garantias sobre a ordem desse acesso.
+
+Uma atribuição a um nome global, como `x = val`, é equivalente a uma atribuição a `_ENV.x = val`. Isso ocorre porque, como mencionado anteriormente, todas as variáveis globais são, na verdade, campos em uma tabela global chamada `_ENV`.
+
+O significado de atribuições a campos de tabelas e variáveis globais (que são, na verdade, campos de tabela) pode ser alterado por meio de metatables (consulte a seção §2.4 para obter mais informações sobre metatables).
+
+3.3.4 – Control Structures
+
+As estruturas de controle if, while e repeat em Lua têm significado convencional e sintaxe familiar. Aqui estão as definições:
+
+1. A estrutura `while`:
+   ```
+   stat ::= while exp do block end
+   ```
+   Isso executa um bloco de código enquanto uma condição for verdadeira.
+
+2. A estrutura `repeat-until`:
+   ```
+   stat ::= repeat block until exp
+   ```
+   Isso executa um bloco de código repetidamente até que uma condição seja verdadeira.
+
+3. A estrutura `if`:
+   ```
+   stat ::= if exp then block {elseif exp then block} [else block] end
+   ```
+   Isso permite que você execute diferentes blocos de código com base em condições.
+
+Além dessas, Lua também possui a estrutura `for` em duas variantes (consulte a seção 3.3.5).
+
+A expressão de condição em uma estrutura de controle pode retornar qualquer valor. Tanto `false` quanto `nil` são considerados falsos. Qualquer outro valor, incluindo o número 0 e a string vazia, é considerado verdadeiro.
+
+Em um loop `repeat-until`, o bloco interno não termina na palavra-chave `until`, mas apenas após a condição. Portanto, a condição pode se referir a variáveis locais declaradas dentro do bloco do loop.
+
+O comando `goto` transfere o controle do programa para um rótulo. Por razões sintáticas, os rótulos em Lua também são considerados declarações. Aqui estão as definições:
+
+1. Goto:
+   ```
+   stat ::= goto Name
+   ```
+
+2. Rótulo:
+   ```
+   stat ::= label
+   label ::= ‘::’ Name ‘::’
+   ```
+
+Um rótulo é visível em todo o bloco onde é definido, exceto dentro de funções aninhadas. O comando `goto` pode saltar para qualquer rótulo visível, desde que não entre no escopo de uma variável local. É importante não declarar um rótulo com o mesmo nome de um rótulo visível, mesmo que esse outro rótulo tenha sido declarado em um bloco externo.
+
+A instrução `break` encerra a execução de um loop `while`, `repeat` ou `for`, pulando para a próxima instrução após o loop:
+
+```
+stat ::= break
+```
+
+O `break` encerra o loop mais interno que o contém.
+
+A instrução `return` é usada para retornar valores de uma função ou de um bloco (que é tratado como uma função anônima). Funções podem retornar mais de um valor, então a sintaxe para a instrução `return` é a seguinte:
+
+```
+stat ::= return [explist] [‘;’]
+```
+
+A instrução `return` só pode ser escrita como a última instrução de um bloco. Se for necessário retornar no meio de um bloco, uma estrutura interna explícita pode ser usada, como na sintaxe `do return end`, porque agora `return` é a última instrução em seu bloco interno.
