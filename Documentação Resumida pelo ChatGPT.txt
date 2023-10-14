@@ -415,3 +415,1069 @@ stat ::= return [explist] [‘;’]
 ```
 
 A instrução `return` só pode ser escrita como a última instrução de um bloco. Se for necessário retornar no meio de um bloco, uma estrutura interna explícita pode ser usada, como na sintaxe `do return end`, porque agora `return` é a última instrução em seu bloco interno.
+
+3.3.5 – For Statement
+
+O comando `for` em Lua tem duas formas: uma numérica e uma genérica.
+
+**Forma Numérica**:
+O loop `for` numérico repete um bloco de código enquanto uma variável de controle percorre uma progressão aritmética. Ele tem a seguinte sintaxe:
+
+```
+stat ::= for Name ‘=’ exp ‘,’ exp [‘,’ exp] do block end
+```
+
+O identificador fornecido (Name) define a variável de controle, que é uma nova variável local ao corpo do loop (block).
+
+O loop começa avaliando uma vez as três expressões de controle. Seus valores são chamados, respectivamente, de valor inicial, limite e passo. Se o passo estiver ausente, ele assume o valor 1.
+
+Se tanto o valor inicial quanto o passo forem números inteiros, o loop é feito com inteiros; observe que o limite pode não ser um número inteiro. Caso contrário, os três valores são convertidos em números de ponto flutuante, e o loop é feito com números de ponto flutuante. Tenha cuidado com a precisão de ponto flutuante nesse caso.
+
+Depois dessa inicialização, o corpo do loop é repetido com o valor da variável de controle percorrendo uma progressão aritmética, começando pelo valor inicial, com uma diferença comum dada pelo passo. Um passo negativo cria uma sequência decrescente; um passo igual a zero gera um erro. O loop continua enquanto o valor for menor ou igual ao limite (maior ou igual ao limite para um passo negativo). Se o valor inicial já for maior que o limite (ou menor que o limite, se o passo for negativo), o corpo não é executado.
+
+Para loops inteiros, a variável de controle nunca faz wrap-around; em vez disso, o loop termina em caso de overflow.
+
+Você não deve alterar o valor da variável de controle durante o loop. Se você precisar do seu valor após o loop, atribua-o a outra variável antes de sair do loop.
+
+**Forma Genérica**:
+O comando `for` genérico funciona com funções chamadas iteradores. Em cada iteração, a função do iterador é chamada para produzir um novo valor, parando quando esse novo valor for `nil`. O comando `for` genérico tem a seguinte sintaxe:
+
+```
+stat ::= for namelist in explist do block end
+namelist ::= Name {‘,’ Name}
+```
+
+Um comando `for` como:
+
+```
+for var_1, ···, var_n in explist do body end
+```
+
+Funciona da seguinte maneira:
+
+Os nomes `var_i` declaram variáveis de loop locais ao corpo do loop. A primeira dessas variáveis é a variável de controle.
+
+O loop começa avaliando `explist` para produzir quatro valores: uma função iteradora, um estado, um valor inicial para a variável de controle e um valor de fechamento.
+
+Então, em cada iteração, Lua chama a função iteradora com dois argumentos: o estado e a variável de controle. Os resultados dessa chamada são atribuídos às variáveis de loop, seguindo as regras de atribuição múltipla (consulte §3.3.3). Se a variável de controle se tornar `nil`, o loop termina. Caso contrário, o corpo é executado e o loop passa para a próxima iteração.
+
+O valor de fechamento se comporta como uma variável a ser fechada (veja §3.3.8), que pode ser usada para liberar recursos quando o loop terminar. Caso contrário, ele não interfere no loop.
+
+Você não deve alterar o valor da variável de controle durante o loop.
+
+3.3.6 – Function Calls as Statements
+
+Para permitir possíveis efeitos colaterais, as chamadas de função podem ser executadas como declarações:
+
+```
+stat ::= functioncall
+```
+
+Nesse caso, todos os valores retornados pela função são descartados. Chamadas de função são explicadas em §3.4.10.
+
+3.3.7 – Local Declarations
+
+Variáveis locais podem ser declaradas em qualquer lugar dentro de um bloco. A declaração pode incluir uma inicialização:
+
+```
+stat ::= local attnamelist [‘=’ explist]
+attnamelist ::=  Name attrib {‘,’ Name attrib}
+```
+
+Se presente, uma atribuição inicial tem a mesma semântica de uma atribuição múltipla (veja §3.3.3). Caso contrário, todas as variáveis são inicializadas com nil.
+
+Cada nome de variável pode ser seguido por um atributo (um nome entre colchetes angulares):
+
+```
+attrib ::= [‘<’ Name ‘>’]
+```
+
+Existem dois atributos possíveis: const, que declara uma variável constante, ou seja, uma variável que não pode ser atribuída após a sua inicialização; e close, que declara uma variável a ser fechada (veja §3.3.8). Uma lista de variáveis pode conter no máximo uma variável a ser fechada.
+
+Um bloco também é um bloco (veja §3.3.2), e assim variáveis locais podem ser declaradas em um bloco explícito. 
+
+As regras de visibilidade para variáveis locais são explicadas em §3.5.
+
+3.3.8 – To-be-closed Variables
+
+Uma variável a ser fechada se comporta como uma variável local constante, com a diferença de que seu valor é fechado sempre que a variável sai de escopo, incluindo a terminação normal do bloco, a saída do bloco por meio de break/goto/return ou a saída devido a um erro.
+
+Aqui, fechar um valor significa chamar seu metamétodo __close. Ao chamar o metamétodo, o próprio valor é passado como primeiro argumento e o objeto de erro que causou a saída (se houver) é passado como segundo argumento; se não houve erro, o segundo argumento é nil.
+
+O valor atribuído a uma variável a ser fechada deve ter um metamétodo __close ou ser um valor falso. (nil e false são ignorados como valores a serem fechados.)
+
+Se várias variáveis a serem fechadas saem de escopo no mesmo evento, elas são fechadas na ordem inversa em que foram declaradas.
+
+Se ocorrer algum erro durante a execução de um método de fechamento, esse erro é tratado como um erro no código regular onde a variável foi definida. Após um erro, os outros métodos de fechamento pendentes ainda serão chamados.
+
+Se uma coroutine entra em estado de suspensão e nunca é retomada novamente, algumas variáveis podem nunca sair de escopo e, portanto, nunca serão fechadas. (Essas variáveis são aquelas criadas dentro da coroutine e em escopo no ponto em que a coroutine entrou em suspensão.) Da mesma forma, se uma coroutine terminar com um erro, ela não desfaz a pilha, portanto, não fechará nenhuma variável. Em ambos os casos, você pode usar finalizadores ou chamar coroutine.close para fechar as variáveis. No entanto, se a coroutine foi criada por meio de coroutine.wrap, sua função correspondente fechará a coroutine em caso de erros.
+
+3.4 – Expressions
+
+As expressões básicas em Lua incluem:
+
+1. `prefixexp`: Esta expressão pode ser uma variável, uma chamada de função ou um par de parênteses que contêm outra expressão.
+2. `nil`, `false`, `true`: São valores literais que representam nulo, falso e verdadeiro, respectivamente.
+3. `Numeral`: Representa números literais, como inteiros ou números de ponto flutuante.
+4. `LiteralString`: Representa strings literais.
+5. `functiondef`: É usado para definir funções.
+6. `tableconstructor`: É usado para criar tabelas.
+7. `'...'`: Representa um vararg, que só pode ser usado dentro de funções variádicas.
+8. `exp binop exp`: Expressões que envolvem operadores binários, como operadores aritméticos, bitwise, relacionais, lógicos ou de concatenação.
+9. `unop exp`: Expressões que envolvem operadores unários, como operadores de negação, bitwise NOT, lógicos NOT ou operador de comprimento.
+10. `prefixexp`: Pode ser uma variável, uma chamada de função ou um par de parênteses que contêm outra expressão.
+
+Essas são as expressões básicas em Lua que podem ser combinadas para formar expressões mais complexas. Você pode se referir às seções subsequentes do manual para obter detalhes sobre operadores e expressões específicas.
+
+3.4.1 – Arithmetic Operators
+
+Lua oferece os seguintes operadores aritméticos:
+
+- `+`: adição
+- `-`: subtração
+- `*`: multiplicação
+- `/`: divisão de ponto flutuante
+- `//`: divisão inteira (arredondamento em direção a menos infinito)
+- `%`: módulo (resto da divisão com arredondamento em direção a menos infinito)
+- `^`: exponenciação
+- `-` (unário): negativo
+
+A maioria dos operadores aritméticos opera da seguinte forma:
+
+- Se ambos os operandos são inteiros, a operação é realizada como uma operação de números inteiros e o resultado é um número inteiro.
+- Se ambos os operandos são números (inteiros ou de ponto flutuante), eles são convertidos em números de ponto flutuante, a operação é realizada seguindo as regras da aritmética de ponto flutuante da máquina e o resultado é um número de ponto flutuante.
+
+Exponenciação e divisão de ponto flutuante (`/`) sempre convertem seus operandos em números de ponto flutuante e o resultado é sempre um número de ponto flutuante. O operador `^` é usado para realizar exponenciação e segue as regras da função ISO C `pow`.
+
+A divisão inteira (`//`) é uma divisão que arredonda o quociente em direção a menos infinito, resultando no valor inteiro inferior mais próximo da divisão dos operandos.
+
+O operador de módulo (`%`) é definido como o resto da divisão que arredonda o quociente em direção a menos infinito (divisão inteira).
+
+Em caso de estouro em operações de números inteiros, todas as operações retornam valores que "dão a volta" ao estourar.
+
+3.4.2 – Bitwise Operators
+
+Lua suporta os seguintes operadores bit a bit:
+
+- `&`: AND bit a bit
+- `|`: OR bit a bit
+- `~`: OR exclusivo bit a bit
+- `>>`: deslocamento para a direita
+- `<<`: deslocamento para a esquerda
+- `~` (unário): NOT bit a bit
+
+Todas as operações bit a bit convertem seus operandos em números inteiros (veja a seção 3.4.3), operam em todos os bits desses números inteiros e o resultado é um número inteiro.
+
+Tanto o deslocamento para a direita quanto o deslocamento para a esquerda preenchem os bits vagos com zeros. Deslocamentos negativos ocorrem na outra direção; deslocamentos com valores absolutos iguais ou superiores ao número de bits em um número inteiro resultam em zero, pois todos os bits são deslocados para fora.
+
+3.4.3 – Coercions and Conversions
+
+Lua fornece algumas conversões automáticas entre tipos e representações em tempo de execução. Operadores bit a bit sempre convertem operandos float em inteiros. Exponenciação e divisão float sempre convertem operandos inteiros em floats. Todas as outras operações aritméticas aplicadas a números mistos (inteiros e floats) convertem o operando inteiro em um float. A API C também converte tanto inteiros em floats quanto floats em inteiros, conforme necessário. Além disso, a concatenação de strings aceita números como argumentos, além de strings.
+
+Em uma conversão de inteiro para float, se o valor inteiro tiver uma representação exata como float, esse é o resultado. Caso contrário, a conversão obtém o valor representável mais próximo, maior ou menor. Esse tipo de conversão nunca falha.
+
+A conversão de float para inteiro verifica se o float tem uma representação exata como inteiro (ou seja, o float tem um valor integral e está dentro da faixa de representação de inteiros). Se isso acontecer, essa representação é o resultado. Caso contrário, a conversão falha.
+
+Vários lugares em Lua convertem strings em números quando necessário. Em particular, a biblioteca de strings define metamétodos que tentam converter strings em números em todas as operações aritméticas. Se a conversão falhar, a biblioteca chama o metamétodo do outro operando (se presente) ou gera um erro. Note que operadores bit a bit não fazem essa coerção.
+
+É sempre uma boa prática não confiar nas conversões implícitas de strings para números, pois elas nem sempre são aplicadas; em particular, "1"==1 é falso e "1"<1 gera um erro (veja a seção 3.4.4). Essas coerções existem principalmente por motivos de compatibilidade e podem ser removidas em versões futuras da linguagem.
+
+Uma string é convertida em um inteiro ou um float seguindo sua sintaxe e as regras do analisador léxico Lua. A string também pode ter espaços em branco no início e no final e um sinal. Todas as conversões de strings para números aceitam tanto um ponto quanto o caractere de marca local atual como caractere de base. (No entanto, o analisador léxico Lua aceita apenas um ponto.) Se a string não for um numeral válido, a conversão falhará. Se necessário, o resultado dessa primeira etapa é então convertido para um subtipo de número específico, seguindo as regras anteriores para conversões entre floats e inteiros.
+
+A conversão de números para strings usa um formato legível por humanos não especificado. Para converter números em strings de uma maneira específica, use a função string.format.
+
+3.4.4 – Relational Operators
+
+Lua oferece os seguintes operadores relacionais:
+
+==: igualdade
+~=: desigualdade
+<: menor que
+>: maior que
+<=: menor ou igual
+>=: maior ou igual
+Esses operadores sempre resultam em false ou true.
+
+Igualdade (==) primeiro compara o tipo de seus operandos. Se os tipos forem diferentes, o resultado é false. Caso contrário, os valores dos operandos são comparados. Strings são iguais se tiverem o mesmo conteúdo de bytes. Números são iguais se denotarem o mesmo valor matemático.
+
+Tabelas, userdata e threads são comparados por referência: dois objetos são considerados iguais apenas se forem o mesmo objeto. Toda vez que você cria um novo objeto (uma tabela, um userdata ou uma thread), esse novo objeto é diferente de qualquer objeto previamente existente. Uma função é sempre igual a si mesma. Funções com qualquer diferença detectável (comportamento diferente, definição diferente) são sempre diferentes. Funções criadas em momentos diferentes, mas sem diferenças detectáveis, podem ser classificadas como iguais ou não (dependendo dos detalhes de cache internos).
+
+Você pode alterar a forma como Lua compara tabelas e userdata usando o metamétodo __eq (veja a seção 2.4).
+
+As comparações de igualdade não convertem strings em números ou vice-versa. Portanto, "0"==0 avalia como false, e t[0] e t["0"] denotam entradas diferentes em uma tabela.
+
+O operador ~= é exatamente a negação da igualdade (==).
+
+Os operadores de ordem funcionam da seguinte forma. Se ambos os argumentos forem números, eles serão comparados de acordo com seus valores matemáticos, independentemente de seus subtipos. Caso contrário, se ambos os argumentos forem strings, seus valores serão comparados de acordo com a localidade atual. Caso contrário, Lua tenta chamar o metamétodo __lt ou o metamétodo __le (veja a seção 2.4). Uma comparação a > b é traduzida para b < a e a >= b é traduzida para b <= a.
+
+Seguindo o padrão IEEE 754, o valor especial NaN é considerado nem menor que, nem igual a, nem maior que qualquer valor, incluindo a si mesmo.
+
+3.4.5 – Logical Operators
+
+Os operadores lógicos em Lua são and, or e not. Assim como as estruturas de controle (veja a seção 3.3.4), todos os operadores lógicos consideram tanto false quanto nil como falso e qualquer outra coisa como verdadeiro.
+
+O operador de negação not sempre retorna false ou true. O operador de conjunção and retorna seu primeiro argumento se esse valor for false ou nil; caso contrário, and retorna seu segundo argumento. O operador de disjunção or retorna seu primeiro argumento se este valor for diferente de nil e false; caso contrário, or retorna seu segundo argumento. Tanto and quanto or usam avaliação de curto-circuito; ou seja, o segundo operando é avaliado apenas se necessário. Aqui estão alguns exemplos:
+
+     10 or 20            --> 10
+     10 or error()       --> 10
+     nil or "a"          --> "a"
+     nil and 10          --> nil
+     false and error()   --> false
+     false and nil       --> false
+     false or nil        --> nil
+     10 and 20           --> 20
+
+3.4.6 – Concatenation
+
+O operador de concatenação de strings em Lua é representado por dois pontos ('..'). Se ambos os operandos forem strings ou números, então os números são convertidos em strings em um formato não especificado (veja a seção 3.4.3). Caso contrário, o metamétodo __concat é chamado (veja a seção 2.4).
+
+3.4.7 – The Length Operator
+
+O operador de comprimento é denotado pelo operador de prefixo unário #.
+
+O comprimento de uma string é o número de bytes. (Esse é o significado usual do comprimento de uma string quando cada caractere ocupa um byte.)
+
+O operador de comprimento aplicado a uma tabela retorna uma "borda" na tabela. Uma "borda" em uma tabela t é qualquer número inteiro não negativo que satisfaz a seguinte condição:
+
+    (borda == 0 ou t[borda] ~= nil) e
+    (t[borda + 1] == nil ou borda == math.maxinteger)
+Em outras palavras, uma "borda" é qualquer índice inteiro positivo presente na tabela que é seguido por um índice ausente, além de dois casos limites: zero, quando o índice 1 está ausente; e o valor máximo para um inteiro, quando esse índice está presente. Note que chaves que não são inteiros positivos não interferem nas "bordas".
+
+Uma tabela com exatamente uma "borda" é chamada de sequência. Por exemplo, a tabela {10, 20, 30, 40, 50} é uma sequência, pois tem apenas uma "borda" (5). A tabela {10, 20, 30, nil, 50} tem duas "bordas" (3 e 5) e, portanto, não é uma sequência. (O nil no índice 4 é chamado de "buraco".) A tabela {nil, 20, 30, nil, nil, 60, nil} tem três "bordas" (0, 3 e 6), portanto também não é uma sequência. A tabela {} é uma sequência com "borda" 0.
+
+Quando t é uma sequência, #t retorna sua única "borda", que corresponde à noção intuitiva do comprimento da sequência. Quando t não é uma sequência, #t pode retornar qualquer uma de suas "bordas". (A exata depende de detalhes da representação interna da tabela, que por sua vez pode depender de como a tabela foi populada e dos endereços de memória de suas chaves não numéricas.)
+
+O cálculo do comprimento de uma tabela tem um tempo máximo garantido de O(log n), onde n é a maior chave inteira na tabela.
+
+Um programa pode modificar o comportamento do operador de comprimento para qualquer valor, exceto strings, através do metamétodo __len (veja a seção 2.4).
+
+3.4.8 – Precedence
+
+O operador de precedência é uma parte importante da sintaxe do Lua que determina a ordem em que as expressões são avaliadas quando contêm vários operadores com diferentes prioridades. A seguir, um resumo da precedência dos operadores no Lua, da menor para a maior prioridade:
+
+1. or
+2. and
+3. <     >     <=    >=    ~=    ==
+4. |
+5. ~
+6. &
+7. <<    >>
+8. ..
+9. +     -
+10. *     /     //    %
+11. Operadores unários (not   #     -     ~)
+12. ^
+
+Isso significa que operadores com maior prioridade são avaliados antes dos de menor prioridade. Se você precisar alterar a precedência padrão, pode usar parênteses para especificar explicitamente a ordem de avaliação de uma expressão complexa.
+
+Lembre-se de que os operadores de concatenação ('..') e de exponenciação ('^') são associativos à direita, o que significa que são avaliados da direita para a esquerda, enquanto todos os outros operadores binários são associativos à esquerda e são avaliados da esquerda para a direita.
+
+3.4.9 – Table Constructors
+
+Construtores de tabela são expressões que criam tabelas no Lua. Sempre que um construtor é avaliado, uma nova tabela é criada. Você pode usá-lo para criar uma tabela vazia ou para criar uma tabela e inicializar alguns de seus campos. A sintaxe geral dos construtores é a seguinte:
+
+```
+tableconstructor ::= ‘{’ [fieldlist] ‘}’
+fieldlist ::= field {fieldsep field} [fieldsep]
+field ::= ‘[’ exp ‘]’ ‘=’ exp | Name ‘=’ exp | exp
+fieldsep ::= ‘,’ | ‘;’
+```
+
+Cada campo na forma [exp1] = exp2 adiciona à nova tabela uma entrada com a chave exp1 e o valor exp2. Um campo na forma nome = exp é equivalente a ["nome"] = exp. Campos na forma exp são equivalentes a [i] = exp, onde i são inteiros consecutivos começando em 1. A ordem das atribuições em um construtor é indefinida.
+
+Por exemplo:
+
+```
+a = { [f(1)] = g; "x", "y"; x = 1, f(x), [30] = 23; 45 }
+```
+
+é equivalente a:
+
+```
+do
+   local t = {}
+   t[f(1)] = g
+   t[1] = "x"
+   t[2] = "y"
+   t.x = 1
+   t[3] = f(x)
+   t[30] = 23
+   t[4] = 45
+   a = t
+end
+```
+
+A ordem das atribuições no construtor é indefinida, a menos que haja chaves repetidas. O último campo na lista pode ter um separador opcional, o que é conveniente para código gerado por máquina.
+
+3.4.10 – Function Calls
+
+Uma chamada de função no Lua tem a seguinte sintaxe:
+
+```
+functioncall ::= prefixexp args
+```
+
+Em uma chamada de função, primeiro prefixexp e args são avaliados. Se o valor de prefixexp for uma função, essa função é chamada com os argumentos fornecidos. Caso contrário, se presente, o metamétodo __call de prefixexp é chamado: seu primeiro argumento é o valor de prefixexp, seguido pelos argumentos originais da chamada.
+
+A forma
+
+```
+functioncall ::= prefixexp ‘:’ Name args
+```
+
+pode ser usada para simular métodos. Uma chamada v:name(args) é um açúcar sintático para v.name(v, args), exceto que v é avaliado apenas uma vez.
+
+Os argumentos têm a seguinte sintaxe:
+
+```
+args ::= ‘(’ [explist] ‘)’
+args ::= tableconstructor
+args ::= LiteralString
+```
+
+Todas as expressões de argumento são avaliadas antes da chamada. Uma chamada na forma f{fields} é açúcar sintático para f({fields}); ou seja, a lista de argumentos é uma única tabela. Uma chamada na forma f'string' (ou f"string" ou f[[string]]) é açúcar sintático para f('string'); ou seja, a lista de argumentos é uma única string literal.
+
+Uma chamada na forma de retorno de return functioncall que não está no escopo de uma variável a ser fechada é chamada de chamada de cauda. O Lua implementa chamadas de cauda adequadas (ou recursão de cauda apropriada): em uma chamada de cauda, a função chamada reutiliza a entrada de pilha da função chamadora. Portanto, não há limite para o número de chamadas de cauda aninhadas que um programa pode executar. No entanto, uma chamada de cauda apaga qualquer informação de depuração sobre a função chamadora. Observe que uma chamada de cauda só ocorre com uma sintaxe específica, onde o return tem uma única chamada de função como argumento, e está fora do escopo de qualquer variável a ser fechada. Esta sintaxe faz com que a função chamadora retorne exatamente os retornos da função chamada, sem qualquer ação intermediária. Portanto, nenhum dos exemplos a seguir são chamadas de cauda:
+
+```
+return (f(x))        -- resultados ajustados para 1
+return 2 * f(x)      -- resultado multiplicado por 2
+return x, f(x)       -- resultados adicionais
+f(x); return         -- resultados descartados
+return x or f(x)     -- resultados ajustados para 1
+```
+
+3.4.11 – Function Definitions
+
+A sintaxe para definição de funções é a seguinte:
+
+```
+functiondef ::= function funcbody
+funcbody ::= ‘(’ [parlist] ‘)’ block end
+```
+
+O seguinte açúcar sintático simplifica a definição de funções:
+
+```
+stat ::= function funcname funcbody
+stat ::= local function Name funcbody
+funcname ::= Name {‘.’ Name} [‘:’ Name]
+```
+
+A declaração
+
+```
+function f () body end
+```
+
+se traduz para
+
+```
+f = function () body end
+```
+
+A declaração
+
+```
+function t.a.b.c.f () body end
+```
+
+se traduz para
+
+```
+t.a.b.c.f = function () body end
+```
+
+A declaração
+
+```
+local function f () body end
+```
+
+se traduz para
+
+```
+local f; f = function () body end
+```
+
+não para
+
+```
+local f = function () body end
+```
+
+(Isso faz diferença apenas quando o corpo da função contém referências a `f`.)
+
+Uma definição de função é uma expressão executável, cujo valor tem o tipo função. Quando o Lua pré-compila um bloco, todos os corpos de função também são pré-compilados, mas ainda não são criados. Em seguida, sempre que o Lua executa a definição de função, a função é instanciada (ou fechada). Essa instância de função, ou fechamento, é o valor final da expressão.
+
+Os parâmetros funcionam como variáveis locais que são inicializadas com os valores dos argumentos:
+
+```
+parlist ::= namelist [‘,’ ‘...’] | ‘...’
+```
+
+Quando uma função Lua é chamada, ela ajusta sua lista de argumentos ao comprimento de sua lista de parâmetros (consulte §3.4.12), a menos que a função seja uma função variádica, o que é indicado por três pontos ('...') no final de sua lista de parâmetros. Uma função variádica não ajusta sua lista de argumentos; em vez disso, coleta todos os argumentos extras e os fornece à função por meio de uma expressão variádica, que também é escrita como três pontos. O valor dessa expressão é uma lista de todos os argumentos extras reais, semelhante a uma função com múltiplos resultados (consulte §3.4.12).
+
+Como exemplo, considere as seguintes definições:
+
+```
+function f(a, b) end
+function g(a, b, ...) end
+function r() return 1,2,3 end
+```
+
+Então, temos a seguinte correspondência de argumentos para parâmetros e para a expressão variádica:
+
+```
+     CHAMADA           PARÂMETROS
+     
+     f(3)             a=3, b=nil
+     f(3, 4)          a=3, b=4
+     f(3, 4, 5)       a=3, b=4
+     f(r(), 10)       a=1, b=10
+     f(r())           a=1, b=2
+     
+     g(3)             a=3, b=nil, ... -->  (nada)
+     g(3, 4)          a=3, b=4,   ... -->  (nada)
+     g(3, 4, 5, 8)    a=3, b=4,   ... -->  5  8
+     g(5, r())        a=5, b=1,   ... -->  2  3
+```
+
+Resultados são retornados usando a declaração de retorno (consulte §3.3.4). Se o controle atingir o final de uma função sem encontrar uma declaração de retorno, a função retorna sem resultados.
+
+Há um limite dependente do sistema no número de valores que uma função pode retornar. Esse limite é garantido ser maior que 1000.
+
+A sintaxe de dois pontos é usada para emular métodos, adicionando um parâmetro extra implícito `self` à função. Portanto, a declaração
+
+```
+function t.a.b.c:f (params) body end
+```
+
+é açúcar sintático para
+
+```
+t.a.b.c.f = function (self, params) body end
+```
+
+3.4.12 – Lists of expressions, multiple results, and adjustment
+
+Em Lua, chamadas de função e expressões vararg (que podem resultar em múltiplos valores) são chamadas de "expressões de múltiplos resultados". Quando uma expressão de múltiplos resultados é usada como o último elemento em uma lista de expressões, todos os resultados dessa expressão são adicionados à lista de valores produzidos pelas outras expressões da lista.
+
+Esses são os lugares onde o Lua espera uma lista de expressões:
+
+1. Uma declaração `return`, por exemplo, `return e1, e2, e3` (consulte §3.3.4).
+2. Um construtor de tabela, por exemplo, `{e1, e2, e3}` (consulte §3.4.9).
+3. Os argumentos de uma chamada de função, por exemplo, `foo(e1, e2, e3)` (consulte §3.4.10).
+4. Uma atribuição múltipla, por exemplo, `a , b, c = e1, e2, e3` (consulte §3.3.3).
+5. Uma declaração local, por exemplo, `local a , b, c = e1, e2, e3` (consulte §3.3.7).
+6. Os valores iniciais em um loop genérico `for`, por exemplo, `for k in e1, e2, e3 do ... end` (consulte §3.3.5).
+
+Nos últimos quatro casos, a lista de valores da lista de expressões deve ser ajustada para um comprimento específico: o número de parâmetros em uma chamada para uma função não variádica (consulte §3.4.11), o número de variáveis em uma atribuição múltipla ou uma declaração local e exatamente quatro valores para um loop genérico. O ajuste segue as seguintes regras: se houver mais valores do que o necessário, os valores extras são descartados; se houver menos valores do que o necessário, a lista é estendida com nils. Quando a lista de expressões termina com uma expressão de múltiplos resultados, todos os resultados dessa expressão entram na lista de valores antes do ajuste.
+
+Quando uma expressão de múltiplos resultados é usada em uma lista de expressões sem ser o último elemento ou em um local onde a sintaxe espera uma única expressão, o Lua ajusta a lista de resultados dessa expressão para um elemento. Como caso particular, a sintaxe espera uma única expressão dentro de uma expressão entre parênteses, portanto, adicionar parênteses em torno de uma expressão de múltiplos resultados força-a a produzir exatamente um resultado.
+
+Em geral, raramente precisamos usar uma expressão vararg em um local onde a sintaxe espera uma única expressão. Geralmente, é mais simples adicionar um parâmetro regular antes da parte variádica e usar esse parâmetro.
+
+Aqui estão alguns exemplos de uso de expressões de múltiplos resultados:
+
+1. `print(x, f())` - imprime `x` e todos os resultados de `f()`.
+2. `print(x, (f()))` - imprime `x` e o primeiro resultado de `f()`.
+3. `print(f(), x)` - imprime o primeiro resultado de `f()` e `x`.
+4. `print(1 + f())` - imprime 1 adicionado ao primeiro resultado de `f()`.
+5. `local x = ...` - `x` recebe o primeiro argumento vararg.
+6. `x,y = ...` - `x` recebe o primeiro argumento vararg, `y` recebe o segundo argumento vararg.
+7. `x,y,z = w, f()` - `x` recebe `w`, `y` recebe o primeiro resultado de `f()`, `z` recebe o segundo resultado de `f()`.
+8. `x,y,z = f()` - `x` recebe o primeiro resultado de `f()`, `y` recebe o segundo resultado de `f()`, `z` recebe o terceiro resultado de `f()`.
+9. `x,y,z = f(), g()` - `x` recebe o primeiro resultado de `f()`, `y` recebe o primeiro resultado de `g()`, `z` recebe o segundo resultado de `g()`.
+10. `x,y,z = (f())` - `x` recebe o primeiro resultado de `f()`, `y` e `z` recebem nil.
+11. `return f()` - retorna todos os resultados de `f()`.
+12. `return x, ...` - retorna `x` e todos os argumentos vararg recebidos.
+13. `return x,y,f()` - retorna `x`, `y` e todos os resultados de `f()`.
+14. `{f()}` - cria uma lista com todos os resultados de `f()`.
+15. `{...}` - cria uma lista com todos os argumentos vararg.
+16. `{f(), 5}` - cria uma lista com o primeiro resultado de `f()` e 5.
+
+3.5 – Visibility Rules
+
+Lua é uma linguagem com escopo léxico. O escopo de uma variável local começa na primeira instrução após a sua declaração e dura até a última instrução não vazia do bloco mais interno que inclui a declaração. Instruções vazias incluem rótulos e instruções vazias. Considere o exemplo a seguir:
+
+```lua
+x = 10                -- variável global
+do                    -- novo bloco
+  local x = x         -- novo 'x', com valor 10
+  print(x)            --> 10
+  x = x + 1
+  do                  -- outro bloco
+    local x = x + 1   -- outro 'x'
+    print(x)          --> 12
+  end
+  print(x)            --> 11
+end
+print(x)              --> 10  (a variável global)
+```
+
+Observe que, em uma declaração como `local x = x`, o novo `x` que está sendo declarado ainda não está em escopo, e, portanto, o segundo `x` se refere à variável externa.
+
+Devido às regras de escopo léxico, variáveis locais podem ser livremente acessadas por funções definidas dentro de seu escopo. Uma variável local usada por uma função interna é chamada de upvalue (ou variável local externa) dentro da função interna.
+
+Observe que cada execução de uma declaração local define novas variáveis locais. Considere o exemplo a seguir:
+
+```lua
+a = {}
+local x = 20
+for i = 1, 10 do
+  local y = 0
+  a[i] = function () y = y + 1; return x + y end
+end
+```
+
+O loop cria dez closures (ou seja, dez instâncias da função anônima). Cada uma dessas closures usa uma variável y diferente, enquanto todas elas compartilham a mesma variável x.
+
+
+
+
+
+
+
+
+
+
+
+5 – The Auxiliary Library
+
+A biblioteca auxiliar fornece várias funções convenientes para interagir C com Lua. Enquanto a API básica fornece as funções primitivas para todas as interações entre C e Lua, a biblioteca auxiliar oferece funções de nível mais alto para algumas tarefas comuns.
+
+Todas as funções e tipos da biblioteca auxiliar são definidos no arquivo de cabeçalho "lauxlib.h" e têm um prefixo "luaL_".
+
+Todas as funções na biblioteca auxiliar são construídas em cima da API básica e, portanto, não fornecem nada que não possa ser feito com essa API. No entanto, o uso da biblioteca auxiliar garante mais consistência ao seu código.
+
+Várias funções na biblioteca auxiliar usam internamente alguns espaços adicionais na pilha. Quando uma função na biblioteca auxiliar usa menos de cinco espaços, ela não verifica o tamanho da pilha; ela simplesmente assume que há slots suficientes.
+
+Várias funções na biblioteca auxiliar são usadas para verificar argumentos de funções C. Como a mensagem de erro é formatada para argumentos (por exemplo, "argumento ruim #1"), você não deve usar essas funções para outros valores na pilha.
+
+Funções chamadas de "luaL_check*" sempre geram um erro se a verificação não for satisfeita.
+
+
+
+
+
+
+
+
+
+
+
+
+
+6 – The Standard Libraries
+
+As bibliotecas padrão do Lua fornecem funções úteis que são implementadas em C por meio da API C. Algumas dessas funções fornecem serviços essenciais para a linguagem (por exemplo, tipo e getmetatable); outras fornecem acesso a serviços externos (por exemplo, E/S); e outras poderiam ser implementadas em Lua, mas, por diferentes razões, merecem uma implementação em C (por exemplo, table.sort).
+
+Todas as bibliotecas são implementadas por meio da API C oficial e são fornecidas como módulos C separados. A menos que seja especificado de outra forma, essas funções da biblioteca não ajustam o número de argumentos para seus parâmetros esperados. Por exemplo, uma função documentada como foo(arg) não deve ser chamada sem um argumento.
+
+A notação "fail" significa um valor falso que representa algum tipo de falha. (Atualmente, "fail" é igual a "nil", mas isso pode mudar em versões futuras. A recomendação é sempre testar o sucesso dessas funções com (not status), em vez de (status == nil).
+
+Atualmente, o Lua possui as seguintes bibliotecas padrão:
+
+biblioteca básica (§6.1);
+biblioteca de coroutine (§6.2);
+biblioteca de pacotes (§6.3);
+manipulação de strings (§6.4);
+suporte básico a UTF-8 (§6.5);
+manipulação de tabelas (§6.6);
+funções matemáticas (§6.7) (sin, log, etc.);
+entrada e saída (§6.8);
+facilidades do sistema operacional (§6.9);
+facilidades de depuração (§6.10).
+Exceto pelas bibliotecas básica e de pacotes, cada biblioteca fornece todas as suas funções como campos de uma tabela global ou como métodos de seus objetos.
+
+Para ter acesso a essas bibliotecas, o programa host em C deve chamar a função luaL_openlibs, que abre todas as bibliotecas padrão. Alternativamente, o programa host pode abri-las individualmente usando luaL_requiref para chamar luaopen_base (para a biblioteca básica), luaopen_package (para a biblioteca de pacotes), luaopen_coroutine (para a biblioteca de coroutine), luaopen_string (para a biblioteca de strings), luaopen_utf8 (para a biblioteca UTF-8), luaopen_table (para a biblioteca de tabelas), luaopen_math (para a biblioteca matemática), luaopen_io (para a biblioteca de E/S), luaopen_os (para a biblioteca do sistema operacional) e luaopen_debug (para a biblioteca de depuração). Essas funções são declaradas em lualib.h.
+
+6.1 – Basic Functions
+
+A biblioteca básica do Lua fornece funções essenciais para a linguagem. Aqui está uma breve descrição de cada uma dessas funções:
+
+1. `assert(v [, message])`: Gera um erro se o valor de seu argumento `v` for falso (ou seja, `nil` ou `false`); caso contrário, retorna todos os seus argumentos. Em caso de erro, `message` é o objeto de erro; quando ausente, o padrão é "assertion failed!"
+
+2. `collectgarbage([opt [, arg]])`: Fornece uma interface genérica para o coletor de lixo. Pode executar várias ações com base em seu primeiro argumento `opt`, como coletar lixo, parar, reiniciar, contar memória em uso e muito mais.
+
+3. `dofile([filename])`: Abre o arquivo especificado e executa seu conteúdo como um fragmento Lua. Quando chamado sem argumentos, executa o conteúdo da entrada padrão (stdin). Retorna todos os valores retornados pelo fragmento.
+
+4. `error(message [, level])`: Gera um erro com a mensagem especificada e nunca retorna. Pode ser usado para sinalizar erros em seu código Lua.
+
+5. `_G`: Uma variável global que mantém o ambiente global (consulte §2.2).
+
+6. `getmetatable(object)`: Retorna a metatable de um objeto, ou `nil` se o objeto não tiver uma metatable. Se a metatable do objeto tiver um campo `__metatable`, retorna o valor associado a ele.
+
+7. `ipairs(t)`: Retorna um iterador para as entradas numéricas de uma tabela, permitindo a iteração sobre as associações de chave-valor (1, t[1]), (2, t[2]), ... até o primeiro índice ausente.
+
+8. `load(chunk [, chunkname [, mode [, env]]])`: Carrega um fragmento Lua e o compila em uma função. Pode carregar um fragmento de uma string ou de uma função que fornece o fragmento. Retorna a função compilada.
+
+9. `loadfile([filename [, mode [, env]])`: Semelhante ao `load`, mas carrega o fragmento de um arquivo ou da entrada padrão. Retorna a função compilada.
+
+10. `next(table [, index])`: Permite a iteração por todas as entradas de uma tabela. Retorna o próximo índice e seu valor associado. Quando chamado com `nil` como segundo argumento, retorna o primeiro índice e valor.
+
+11. `pairs(t)`: Fornece um iterador para as entradas de uma tabela, permitindo a iteração sobre todas as associações de chave-valor.
+
+12. `pcall(f [, arg1, ...])`: Chama uma função em modo protegido, capturando erros e retornando um código de status. Se a chamada for bem-sucedida, retorna `true` e todos os resultados da chamada; em caso de erro, retorna `false` e o objeto de erro.
+
+13. `print(...)`: Recebe qualquer número de argumentos e imprime seus valores no stdout, convertendo cada argumento em uma string.
+
+14. `rawequal(v1, v2)`: Verifica se `v1` é igual a `v2` sem invocar o metamétodo `__eq`. Retorna um booleano.
+
+15. `rawget(table, index)`: Obtém o valor real de `table[index]`, sem usar o metamétodo `__index`.
+
+16. `rawlen(v)`: Retorna o tamanho do objeto `v`, que deve ser uma tabela ou uma string, sem invocar o metamétodo `__len`.
+
+17. `rawset(table, index, value)`: Define o valor real de `table[index]` como `value`, sem usar o metamétodo `__newindex`. Retorna a tabela.
+
+18. `select(index, ...)`: Seleciona argumentos a partir de um índice, permitindo índices negativos para contar a partir do final. Se `index` for a string "#", retorna o número total de argumentos extras recebidos.
+
+19. `setmetatable(table, metatable)`: Define a metatable de uma tabela. Se `metatable` for `nil`, remove a metatable. Se a metatable original tiver um campo `__metatable`, gera um erro.
+
+20. `tonumber(e [, base])`: Tenta converter seu argumento em um número. Pode especificar uma base numérica para a conversão.
+
+21. `tostring(v)`: Converte um valor de qualquer tipo em uma string em formato legível.
+
+22. `type(v)`: Retorna o tipo de seu único argumento em formato de string.
+
+23. `_VERSION`: Uma variável global que mantém a versão atual do Lua em execução.
+
+24. `warn(msg1, ...)`: Emite um aviso com uma mensagem composta pela concatenação de todos os argumentos. Pode ser usado para sinalizar avisos em seu código Lua.
+
+25
+
+. `xpcall(f, msgh [, arg1, ...])`: Funciona como `pcall`, mas permite definir um novo manipulador de mensagens `msgh`.
+
+Essas funções desempenham um papel fundamental no desenvolvimento de aplicativos em Lua e são usadas para realizar várias tarefas, como manipulação de erros, E/S, iteração de tabelas e manipulação de strings.
+
+6.2 – Coroutine Manipulation
+
+A biblioteca de manipulação de corotinas fornece funções e operações para criar, controlar e gerenciar corotinas no Lua. Corotinas são como threads leves que permitem a execução concorrente de código. Aqui estão as funções disponíveis nesta biblioteca:
+
+1. `coroutine.close(co)`: Fecha a corotina `co`, fechando todas as suas variáveis pendentes para fechamento e colocando a corotina em um estado morto. A corotina fornecida deve estar morta ou suspensa. Em caso de erro (seja o erro original que parou a corotina ou erros em métodos de fechamento), retorna `false` mais o objeto de erro; caso contrário, retorna `true`.
+
+2. `coroutine.create(f)`: Cria uma nova corotina com o corpo `f`. `f` deve ser uma função. Retorna esta nova corotina, um objeto com o tipo "thread".
+
+3. `coroutine.isyieldable([co])`: Retorna `true` quando a corotina `co` pode ser suspensa. O valor padrão para `co` é a corotina em execução. Uma corotina é suspensível se não for a corotina principal e não estiver dentro de uma função C não suspensível.
+
+4. `coroutine.resume(co [, val1, ...])`: Inicia ou continua a execução da corotina `co`. Na primeira vez que você retomar uma corotina, ela começa a executar seu corpo. Os valores `val1, ...` são passados como argumentos para a função do corpo. Se a corotina tiver sido suspensa, a retomada a reiniciará; os valores `val1, ...` são passados como resultados da suspensão.
+
+   Se a corotina for executada sem erros, `resume` retorna `true` mais quaisquer valores passados para `yield` (quando a corotina suspende) ou quaisquer valores retornados pela função do corpo (quando a corotina termina). Se ocorrer um erro, `resume` retorna `false` mais a mensagem de erro.
+
+5. `coroutine.running()`: Retorna a corotina em execução e um booleano, `true` quando a corotina em execução é a principal.
+
+6. `coroutine.status(co)`: Retorna o status da corotina `co` como uma string: "running", se a corotina estiver em execução (ou seja, se for a que chamou o status); "suspended", se a corotina estiver suspensa em uma chamada a `yield`, ou se ainda não tiver começado a executar; "normal", se a corotina estiver ativa, mas não em execução (ou seja, se retomou outra corotina); e "dead", se a corotina terminou sua função do corpo ou se parou com um erro.
+
+7. `coroutine.wrap(f)`: Cria uma nova corotina com corpo `f`. `f` deve ser uma função. Retorna uma função que retoma a corotina cada vez que é chamada. Quaisquer argumentos passados para esta função se comportam como argumentos extras para `resume`. A função retorna os mesmos valores retornados por `resume`, exceto o primeiro booleano. Em caso de erro, a função fecha a corotina e propaga o erro.
+
+8. `coroutine.yield(...)`: Suspende a execução da corotina chamadora. Quaisquer argumentos para `yield` são passados como resultados extras para `resume`.
+
+Essas funções são usadas para criar e gerenciar corotinas e permitem a execução concorrente e cooperativa de código Lua. As corotinas são úteis para criar estados de máquinas, gerenciar tarefas em segundo plano e muito mais.
+
+6.3 – Modules
+
+A biblioteca de pacotes no Lua fornece funcionalidades para carregar módulos. Aqui estão as funções e variáveis disponíveis nesta biblioteca:
+
+1. `require (modname)`: Carrega o módulo especificado. A função começa por verificar a tabela `package.loaded` para determinar se `modname` já está carregado. Se estiver, `require` retorna o valor armazenado em `package.loaded[modname]`. Caso contrário, tenta encontrar um carregador para o módulo.
+
+   Para encontrar um carregador, `require` é guiado pela tabela `package.searchers`. Cada item nesta tabela é uma função de pesquisa que procura o módulo de uma maneira específica. Alterando esta tabela, você pode alterar como `require` procura um módulo.
+
+   Primeiro, `require` verifica `package.preload[modname]`. Se tiver um valor, esse valor (que deve ser uma função) é o carregador. Caso contrário, `require` procura por um carregador Lua usando o caminho armazenado em `package.path`. Se isso também falhar, ele procura por um carregador C usando o caminho em `package.cpath`. Se isso também falhar, ele tenta um carregador tudo-em-um (consulte `package.searchers`).
+
+   Assim que um carregador é encontrado, `require` chama o carregador com dois argumentos: `modname` e um valor extra, um dado de carregador, também retornado pelo pesquisador. O dado do carregador pode ser qualquer valor útil para o módulo; para os pesquisadores padrão, ele indica onde o carregador foi encontrado. (Por exemplo, se o carregador veio de um arquivo, esse valor extra é o caminho do arquivo.) Se o carregador retornar um valor não nulo, `require` atribui o valor retornado a `package.loaded[modname]`. Se o carregador não retornar um valor não nulo e não tiver atribuído nenhum valor a `package.loaded[modname]`, `require` atribui `true` a esta entrada. De qualquer forma, `require` retorna o valor final de `package.loaded[modname]`. Além desse valor, `require` também retorna como segundo resultado o dado do carregador retornado pelo pesquisador, que indica como `require` encontrou o módulo.
+
+   Se houver algum erro no carregamento ou execução do módulo, ou se não for possível encontrar um carregador para o módulo, `require` gera um erro.
+
+2. `package.config`: Uma string que descreve algumas configurações em tempo de compilação para pacotes.
+
+3. `package.cpath`: Uma string com o caminho usado por `require` para procurar um carregador C.
+
+4. `package.loaded`: Uma tabela usada por `require` para controlar quais módulos já estão carregados. Quando você requer um módulo `modname` e `package.loaded[modname]` não for `false`, `require` simplesmente retorna o valor armazenado lá.
+
+   Esta variável é apenas uma referência à tabela real; as atribuições a esta variável não alteram a tabela usada por `require`. A tabela real é armazenada no registro C (consulte §4.3), indexada pela chave `LUA_LOADED_TABLE`, uma string.
+
+5. `package.loadlib (libname, funcname)`: Faz a ligação dinâmica do programa hospedeiro com a biblioteca C `libname`.
+
+   Se `funcname` for "*", então apenas faz a ligação com a biblioteca, tornando os símbolos exportados pela biblioteca disponíveis para outras bibliotecas dinamicamente vinculadas. Caso contrário, ele procura uma função `funcname` dentro da biblioteca e retorna essa função como uma função C. Portanto, `funcname` deve seguir o protótipo `lua_CFunction` (consulte `lua_CFunction`).
+
+   Esta é uma função de baixo nível que contorna completamente o sistema de pacotes e módulos. Diferentemente do `require`, ela não realiza nenhuma busca de caminho e não adiciona automaticamente extensões. `libname` deve ser o nome completo do arquivo da biblioteca C, incluindo, se necessário, um caminho e uma extensão. `funcname` deve ser o nome exato exportado pela biblioteca C (o que pode depender do compilador C e do linkador usados).
+
+   Essa funcionalidade não é suportada pelo ISO C e, portanto, só está disponível em algumas plataformas (Windows, Linux, Mac OS X, Solaris, BSD e outros sistemas Unix que suportam o padrão dlfcn).
+
+   Essa função é inerentemente insegura, pois permite ao Lua chamar qualquer função em qualquer biblioteca dinâmica legível no sistema. (Lua chama qualquer função assumindo que a função possui um protótipo adequado e respeita um protocolo adequado (consulte `lua_CFunction`). Portanto, chamar uma função arbitrária em uma biblioteca dinâmica
+
+ arbitrária na maioria das vezes resulta em uma violação de acesso.)
+
+6. `package.path`: Uma string com o caminho usado por `require` para procurar um carregador Lua.
+
+   Na inicialização, o Lua inicializa essa variável com o valor da variável de ambiente `LUA_PATH_5_4` ou da variável de ambiente `LUA_PATH`, ou com um caminho padrão definido em `luaconf.h`, caso essas variáveis de ambiente não sejam definidas. Um ";;" no valor da variável de ambiente é substituído pelo caminho padrão.
+
+7. `package.preload`: Uma tabela para armazenar carregadores para módulos específicos (consulte `require`).
+
+   Esta variável é apenas uma referência à tabela real; as atribuições a esta variável não alteram a tabela usada por `require`. A tabela real é armazenada no registro C (consulte §4.3), indexada pela chave `LUA_PRELOAD_TABLE`, uma string.
+
+8. `package.searchers`: Uma tabela usada por `require` para controlar como encontrar módulos.
+
+   Cada entrada nesta tabela é uma função de pesquisa. Ao procurar um módulo, `require` chama cada um desses pesquisadores em ordem crescente, com o nome do módulo (o argumento dado a `require`) como seu único argumento. Se o pesquisador encontrar o módulo, ele retorna outra função, o carregador de módulo, além de um valor extra, um dado de carregador, que será passado a esse carregador e retornado como segundo resultado por `require`. Se não conseguir encontrar o módulo, ele retorna uma string explicando o motivo (ou `nil` se não tiver nada a dizer).
+
+   O Lua inicializa esta tabela com quatro funções de pesquisa.
+
+   - O primeiro pesquisador simplesmente procura um carregador na tabela `package.preload`.
+
+   - O segundo pesquisador procura um carregador como uma biblioteca Lua, usando o caminho armazenado em `package.path`. A pesquisa é feita conforme descrito na função `package.searchpath`.
+
+   - O terceiro pesquisador procura um carregador como uma biblioteca C, usando o caminho fornecido pela variável `package.cpath`. Novamente, a pesquisa é feita conforme descrito na função `package.searchpath`. Por exemplo, se o caminho C for a string
+
+     "./?.so;./?.dll;/usr/local/?/init.so"
+   o pesquisador do módulo foo tentará abrir os arquivos ./foo.so, ./foo.dll e /usr/local/foo/init.so, nessa ordem. Assim que encontrar uma biblioteca C, esse pesquisador primeiro usa uma facilidade de ligação dinâmica para vincular o aplicativo à biblioteca. Em seguida, ele tenta encontrar uma função C dentro da biblioteca a ser usada como carregador. O nome desta função C é a string "luaopen_" concatenada com uma cópia do nome do módulo, onde cada ponto é substituído por um sublinhado. Além disso, se o nome do módulo tiver um hífen, o sufixo após (e incluindo) o primeiro hífen é removido. Por exemplo, se o nome do módulo for a.b.c-v2.1, o nome da função será luaopen_a_b_c.
+
+   - O quarto pesquisador tenta um carregador tudo-em-um. Ele pesquisa o caminho C para uma biblioteca para o nome raiz do módulo fornecido. Por exemplo, ao requerer a.b.c, ele pesquisará uma biblioteca C para a. Se encontrado, ele a examinará em busca de uma função de abertura para o submódulo; em nosso exemplo, isso seria luaopen_a_b_c. Com esta facilidade, um pacote pode empacotar vários submódulos C em uma única biblioteca, mantendo cada submódulo com sua função de abertura original.
+
+   Todos os pesquisadores, exceto o primeiro (pré-carga), retornam como valor extra o caminho do arquivo onde o módulo foi encontrado, conforme retornado por `package.searchpath`. O primeiro pesquisador sempre retorna a string ":preload:".
+
+   Os pesquisadores não devem gerar erros e não devem ter efeitos colaterais no Lua. (Eles podem ter efeitos colaterais em C, por exemplo, ao vincular o aplicativo a uma biblioteca.)
+
+6.4 – String Manipulation
+
+A biblioteca de manipulação de strings no Lua fornece funções genéricas para manipular strings, como encontrar e extrair substrings, correspondência de padrões e formatação de strings. Quando você indexa uma string no Lua, o primeiro caractere está na posição 1 (não na posição 0, como em C). Índices também podem ser negativos e são interpretados como indexação reversa, a partir do final da string. Portanto, o último caractere está na posição -1 e assim por diante.
+
+As funções da biblioteca de strings estão disponíveis dentro da tabela `string`. Além disso, ela define uma metatabela para strings, onde o campo `__index` aponta para a tabela `string`. Portanto, você pode usar as funções de string no estilo orientado a objetos. Por exemplo, `string.byte(s, i)` pode ser escrito como `s:byte(i)`.
+
+A biblioteca de strings assume codificações de caracteres de um byte.
+
+Aqui estão algumas das principais funções da biblioteca de strings:
+
+1. `string.byte(s [, i [, j]])`: Retorna os códigos numéricos internos dos caracteres `s[i]`, `s[i+1]`, ..., `s[j]`. Os valores padrão para `i` e `j` são 1; o valor padrão para `j` é `i`. Esses índices são corrigidos seguindo as mesmas regras da função `string.sub`. Observe que os códigos numéricos nem sempre são portáteis entre plataformas.
+
+2. `string.char(···)`: Recebe zero ou mais inteiros e retorna uma string com o comprimento igual ao número de argumentos, em que cada caractere tem o código numérico interno igual ao seu argumento correspondente. Observe que os códigos numéricos nem sempre são portáteis entre plataformas.
+
+3. `string.dump(function [, strip])`: Retorna uma string contendo uma representação binária (um pedaço binário) da função fornecida, de modo que uma posterior carga nesta string retorne uma cópia da função (mas com novos upvalues). Se `strip` for um valor verdadeiro, a representação binária pode não incluir todas as informações de depuração sobre a função para economizar espaço. As funções com upvalues têm apenas o número de upvalues salvo. Quando (re)carregados, esses upvalues recebem instâncias novas. Você pode usar a biblioteca `debug` para serializar e recarregar os upvalues de uma função de acordo com suas necessidades.
+
+4. `string.find(s, pattern [, init [, plain]])`: Procura a primeira correspondência do padrão em `s`. Se encontrar uma correspondência, `find` retorna os índices em `s` onde esta ocorrência começa e termina; caso contrário, retorna `nil`. Um terceiro argumento numérico opcional `init` especifica onde começar a pesquisa; o valor padrão é 1 e pode ser negativo. Um quarto argumento opcional verdadeiro `plain` desativa as funcionalidades de correspondência de padrões, fazendo com que a função realize uma operação de "encontrar substring" simples, sem considerar caracteres no padrão como mágicos. Se o padrão tiver capturas, então, em uma correspondência bem-sucedida, os valores capturados também são retornados, após os dois índices.
+
+5. `string.format(formatstring, ···)`: Retorna uma versão formatada de seu número variável de argumentos seguindo a descrição dada em seu primeiro argumento, que deve ser uma string. A string de formatação segue as mesmas regras da função `sprintf` em C. As únicas diferenças são que os especificadores de conversão e modificadores F, n, *, h, L e l não são suportados, e há um especificador adicional, `q`. O especificador `q` formata booleanos, nulos, números e strings de tal forma que o resultado é uma constante válida no código-fonte do Lua. Os booleanos e nulos são escritos de maneira óbvia (true, false, nil). Os números de ponto flutuante são escritos em hexadecimal, para preservar a precisão total. Uma string é escrita entre aspas duplas, usando sequências de escape quando necessário para garantir que ela possa ser lida com segurança pelo interpretador Lua. Este especificador não suporta modificadores (flags, largura, precisão).
+
+6. `string.gmatch(s, pattern [, init])`: Retorna uma função iteradora que, cada vez que é chamada, retorna
+
+ as próximas capturas do padrão na string `s`. Se o padrão não especificar capturas, a correspondência inteira é produzida em cada chamada. Um terceiro argumento numérico opcional `init` especifica onde começar a pesquisa; o valor padrão é 1 e pode ser negativo.
+
+Essas são apenas algumas das funções da biblioteca de strings no Lua. Você pode encontrar mais funções e detalhes na documentação oficial do Lua.
+
+6.4.1 – Patterns
+
+Em Lua, os "padrões" são usados para realizar correspondências de padrões em strings e são descritos usando strings regulares. Você pode usar padrões com funções como `string.find`, `string.gmatch`, `string.gsub` e `string.match`. Padrões são uma forma poderosa de buscar e manipular substrings dentro de strings. Aqui estão alguns elementos-chave dos padrões em Lua:
+
+**Classes de caracteres:**
+- Uma classe de caracteres é usada para representar um conjunto de caracteres.
+- Você pode usar combinações específicas de classes de caracteres para descrever vários conjuntos de caracteres.
+- Por exemplo, `%a` representa todas as letras, `%d` representa todos os dígitos, `%s` representa todos os caracteres de espaço, e assim por diante.
+- Você pode usar `[conjunto]` para representar uma classe personalizada, especificando os caracteres que deseja no conjunto.
+- `[^conjunto]` representa o complemento do conjunto.
+
+**Item de padrão:**
+- Um item de padrão pode ser uma única classe de caracteres, que corresponde a qualquer caractere nessa classe.
+- Você pode aplicar quantificadores a itens de padrão:
+  - `*` corresponde a zero ou mais ocorrências da classe de caracteres.
+  - `+` corresponde a uma ou mais ocorrências.
+  - `-` corresponde a zero ou mais ocorrências (a menor sequência possível).
+  - `?` corresponde a zero ou uma ocorrência.
+- `%n` corresponde a uma substring igual à `n`-ésima string capturada (veja abaixo).
+- `%bxy` corresponde a strings com caracteres `x` e `y` equilibrados.
+- `%f[conjunto]` é um padrão de fronteira que corresponde a uma string vazia na posição em que o próximo caractere pertence ao conjunto, mas o caractere anterior não.
+
+**Padrão:**
+- Um padrão é uma sequência de itens de padrão.
+- Você pode usar `^` para ancorar a correspondência no início da string de entrada e `$` para ancorá-la no final.
+- Você pode usar padrões para pesquisar por padrões específicos em strings, fazer substituições, extrair dados, entre outras operações. Eles são uma ferramenta flexível e poderosa para manipulação de strings em Lua.
+
+6.4.2 – Format Strings for Pack and Unpack
+
+As informações fornecidas descrevem a sintaxe das sequências de formatos usadas com as funções `string.pack`, `string.packsize` e `string.unpack` em Lua. Essas sequências de formatos são usadas para especificar como os dados devem ser empacotados ou desempacotados em strings binárias.
+
+Aqui estão os principais formatos de conversão disponíveis:
+
+1. `<`: Define a ordem little endian (menos significativo primeiro).
+2. `>`: Define a ordem big endian (mais significativo primeiro).
+3. `=`: Define a ordem nativa, que depende da arquitetura do sistema.
+4. `![n]`: Define o alinhamento máximo para n (o padrão é o alinhamento nativo).
+5. `b`: Um byte assinado (char).
+6. `B`: Um byte não assinado (char).
+7. `h`: Um número inteiro curto assinado (tamanho nativo).
+8. `H`: Um número inteiro curto não assinado (tamanho nativo).
+9. `l`: Um número inteiro longo assinado (tamanho nativo).
+10. `L`: Um número inteiro longo não assinado (tamanho nativo).
+11. `j`: Um número lua_Integer.
+12. `J`: Um número lua_Unsigned.
+13. `T`: Um número size_t (tamanho nativo).
+14. `i[n]`: Um número inteiro assinado com n bytes (o padrão é o tamanho nativo).
+15. `I[n]`: Um número inteiro não assinado com n bytes (o padrão é o tamanho nativo).
+16. `f`: Um número de ponto flutuante (tamanho nativo).
+17. `d`: Um número de ponto flutuante de precisão dupla (tamanho nativo).
+18. `n`: Um número lua_Number.
+19. `cn`: Uma string de tamanho fixo com n bytes.
+20. `z`: Uma string zero-terminada.
+21. `s[n]`: Uma string precedida pelo seu comprimento codificado como um número não assinado com n bytes (o padrão é um size_t).
+22. `x`: Um byte de preenchimento.
+23. `Xop`: Um item vazio que é alinhado de acordo com a opção op (que, de outra forma, é ignorada).
+24. `' '`: (espaço) ignorado.
+
+Observe que algumas opções, como `b`, `B`, `h`, `H`, `l`, `L`, `j`, `J`, `T`, `f`, `d`, `n`, `cn`, e `z`, correspondem a argumentos em `string.pack` ou resultados em `string.unpack`. As opções `!n`, `sn`, `in` e `In` têm limites específicos para n.
+
+Além disso, a opção de alinhamento (`![n]`) permite especificar o alinhamento desejado para os dados empacotados.
+
+É importante observar que as funções de empacotamento (packing) não emulam corretamente o comportamento de formatos mistos-endian (quando um sistema tem bytes de ordens diferentes).
+
+6.5 – UTF-8 Support
+
+Esta seção descreve as funções da biblioteca UTF-8 em Lua, que fornecem suporte básico para a codificação UTF-8. Essas funções estão contidas na tabela `utf8`. É importante observar que essa biblioteca lida apenas com a manipulação da codificação UTF-8 e não fornece suporte para operações de classificação de caracteres ou outras operações que dependam do significado dos caracteres.
+
+Aqui estão as principais funções da biblioteca UTF-8:
+
+1. `utf8.char(···)`: Recebe zero ou mais números inteiros, converte cada um em sua sequência de bytes UTF-8 correspondente e retorna uma string com a concatenação de todas essas sequências.
+
+2. `utf8.charpattern`: Uma string que representa um padrão (não uma função) que corresponde a uma única sequência de bytes UTF-8. Esse padrão assume que o sujeito é uma string UTF-8 válida.
+
+3. `utf8.codes(s [, lax])`: Retorna os valores para que a construção `for p, c in utf8.codes(s) do body end` itere sobre todos os caracteres UTF-8 na string `s`, com `p` sendo a posição (em bytes) e `c` o ponto de código de cada caractere. Ele gera um erro se encontrar alguma sequência de bytes inválida.
+
+4. `utf8.codepoint(s [, i [, j [, lax]]])`: Retorna os pontos de código (como inteiros) de todos os caracteres em `s` que começam entre a posição do byte `i` e `j` (ambos incluídos). O valor padrão para `i` é 1 e para `j` é `i`. Ele gera um erro se encontrar alguma sequência de bytes inválida.
+
+5. `utf8.len(s [, i [, j [, lax]]])`: Retorna o número de caracteres UTF-8 na string `s` que começam entre as posições `i` e `j` (ambos inclusos). O valor padrão para `i` é 1 e para `j` é -1. Se encontrar alguma sequência de bytes inválida, retorna "fail" junto com a posição do primeiro byte inválido.
+
+6. `utf8.offset(s, n [, i])`: Retorna a posição (em bytes) onde a codificação do n-ésimo caractere de `s` (contando a partir da posição `i`) começa. Um valor `n` negativo obtém caracteres antes da posição `i`. O valor padrão para `i` é 1 quando `n` é não negativo e `#s + 1` caso contrário, para que `utf8.offset(s, -n)` obtenha o deslocamento do n-ésimo caractere a partir do final da string. Se o caractere especificado não estiver no sujeito nem imediatamente após o final dele, a função retorna "fail".
+
+Como um caso especial, quando `n` é 0, a função retorna o início da codificação do caractere que contém o i-ésimo byte de `s`.
+
+Observe que essas funções presumem que `s` é uma string UTF-8 válida. Elas podem ser úteis ao trabalhar com texto multilíngue e processar sequências de caracteres UTF-8.
+
+6.6 – Table Manipulation
+
+A biblioteca de manipulação de tabelas em Lua fornece funções genéricas para manipulação de tabelas. Todas as funções são disponibilizadas dentro da tabela `table`. Aqui estão as principais funções dessa biblioteca:
+
+1. `table.concat (list [, sep [, i [, j]])`: Dada uma lista onde todos os elementos são strings ou números, esta função retorna a string `list[i]..sep..list[i+1] ··· sep..list[j]`. O valor padrão para `sep` é a string vazia, o valor padrão para `i` é 1 e o valor padrão para `j` é `#list`. Se `i` for maior do que `j`, retorna uma string vazia.
+
+2. `table.insert (list, [pos,] value)`: Insere o elemento `value` na posição `pos` na lista, deslocando os elementos `list[pos]`, `list[pos+1]`, ···, `list[#list]`. O valor padrão para `pos` é `#list+1`, de modo que uma chamada `table.insert(t, x)` insere `x` no final da lista `t`.
+
+3. `table.move (a1, f, e, t [,a2])`: Move elementos da tabela `a1` para a tabela `a2`, executando a atribuição múltipla equivalente a: `a2[t], ··· = a1[f], ···, a1[e]`. O valor padrão para `a2` é `a1`. O intervalo de destino pode se sobrepor ao intervalo de origem. O número de elementos a serem movidos deve caber em um número inteiro Lua. Retorna a tabela de destino `a2`.
+
+4. `table.pack (···)`: Retorna uma nova tabela com todos os argumentos armazenados nas chaves 1, 2, etc., e com um campo "n" contendo o número total de argumentos. Observe que a tabela resultante pode não ser uma sequência se alguns argumentos forem nulos.
+
+5. `table.remove (list [, pos])`: Remove da lista o elemento na posição `pos`, retornando o valor do elemento removido. Quando `pos` é um número inteiro entre 1 e `#list`, ele desloca os elementos `list[pos+1]`, `list[pos+2], ···, `list[#list]` e apaga o elemento `list[#list]`. O índice `pos` também pode ser 0 quando `#list` é 0 ou `#list + 1`. O valor padrão para `pos` é `#list`, de modo que uma chamada `table.remove(l)` remove o último elemento da lista `l`.
+
+6. `table.sort (list [, comp])`: Ordena os elementos da lista em uma ordem específica, in-place, de `list[1]` até `list[#list]`. Se `comp` for fornecido, deve ser uma função que recebe dois elementos da lista e retorna `true` quando o primeiro elemento deve vir antes do segundo na ordem final. Se `comp` não for fornecido, o operador padrão `<` do Lua é usado em seu lugar.
+
+7. `table.unpack (list [, i [, j]])`: Retorna os elementos da lista fornecida. Esta função é equivalente a `return list[i], list[i+1], ···, list[j]`. Por padrão, `i` é 1 e `j` é `#list`.
+
+Essas funções são úteis para manipular tabelas em Lua, permitindo a concatenação de strings, inserção e remoção de elementos, classificação e desempacotamento de tabelas.
+
+6.7 – Mathematical Functions
+
+A biblioteca matemática em Lua fornece funções matemáticas básicas. Todas as funções e constantes estão disponíveis dentro da tabela `math`. Aqui estão algumas das funções matemáticas disponíveis:
+
+1. `math.abs (x)`: Retorna o valor máximo entre `x` e `-x`. (inteiro/flutuante)
+
+2. `math.acos (x)`: Retorna o cosseno inverso de `x` (em radianos).
+
+3. `math.asin (x)`: Retorna o seno inverso de `x` (em radianos).
+
+4. `math.atan (y [, x])`: Retorna a tangente inversa de `y/x` (em radianos), usando os sinais de ambos os argumentos para encontrar o quadrante do resultado. Também lida corretamente com o caso de `x` ser zero.
+
+5. `math.ceil (x)`: Retorna o menor valor inteiro maior ou igual a `x`.
+
+6. `math.cos (x)`: Retorna o cosseno de `x` (assumido em radianos).
+
+7. `math.deg (x)`: Converte o ângulo `x` de radianos para graus.
+
+8. `math.exp (x)`: Retorna o valor `e^x` (onde `e` é a base dos logaritmos naturais).
+
+9. `math.floor (x)`: Retorna o maior valor inteiro menor ou igual a `x`.
+
+10. `math.fmod (x, y)`: Retorna o resto da divisão de `x` por `y` que arredonda o quociente em direção a zero. (inteiro/flutuante)
+
+11. `math.huge`: O valor de float `HUGE_VAL`, um valor maior do que qualquer outro valor numérico.
+
+12. `math.log (x [, base])`: Retorna o logaritmo de `x` na base fornecida. O padrão para a base é `e` (para que a função retorne o logaritmo natural de `x`).
+
+13. `math.max (x, ···)`: Retorna o argumento com o valor máximo, de acordo com o operador Lua `<`.
+
+14. `math.maxinteger`: Um número inteiro com o valor máximo para um inteiro.
+
+15. `math.min (x, ···)`: Retorna o argumento com o valor mínimo, de acordo com o operador Lua `<`.
+
+16. `math.mininteger`: Um número inteiro com o valor mínimo para um inteiro.
+
+17. `math.modf (x)`: Retorna a parte integral de `x` e a parte fracionária de `x`. O segundo resultado é sempre um número em ponto flutuante.
+
+18. `math.pi`: O valor de π.
+
+19. `math.rad (x)`: Converte o ângulo `x` de graus para radianos.
+
+20. `math.random ([m [, n]])`: Quando chamado sem argumentos, retorna um número em ponto flutuante pseudo-aleatório com distribuição uniforme no intervalo [0,1). Quando chamado com dois inteiros `m` e `n`, `math.random` retorna um número inteiro pseudo-aleatório com distribuição uniforme no intervalo `[m, n]`.
+
+21. `math.randomseed ([x [, y]])`: Quando chamado com pelo menos um argumento, os parâmetros inteiros `x` e `y` são combinados em uma semente de 128 bits que é usada para reinicializar o gerador pseudo-aleatório. Quando chamado sem argumentos, Lua gera uma semente com uma fraca tentativa de aleatoriedade.
+
+22. `math.sin (x)`: Retorna o seno de `x` (assumido em radianos).
+
+23. `math.sqrt (x)`: Retorna a raiz quadrada de `x`. (Você também pode usar a expressão `x^0.5` para calcular esse valor.)
+
+24. `math.tan (x)`: Retorna a tangente de `x` (assumido em radianos).
+
+25. `math.tointeger (x)`: Se o valor `x` puder ser convertido em um número inteiro, retorna esse número inteiro. Caso contrário, retorna "fail".
+
+26. `math.type (x)`: Retorna "inteiro" se `x` for um número inteiro, "flutuante" se for um número em ponto flutuante ou "fail" se `x` não for um número.
+
+27. `math.ult (m, n)`: Retorna um valor booleano, `true` se e somente se o inteiro `m` for menor que o inteiro `n` quando comparados como números não assinados.
+
+6.8 – Input and Output Facilities
+
+A biblioteca de E/S (entrada e saída) em Lua fornece funcionalidades para operações de arquivo. Existem dois estilos diferentes de manipulação de arquivo: um que usa identificadores de arquivo implícitos e outro que usa identificadores de arquivo explícitos. O estilo implícito usa as operações padrão para definir um arquivo de entrada padrão e um arquivo de saída padrão, e todas as operações de entrada/saída são realizadas nesses arquivos padrão. O estilo explícito envolve a criação e manipulação direta de identificadores de arquivo.
+
+Aqui estão algumas das funções disponíveis na biblioteca de E/S:
+
+**Usando Identificadores de Arquivo Implícitos:**
+
+1. `io.close([file])`: Fecha um arquivo. Se chamada sem argumentos, fecha o arquivo de saída padrão.
+
+2. `io.flush()`: Descarrega o conteúdo armazenado em buffer no arquivo de saída padrão.
+
+3. `io.input([file])`: Define o arquivo especificado como o arquivo de entrada padrão. Se chamada sem argumentos, retorna o arquivo de entrada padrão atual.
+
+4. `io.lines([filename, ...])`: Abre o arquivo especificado e retorna um iterador que itera pelas linhas do arquivo. Ele fecha automaticamente o arquivo quando não há mais dados para ler.
+
+5. `io.open(filename, [mode])`: Abre um arquivo com o nome especificado e retorna um identificador de arquivo.
+
+6. `io.output([file])`: Define o arquivo especificado como o arquivo de saída padrão.
+
+7. `io.popen(prog, [mode])`: Inicia um programa em um processo separado e retorna um identificador de arquivo para ler ou escrever dados para o programa.
+
+8. `io.read(...)`: Lê dados do arquivo de entrada padrão de acordo com os formatos especificados.
+
+9. `io.tmpfile()`: Retorna um identificador de arquivo para um arquivo temporário que é automaticamente removido quando o programa termina.
+
+**Usando Identificadores de Arquivo Explícitos:**
+
+1. `file:close()`: Fecha o arquivo.
+
+2. `file:flush()`: Descarrega o conteúdo armazenado em buffer no arquivo.
+
+3. `file:lines(...)`: Retorna um iterador que lê o arquivo de acordo com os formatos especificados.
+
+4. `file:read(...)`: Lê dados do arquivo de acordo com os formatos especificados.
+
+5. `file:seek([whence, offset])`: Define e obtém a posição atual no arquivo.
+
+6. `file:setvbuf(mode, [size])`: Define o modo de armazenamento em buffer para o arquivo.
+
+7. `file:write(...)`: Escreve os valores fornecidos no arquivo.
+
+Além disso, você tem acesso a identificadores de arquivo padrão, como `io.stdin`, `io.stdout` e `io.stderr`, que representam a entrada padrão, a saída padrão e a saída de erro padrão, respectivamente.
+
+A biblioteca de E/S em Lua retorna "fail" em caso de erro, juntamente com uma mensagem de erro e um código de erro específico do sistema em caso de falha, e um valor não falso em caso de sucesso. Tenha em mente que as mensagens de erro e os códigos de erro específicos do sistema podem não ser thread-safe em sistemas não POSIX, pois dependem da variável global C `errno`.
+
+Observe que as funções `io.close` e `file:close` são responsáveis por fechar os arquivos, mas os arquivos também podem ser fechados automaticamente quando os identificadores de arquivo são coletados pelo garbage collector. O comportamento exato depende da implementação específica de Lua.
+
+6.9 – Operating System Facilities
+
+A biblioteca do sistema operacional (`os`) em Lua fornece funções relacionadas a operações do sistema operacional. Aqui estão algumas das funções disponíveis na biblioteca do sistema operacional:
+
+1. `os.clock()`: Retorna uma aproximação da quantidade de tempo em segundos de CPU usada pelo programa. Isso é retornado pela função clock subjacente do ISO C.
+
+2. `os.date([format [, time]])`: Retorna uma string ou uma tabela contendo a data e a hora, formatadas de acordo com o formato de string fornecido.
+
+3. `os.difftime(t2, t1)`: Retorna a diferença, em segundos, entre o tempo `t1` e o tempo `t2`. Esses tempos são valores retornados pela função `os.time`.
+
+4. `os.execute([command])`: Executa um comando por meio de um shell do sistema operacional. Retorna `true` se o comando for bem-sucedido ou `fail` em caso de falha.
+
+5. `os.exit([code [, close]])`: Encerra o programa host chamando a função ISO C `exit`. O código de saída padrão é `EXIT_SUCCESS` se `code` for verdadeiro, `EXIT_FAILURE` se `code` for falso, ou o valor de `code` se for um número. Opcionalmente, você pode especificar se deseja fechar o estado Lua antes de sair.
+
+6. `os.getenv(varname)`: Retorna o valor da variável de ambiente do processo chamada `varname`. Retorna `fail` se a variável não estiver definida.
+
+7. `os.remove(filename)`: Exclui o arquivo com o nome especificado. Retorna `fail` e uma mensagem de erro em caso de falha, ou `true` em caso de sucesso.
+
+8. `os.rename(oldname, newname)`: Renomeia o arquivo ou diretório de `oldname` para `newname`. Retorna `fail` e uma mensagem de erro em caso de falha, ou `true` em caso de sucesso.
+
+9. `os.setlocale(locale [, category])`: Define a localização atual do programa. `locale` é uma string específica do sistema que descreve uma localização, e `category` é uma categoria opcional que especifica o que deve ser alterado. A função retorna o nome da nova localização ou `fail` se a solicitação não puder ser atendida.
+
+10. `os.time([table])`: Retorna a hora atual quando chamada sem argumentos, ou uma hora que representa a data e hora local especificada na tabela fornecida. A tabela deve ter campos `year`, `month`, `day`, `hour`, `min`, `sec` e `isdst` (opcional). Retorna um número cujo significado depende do seu sistema.
+
+11. `os.tmpname()`: Retorna uma string com um nome de arquivo que pode ser usado para um arquivo temporário. O arquivo deve ser explicitamente aberto antes de seu uso e removido quando não for mais necessário.
+
+Lembre-se de que o comportamento exato dessas funções pode variar dependendo do sistema operacional em que você está executando seu programa Lua.
+
+6.10 – The Debug Library
+
+A biblioteca de depuração (`debug`) em Lua fornece funcionalidades que permitem a inspeção e manipulação de informações relacionadas à execução de programas Lua. Ela é especialmente útil para depuração e introspecção de código. Aqui estão algumas das funções disponíveis na biblioteca de depuração:
+
+1. `debug.debug()`: Entra em um modo interativo com o usuário, permitindo a execução de comandos e a inspeção de variáveis. Pode ser usado para depuração interativa.
+
+2. `debug.gethook([thread])`: Retorna as configurações atuais do gancho (hook) do depurador para o thread especificado, incluindo a função de gancho atual, a máscara de gancho e a contagem de gancho.
+
+3. `debug.getinfo([thread,] f [, what])`: Retorna informações sobre uma função ou nível de pilha de chamadas. Você pode especificar quais informações deseja recuperar usando a string `what`. Essas informações incluem detalhes sobre o código, variáveis, origem e muito mais.
+
+4. `debug.getlocal([thread,] f, local)`: Retorna o nome e o valor de uma variável local com base em seu índice na função na pilha de chamadas.
+
+5. `debug.getmetatable(value)`: Retorna a metatabela associada a um valor ou `nil` se o valor não tiver uma metatabela.
+
+6. `debug.getregistry()`: Retorna a tabela de registro, que é usada para armazenar informações arbitrariamente associadas a valores.
+
+7. `debug.getupvalue(f, up)`: Retorna o nome e o valor da upvalue (variável externa) com base em seu índice na função. As upvalues são as variáveis locais externas usadas por uma função.
+
+8. `debug.getuservalue(udata, n)`: Retorna o valor de usuário associado ao n-ésimo valor do userdata e um booleano que indica se o userdata possui esse valor de usuário.
+
+9. `debug.sethook([thread,] hook, mask [, count])`: Define uma função como o gancho de depuração, permitindo que você rastreie eventos, como chamadas de função, retornos de função e linhas de código. A máscara e a contagem especificam quando o gancho é chamado.
+
+10. `debug.setlocal([thread,] level, local, value)`: Atribui um valor a uma variável local com base em seu índice na função na pilha de chamadas.
+
+11. `debug.setmetatable(value, table)`: Define a metatabela associada a um valor.
+
+12. `debug.setupvalue(f, up, value)`: Atribui um valor a uma upvalue com base em seu índice na função. Upvalues são variáveis externas usadas por funções.
+
+13. `debug.setuservalue(udata, value, n)`: Define o valor de usuário associado ao n-ésimo valor do userdata.
+
+14. `debug.traceback([thread,] [message [, level]])`: Retorna uma string com uma rastreabilidade da pilha de chamadas no ponto em que a função é chamada. É útil para geração de mensagens de erro.
+
+15. `debug.upvalueid(f, n)`: Retorna um identificador único (como um userdata leve) para a n-ésima upvalue de uma função.
+
+16. `debug.upvaluejoin(f1, n1, f2, n2)`: Faz com que a n1-ésima upvalue de uma função Lua `f1` seja referenciada pela n2-ésima upvalue de uma função Lua `f2`.
+
+Essas funções fornecem controle detalhado sobre a execução do programa e são úteis para tarefas de depuração, introspecção e manipulação de funções e variáveis. No entanto, é importante usá-las com cuidado, pois podem violar as suposições básicas do código Lua e comprometer a segurança e a integridade do código.
+
+7. Lua Standalone
+
+
+O interpretador Lua standalone (`lua`) é uma ferramenta poderosa para executar scripts Lua a partir da linha de comando. Ele fornece várias opções e recursos para a execução de código Lua e interação com o interpretador. Eis uma visão geral das opções disponíveis e como usar o interpretador `lua`:
+
+1. `-e stat`: Permite executar uma instrução Lua especificada por `stat`. Por exemplo:
+   ```
+   lua -e "print('Olá, Lua!')"
+   ```
+
+2. `-i`: Inicia o modo interativo após a execução de um script. No modo interativo, você pode inserir código Lua linha por linha e ver os resultados imediatamente.
+
+3. `-l mod` e `-l g=mod`: Essas opções permitem carregar um módulo Lua (`mod`) usando a função `require`. Você pode atribuir o módulo carregado a uma variável global se usar a forma `-l g=mod`.
+
+4. `-v`: Imprime informações de versão do interpretador Lua.
+
+5. `-E`: Ignora variáveis de ambiente como `LUA_INIT` ou qualquer outra variável de ambiente relacionada ao Lua.
+
+6. `-W`: Ativa avisos. Quando ativados, o Lua imprimirá avisos na saída de erro padrão.
+
+7. `--`: Interrompe o processamento de opções. Você pode usar isso se quiser executar um script com um nome que comece com hífen (`-`).
+
+8. `-`: Executa a entrada padrão (`stdin`) como um script Lua. Isso é útil para ler código Lua a partir da linha de comando.
+
+Quando você executa um script Lua com o interpretador `lua`, ele coleta todos os argumentos da linha de comando em uma tabela global chamada `arg`. O nome do script vai para o índice 0, o primeiro argumento após o nome do script vai para o índice 1 e assim por diante.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
