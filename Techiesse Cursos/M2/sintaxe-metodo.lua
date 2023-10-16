@@ -14,6 +14,7 @@ function Pair.create(x,y)
     }
 end
 
+
 P1 = Pair.create(1, 2)
 P2 = Pair.create(10, 20)
 
