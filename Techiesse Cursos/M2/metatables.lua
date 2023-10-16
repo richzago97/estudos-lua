@@ -20,5 +20,5 @@ local function ex2()
     print(a)
 end
 
-ex2()
+-- ex2()
 
