@@ -6,7 +6,7 @@ Pair = {
     end,
 }
 
-function Pair.create(x,y)
+function Pair.create2(x,y)
     return {
         x = x,
         y = y,
@@ -14,9 +14,8 @@ function Pair.create(x,y)
     }
 end
 
-
-P1 = Pair.create(1, 2)
-P2 = Pair.create(10, 20)
+P1 = Pair.create2(1, 2)
+P2 = Pair.create2(10, 20)
 
 print(_F("p1.x = %s", P1.x))
 print(_F("p1.y = %s", P1.y))
