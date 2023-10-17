@@ -11,6 +11,8 @@ O principal objetivo deste repositório é documentar meu progresso e aprendizad
 
 - **Aulas do CFB Cursos**: Você encontrará resumos e anotações das aulas do curso básico de Lua do CFB Cursos.
 
+- **Aulas do Techiesse Cursos**: Você encontrará resumos e anotações das aulas do curso básico de Lua do Techiesse Cursos.
+
 - **Projetos de Estudo**: À medida que avanço nos estudos, vou compartilhar projetos e scripts que desenvolvo para aplicar o que aprendi.
 
 - **Documentação e Tutoriais**: Pretendo criar documentação e tutoriais para conceitos importantes, como programação orientada a eventos em Lua.
