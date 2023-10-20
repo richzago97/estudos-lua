@@ -1,7 +1,7 @@
 
 # Repositório de Estudos em Lua
 
-Bem-vindo ao meu repositório de estudos em Lua! Este é um espaço dedicado ao meu aprendizado na linguagem Lua, do zero. Já concluí o curso básico de Lua do CFB Cursos e agora estou continuando minha jornada de aprendizado.
+Bem-vindo ao meu repositório de estudos em Lua! Este é um espaço dedicado ao meu aprendizado na linguagem Lua, do zero. Já concluí os cursos básicos de Lua do CFB Cursos, Techiesse Cursos e agora estou continuando minha jornada de aprendizado.
 
 ## Objetivo
 
@@ -10,6 +10,8 @@ O principal objetivo deste repositório é documentar meu progresso e aprendizad
 ## Conteúdo
 
 - **Aulas do CFB Cursos**: Você encontrará resumos e anotações das aulas do curso básico de Lua do CFB Cursos.
+
+- **Aulas do Techiesse Cursos**: Você encontrará resumos e anotações das aulas do curso básico de Lua do Techiesse Cursos.
 
 - **Projetos de Estudo**: À medida que avanço nos estudos, vou compartilhar projetos e scripts que desenvolvo para aplicar o que aprendi.
 
